@@ -1,0 +1,257 @@
+{
+  "aggregated": {
+    "original": {
+      "1": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 3.0839712666735672,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      },
+      "2": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 0.7127454333240166,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      },
+      "3": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 0.9448220332851633,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      },
+      "5": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 0.9535917333560064,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      },
+      "10": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 0.9787226332894837,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      }
+    },
+    "evidence_first": {
+      "1": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 0.941196966644687,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      },
+      "2": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 0.6903608333474646,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      },
+      "3": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 0.8707126666558906,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      },
+      "5": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 1.1979385000110294,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      },
+      "10": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 0.703176933263118,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      }
+    },
+    "evidence_last": {
+      "1": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 0.6217707000129545,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      },
+      "2": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 0.853070933294172,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      },
+      "3": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 0.8641640999897694,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      },
+      "5": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 0.8812251333535338,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      },
+      "10": {
+        "questions": 3,
+        "average_context_characters": 261.0,
+        "average_evidence_recall": 0.3333333333333333,
+        "average_latency_seconds": 0.8034640333304802,
+        "average_groundedness": 2.0,
+        "average_relevance": 2.0,
+        "average_completeness": 2.0,
+        "average_unsupported_claims": 0.0,
+        "quality_index": 1.0
+      }
+    }
+  },
+  "ordering_deltas_vs_original": {
+    "1": {
+      "evidence_first": {
+        "quality_delta": 0.0,
+        "groundedness_delta": 0.0,
+        "completeness_delta": 0.0,
+        "evidence_recall_delta": 0.0,
+        "latency_delta": -2.14277430002888
+      },
+      "evidence_last": {
+        "quality_delta": 0.0,
+        "groundedness_delta": 0.0,
+        "completeness_delta": 0.0,
+        "evidence_recall_delta": 0.0,
+        "latency_delta": -2.462200566660613
+      }
+    },
+    "2": {
+      "evidence_first": {
+        "quality_delta": 0.0,
+        "groundedness_delta": 0.0,
+        "completeness_delta": 0.0,
+        "evidence_recall_delta": 0.0,
+        "latency_delta": -0.022384599976552066
+      },
+      "evidence_last": {
+        "quality_delta": 0.0,
+        "groundedness_delta": 0.0,
+        "completeness_delta": 0.0,
+        "evidence_recall_delta": 0.0,
+        "latency_delta": 0.14032549997015542
+      }
+    },
+    "3": {
+      "evidence_first": {
+        "quality_delta": 0.0,
+        "groundedness_delta": 0.0,
+        "completeness_delta": 0.0,
+        "evidence_recall_delta": 0.0,
+        "latency_delta": -0.0741093666292727
+      },
+      "evidence_last": {
+        "quality_delta": 0.0,
+        "groundedness_delta": 0.0,
+        "completeness_delta": 0.0,
+        "evidence_recall_delta": 0.0,
+        "latency_delta": -0.08065793329539395
+      }
+    },
+    "5": {
+      "evidence_first": {
+        "quality_delta": 0.0,
+        "groundedness_delta": 0.0,
+        "completeness_delta": 0.0,
+        "evidence_recall_delta": 0.0,
+        "latency_delta": 0.24434676665502297
+      },
+      "evidence_last": {
+        "quality_delta": 0.0,
+        "groundedness_delta": 0.0,
+        "completeness_delta": 0.0,
+        "evidence_recall_delta": 0.0,
+        "latency_delta": -0.07236660000247264
+      }
+    },
+    "10": {
+      "evidence_first": {
+        "quality_delta": 0.0,
+        "groundedness_delta": 0.0,
+        "completeness_delta": 0.0,
+        "evidence_recall_delta": 0.0,
+        "latency_delta": -0.2755457000263657
+      },
+      "evidence_last": {
+        "quality_delta": 0.0,
+        "groundedness_delta": 0.0,
+        "completeness_delta": 0.0,
+        "evidence_recall_delta": 0.0,
+        "latency_delta": -0.1752585999590035
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+results = [
+    {
+        "question": "Who approves annual leave?",
+        "failure_category": "success",
+        "evidence_recall": 1.0,
+        "retrieved_ids": ["policy2"]
+    },
+    {
+        "question": "How do employees apply for leave?",
+        "failure_category": "evidence_missing",
+        "evidence_recall": 0.0,
+        "retrieved_ids": ["handbook1"]
+    },
+    {
+        "question": "What is the maternity leave policy?",
+        "failure_category": "should_have_abstained",
+        "evidence_recall": 0.0,
+        "retrieved_ids": []
+    },
+    {
+        "question": "Can medical leave require documents?",
+        "failure_category": "generation_ungrounded",
+        "evidence_recall": 1.0,
+        "retrieved_ids": ["policy3"]
+    }
+]

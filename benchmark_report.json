@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-09-23T11:49:06.424736",
+  "configuration": {
+    "chunk_size": 500,
+    "overlap": 100,
+    "vector_k": 10,
+    "hybrid_k": 10,
+    "rerank_k": 5,
+    "evidence_threshold": 0.6
+  },
+  "metrics": {},
+  "results": []
+}

@@ -1,0 +1,8 @@
+{
+  "source_file": "evidence_aware_budget_sweep.json",
+  "policy": [],
+  "selected_budget": {
+    "budget": null,
+    "reason": "no_budget_meets_requirements"
+  }
+}

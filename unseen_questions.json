@@ -1,0 +1,30 @@
+[
+    {
+        "question": "Who must approve a request for annual leave?",
+        "answerable": true,
+        "required_evidence": [
+            "annual leave approval authority"
+        ]
+    },
+    {
+        "question": "What is required when an employee applies for leave?",
+        "answerable": true,
+        "required_evidence": [
+            "leave application procedure"
+        ]
+    },
+    {
+        "question": "Can supporting documentation be required for medical leave?",
+        "answerable": true,
+        "required_evidence": [
+            "medical leave documentation requirements"
+        ]
+    },
+    {
+        "question": "What is the company's remote work policy?",
+        "answerable": false,
+        "required_evidence": [
+            "remote work policy"
+        ]
+    }
+]

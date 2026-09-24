@@ -1,0 +1,70 @@
+{
+  "strategies": {
+    "original": {
+      "questions": 1,
+      "average_groundedness": 2,
+      "average_completeness": 2,
+      "average_relevance": 2,
+      "average_unsupported_claims": 0,
+      "average_latency_seconds": 1.326184600009583,
+      "average_evidence_index": 0,
+      "quality_index": 1.0
+    },
+    "evidence_first": {
+      "questions": 1,
+      "average_groundedness": 2,
+      "average_completeness": 2,
+      "average_relevance": 2,
+      "average_unsupported_claims": 0,
+      "average_latency_seconds": 0.5311675000702962,
+      "average_evidence_index": 0,
+      "quality_index": 1.0
+    },
+    "evidence_last": {
+      "questions": 1,
+      "average_groundedness": 2,
+      "average_completeness": 2,
+      "average_relevance": 2,
+      "average_unsupported_claims": 0,
+      "average_latency_seconds": 0.5131503999000415,
+      "average_evidence_index": 1,
+      "quality_index": 1.0
+    },
+    "alternating": {
+      "questions": 1,
+      "average_groundedness": 2,
+      "average_completeness": 2,
+      "average_relevance": 2,
+      "average_unsupported_claims": 0,
+      "average_latency_seconds": 1.3105481000384316,
+      "average_evidence_index": 0,
+      "quality_index": 1.0
+    }
+  },
+  "relative_to_original": {
+    "evidence_first": {
+      "groundedness_delta": 0,
+      "completeness_delta": 0,
+      "relevance_delta": 0,
+      "unsupported_claims_delta": 0,
+      "latency_delta_seconds": -0.7950170999392867,
+      "quality_index_delta": 0.0
+    },
+    "evidence_last": {
+      "groundedness_delta": 0,
+      "completeness_delta": 0,
+      "relevance_delta": 0,
+      "unsupported_claims_delta": 0,
+      "latency_delta_seconds": -0.8130342001095414,
+      "quality_index_delta": 0.0
+    },
+    "alternating": {
+      "groundedness_delta": 0,
+      "completeness_delta": 0,
+      "relevance_delta": 0,
+      "unsupported_claims_delta": 0,
+      "latency_delta_seconds": -0.015636499971151352,
+      "quality_index_delta": 0.0
+    }
+  }
+}

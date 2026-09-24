@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "Can medical leave require documents?",
+      "evidence_id": "leave_policy.txt_0",
+      "evidence_similarity": 0.676710307598114,
+      "average_groundedness": 2,
+      "groundedness_range": 0,
+      "average_completeness": 2,
+      "completeness_range": 0,
+      "average_relevance": 2,
+      "relevance_range": 0,
+      "average_unsupported_claims": 0,
+      "unsupported_claims_range": 0
+    }
+  ],
+  "aggregate": {
+    "questions": 1,
+    "average_groundedness": 2,
+    "average_groundedness_range": 0,
+    "average_completeness": 2,
+    "average_completeness_range": 0,
+    "average_relevance": 2,
+    "average_relevance_range": 0,
+    "average_unsupported_claims": 0,
+    "average_unsupported_claims_range": 0
+  }
+}

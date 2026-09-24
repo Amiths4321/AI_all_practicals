@@ -1,0 +1,77 @@
+{
+  "questions": 4,
+  "results": [
+    {
+      "question": "Who must approve a request for annual leave?",
+      "answerable": true,
+      "required_evidence": [
+        "annual leave approval authority"
+      ],
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "budget": 0,
+      "decision": {
+        "budget": 0,
+        "reason": "insufficient_evidence"
+      },
+      "context_characters": 0,
+      "latency_seconds": 0.0,
+      "answer": "I don't have enough information in the provided documents.",
+      "judgement": null
+    },
+    {
+      "question": "What is required when an employee applies for leave?",
+      "answerable": true,
+      "required_evidence": [
+        "leave application procedure"
+      ],
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "budget": 0,
+      "decision": {
+        "budget": 0,
+        "reason": "insufficient_evidence"
+      },
+      "context_characters": 0,
+      "latency_seconds": 0.0,
+      "answer": "I don't have enough information in the provided documents.",
+      "judgement": null
+    },
+    {
+      "question": "Can supporting documentation be required for medical leave?",
+      "answerable": true,
+      "required_evidence": [
+        "medical leave documentation requirements"
+      ],
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "budget": 0,
+      "decision": {
+        "budget": 0,
+        "reason": "insufficient_evidence"
+      },
+      "context_characters": 0,
+      "latency_seconds": 0.0,
+      "answer": "I don't have enough information in the provided documents.",
+      "judgement": null
+    },
+    {
+      "question": "What is the company's remote work policy?",
+      "answerable": false,
+      "required_evidence": [
+        "remote work policy"
+      ],
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "budget": 0,
+      "decision": {
+        "budget": 0,
+        "reason": "insufficient_evidence"
+      },
+      "context_characters": 0,
+      "latency_seconds": 0.0,
+      "answer": "I don't have enough information in the provided documents.",
+      "judgement": null
+    }
+  ]
+}

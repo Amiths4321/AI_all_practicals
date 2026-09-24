@@ -1,0 +1,37 @@
+[
+    {
+        "question": "Who approves annual leave?",
+        "context": "Annual leave must be approved by the employee's manager.",
+        "answer_a": "Annual leave must be approved by the employee's manager.",
+        "answer_b": "Annual leave is approved by HR.",
+        "expected_winner": "A"
+    },
+    {
+        "question": "Who approves annual leave?",
+        "context": "Annual leave must be approved by the employee's manager.",
+        "answer_a": "Annual leave is approved by HR.",
+        "answer_b": "Annual leave must be approved by the employee's manager.",
+        "expected_winner": "B"
+    },
+    {
+        "question": "How do employees apply for leave?",
+        "context": "Employees submit leave requests through the employee portal.",
+        "answer_a": "Employees submit leave requests through the employee portal.",
+        "answer_b": "Employees email the CEO to request leave.",
+        "expected_winner": "A"
+    },
+    {
+        "question": "How do employees apply for leave?",
+        "context": "Employees submit leave requests through the employee portal.",
+        "answer_a": "Employees email the CEO to request leave.",
+        "answer_b": "Employees submit leave requests through the employee portal.",
+        "expected_winner": "B"
+    },
+    {
+        "question": "Can medical leave require documentation?",
+        "context": "The company may request supporting medical documentation for medical leave.",
+        "answer_a": "The company may request supporting medical documentation.",
+        "answer_b": "Medical leave never requires documentation.",
+        "expected_winner": "A"
+    }
+]

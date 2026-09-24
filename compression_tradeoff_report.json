@@ -1,0 +1,29 @@
+{
+  "full": {
+    "questions": 3,
+    "average_latency_seconds": 3.246003666621012,
+    "average_context_chars": 261,
+    "average_groundedness": 2,
+    "average_relevance": 2,
+    "average_completeness": 2,
+    "average_unsupported_claims": 0
+  },
+  "top_n": {
+    "questions": 3,
+    "average_latency_seconds": 0.930757833373112,
+    "average_context_chars": 261,
+    "average_groundedness": 2,
+    "average_relevance": 2,
+    "average_completeness": 2,
+    "average_unsupported_claims": 0
+  },
+  "evidence_aware": {
+    "questions": 3,
+    "average_latency_seconds": 0.7076444000316163,
+    "average_context_chars": 261,
+    "average_groundedness": 2,
+    "average_relevance": 2,
+    "average_completeness": 2,
+    "average_unsupported_claims": 0
+  }
+}

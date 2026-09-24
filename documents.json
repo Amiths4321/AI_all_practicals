@@ -1,0 +1,10 @@
+[
+    {
+        "source": "leave_policy.txt",
+        "text": "Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents."
+    },
+    {
+        "source": "employee_handbook.txt",
+        "text": "Employees must inform their manager before taking leave."
+    }
+]

@@ -1,0 +1,72 @@
+{
+  "summary": {
+    "1": {
+      "average_context_characters": 781.0,
+      "average_latency_seconds": 2.73132227503811,
+      "average_evidence_recall": 0.0,
+      "average_quality": 0.75
+    },
+    "2": {
+      "average_context_characters": 781.0,
+      "average_latency_seconds": 1.1760496999777388,
+      "average_evidence_recall": 0.0,
+      "average_quality": 0.75
+    },
+    "3": {
+      "average_context_characters": 781.0,
+      "average_latency_seconds": 1.1309999500226695,
+      "average_evidence_recall": 0.0,
+      "average_quality": 0.75
+    },
+    "5": {
+      "average_context_characters": 781.0,
+      "average_latency_seconds": 1.114449099986814,
+      "average_evidence_recall": 0.0,
+      "average_quality": 0.75
+    },
+    "10": {
+      "average_context_characters": 781.0,
+      "average_latency_seconds": 1.123067024978809,
+      "average_evidence_recall": 0.0,
+      "average_quality": 0.75
+    },
+    "adaptive": {
+      "average_context_characters": 0.0,
+      "average_latency_seconds": 0.0,
+      "average_evidence_recall": 0.0,
+      "average_quality": 0.0
+    }
+  },
+  "adaptive_vs_fixed": {
+    "1": {
+      "context_reduction": 1.0,
+      "quality_delta": -0.75,
+      "evidence_delta": 0.0,
+      "latency_delta": -2.73132227503811
+    },
+    "2": {
+      "context_reduction": 1.0,
+      "quality_delta": -0.75,
+      "evidence_delta": 0.0,
+      "latency_delta": -1.1760496999777388
+    },
+    "3": {
+      "context_reduction": 1.0,
+      "quality_delta": -0.75,
+      "evidence_delta": 0.0,
+      "latency_delta": -1.1309999500226695
+    },
+    "5": {
+      "context_reduction": 1.0,
+      "quality_delta": -0.75,
+      "evidence_delta": 0.0,
+      "latency_delta": -1.114449099986814
+    },
+    "10": {
+      "context_reduction": 1.0,
+      "quality_delta": -0.75,
+      "evidence_delta": 0.0,
+      "latency_delta": -1.123067024978809
+    }
+  }
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "question": "Who approves annual leave?",
+    "required_evidence": [
+      "annual leave approval authority"
+    ],
+    "budgets": {
+      "1": {
+        "documents_used": 1,
+        "context_characters": 169,
+        "evidence_recall": 0.0,
+        "generation_latency_seconds": 7.556769500020891,
+        "answer": "Manager approval is required for annual leave.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context, which states that 'Annual leave requires manager approval.' The answer is relevant to the question and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "2": {
+        "documents_used": 2,
+        "context_characters": 261,
+        "evidence_recall": 0.0,
+        "generation_latency_seconds": 0.5352926000487059,
+        "answer": "Manager approval is required for annual leave.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "3": {
+        "documents_used": 2,
+        "context_characters": 261,
+        "evidence_recall": 0.0,
+        "generation_latency_seconds": 0.5358778999652714,
+        "answer": "Manager approval is required for annual leave.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "5": {
+        "documents_used": 2,
+        "context_characters": 261,
+        "evidence_recall": 0.0,
+        "generation_latency_seconds": 1.2144013000652194,
+        "answer": "Manager approval is required for annual leave.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "10": {
+        "documents_used": 2,
+        "context_characters": 261,
+        "evidence_recall": 0.0,
+        "generation_latency_seconds": 0.4980912000173703,
+        "answer": "Manager approval is required for annual leave.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      }
+    }
+  },
+  {
+    "question": "How do employees apply for leave?",
+    "required_evidence": [
+      "leave application process"
+    ],
+    "budgets": {
+      "1": {
+        "documents_used": 1,
+        "context_characters": 169,
+        "evidence_recall": 0.0,
+        "generation_latency_seconds": 0.8610791999381036,
+        "answer": "Employees apply for leave through the HR portal. Annual leave requires manager approval, while medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is fully grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it."
+        }
+      },
+      "2": {
+        "documents_used": 2,
+        "context_characters": 261,
+        "evidence_recall": 0.0,
+        "generation_latency_seconds": 1.1053759000496939,
+        "answer": "Employees apply for leave through the HR portal. Annual leave requires manager approval, and medical leave may require supporting documents. Employees must inform their manager before taking leave.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it based on the context."
+        }
+      },
+      "3": {
+        "documents_used": 2,
+        "context_characters": 261,
+        "evidence_recall": 0.0,
+        "generation_latency_seconds": 1.1077116000233218,
+        "answer": "Employees apply for leave through the HR portal. Annual leave requires manager approval, and medical leave may require supporting documents. Employees must inform their manager before taking leave.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it based on the context."
+        }
+      },
+      "5": {
+        "documents_used": 2,
+        "context_characters": 261,
+        "evidence_recall": 0.0,
+        "generation_latency_seconds": 1.0515382000012323,
+        "answer": "Employees apply for leave through the HR portal. Annual leave requires manager approval, and medical leave may require supporting documents. Employees must inform their manager before taking leave.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it based on the context."
+        }
+      },
+      "10": {
+        "documents_used": 2,
+        "context_characters": 261,
+        "evidence_recall": 0.0,
+        "generation_latency_seconds": 1.0820827999850735,
+        "answer": "Employees apply for leave through the HR portal. Annual leave requires manager approval, and medical leave may require supporting documents. Employees must inform their manager before taking leave.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it based on the context."
+        }
+      }
+    }
+  },
+  {
+    "question": "Can medical leave require documents?",
+    "required_evidence": [
+      "medical leave documentation"
+    ],
+    "budgets": {
+      "1": {
+        "documents_used": 1,
+        "context_characters": 169,
+        "evidence_recall": 1.0,
+        "generation_latency_seconds": 0.4989796000299975,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "2": {
+        "documents_used": 2,
+        "context_characters": 261,
+        "evidence_recall": 1.0,
+        "generation_latency_seconds": 0.5256564000155777,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "3": {
+        "documents_used": 2,
+        "context_characters": 261,
+        "evidence_recall": 1.0,
+        "generation_latency_seconds": 1.2910259999334812,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "5": {
+        "documents_used": 2,
+        "context_characters": 261,
+        "evidence_recall": 1.0,
+        "generation_latency_seconds": 0.4911955000134185,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "10": {
+        "documents_used": 2,
+        "context_characters": 261,
+        "evidence_recall": 1.0,
+        "generation_latency_seconds": 0.5656362000154331,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      }
+    }
+  }
+]

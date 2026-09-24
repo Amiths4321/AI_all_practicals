@@ -1,0 +1,29 @@
+[
+  {
+    "question": "Who approves annual leave?",
+    "reference_answer": "PUT THE ANSWER FROM YOUR ACTUAL DOCUMENT HERE",
+    "generated_answer": "Manager approval is required for annual leave.",
+    "retrieved_sources": [
+      "leave_policy.txt",
+      "employee_handbook.txt"
+    ]
+  },
+  {
+    "question": "How do employees apply for leave?",
+    "reference_answer": "PUT THE ANSWER FROM YOUR ACTUAL DOCUMENT HERE",
+    "generated_answer": "Employees apply for leave through the HR portal. Annual leave requires manager approval, and medical leave may require supporting documents. Employees must inform their manager before taking leave.",
+    "retrieved_sources": [
+      "leave_policy.txt",
+      "employee_handbook.txt"
+    ]
+  },
+  {
+    "question": "Can medical leave require documents?",
+    "reference_answer": "PUT THE ANSWER FROM YOUR ACTUAL DOCUMENT HERE",
+    "generated_answer": "Yes, medical leave may require supporting documents.",
+    "retrieved_sources": [
+      "leave_policy.txt",
+      "employee_handbook.txt"
+    ]
+  }
+]

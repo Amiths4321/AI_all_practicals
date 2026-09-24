@@ -1,0 +1,227 @@
+[
+  {
+    "context_size": 5,
+    "position": "beginning",
+    "relevant_index": 0,
+    "context_characters": 682,
+    "latency_seconds": 0.9364769000094384,
+    "answer": "Manager approval.",
+    "judgement": {
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer 'Manager approval' is directly supported by the context in 'leave_policy.txt', which states that annual leave requires manager approval before the leave is taken. The answer is both grounded and relevant to the question, and it includes the necessary information to answer the question based on the context."
+    }
+  },
+  {
+    "context_size": 5,
+    "position": "quarter",
+    "relevant_index": 1,
+    "context_characters": 682,
+    "latency_seconds": 0.9645524000516161,
+    "answer": "Manager approval is required for annual leave.",
+    "judgement": {
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    }
+  },
+  {
+    "context_size": 5,
+    "position": "middle",
+    "relevant_index": 2,
+    "context_characters": 682,
+    "latency_seconds": 0.49694650003220886,
+    "answer": "Manager approval is required for annual leave.",
+    "judgement": {
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    }
+  },
+  {
+    "context_size": 5,
+    "position": "three_quarters",
+    "relevant_index": 3,
+    "context_characters": 682,
+    "latency_seconds": 0.5006169999251142,
+    "answer": "Manager approval is required for annual leave.",
+    "judgement": {
+      "groundedness": 1,
+      "relevance": 1,
+      "completeness": 1,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    }
+  },
+  {
+    "context_size": 5,
+    "position": "end",
+    "relevant_index": 4,
+    "context_characters": 682,
+    "latency_seconds": 1.3281757000368088,
+    "answer": "Manager approval is required for annual leave.",
+    "judgement": {
+      "groundedness": 1,
+      "relevance": 1,
+      "completeness": 1,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    }
+  },
+  {
+    "context_size": 10,
+    "position": "beginning",
+    "relevant_index": 0,
+    "context_characters": 1418,
+    "latency_seconds": 0.37692860001698136,
+    "answer": "Manager",
+    "judgement": {
+      "groundedness": 1,
+      "relevance": 1,
+      "completeness": 1,
+      "unsupported_claims": 0,
+      "reason": "The answer 'Manager' is grounded in the context provided, which states that annual leave requires manager approval. The answer directly addresses the question and includes the important information needed to answer it based on the context."
+    }
+  },
+  {
+    "context_size": 10,
+    "position": "quarter",
+    "relevant_index": 2,
+    "context_characters": 1418,
+    "latency_seconds": 0.44355219998396933,
+    "answer": "Manager approval.",
+    "judgement": {
+      "groundedness": 1,
+      "relevance": 1,
+      "completeness": 1,
+      "unsupported_claims": 0,
+      "reason": "The answer 'Manager approval' is grounded in the context provided, which states that 'Annual leave requires manager approval before the leave is taken.' The answer directly addresses the question and includes the important information needed to answer the question based on the context."
+    }
+  },
+  {
+    "context_size": 10,
+    "position": "middle",
+    "relevant_index": 5,
+    "context_characters": 1418,
+    "latency_seconds": 1.374811999965459,
+    "answer": "Manager approval is required for annual leave.",
+    "judgement": {
+      "groundedness": 1,
+      "relevance": 1,
+      "completeness": 1,
+      "unsupported_claims": 0,
+      "reason": "The answer 'Manager approval is required for annual leave' is grounded in the context provided, which states that 'Annual leave requires manager approval before the leave is taken.' The answer directly addresses the question and includes the important information needed to answer it based on the context."
+    }
+  },
+  {
+    "context_size": 10,
+    "position": "three_quarters",
+    "relevant_index": 7,
+    "context_characters": 1418,
+    "latency_seconds": 0.9150627999333665,
+    "answer": "Manager approval is required for annual leave.",
+    "judgement": {
+      "groundedness": 1,
+      "relevance": 1,
+      "completeness": 1,
+      "unsupported_claims": 0,
+      "reason": "The answer 'Manager approval is required for annual leave' is grounded in the context provided, which states that 'Annual leave requires manager approval before the leave is taken.' The answer directly addresses the question and includes the important information needed to answer the question based on the context."
+    }
+  },
+  {
+    "context_size": 10,
+    "position": "end",
+    "relevant_index": 9,
+    "context_characters": 1418,
+    "latency_seconds": 0.7228489000117406,
+    "answer": "Manager approval is required for annual leave.",
+    "judgement": {
+      "groundedness": 1,
+      "relevance": 1,
+      "completeness": 1,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, as it states that manager approval is required for annual leave, which is explicitly stated in the retrieved context. The answer directly addresses the question and includes the important information needed to answer it."
+    }
+  },
+  {
+    "context_size": 20,
+    "position": "beginning",
+    "relevant_index": 0,
+    "context_characters": 2907,
+    "latency_seconds": 1.1922292000381276,
+    "answer": "Manager approval.",
+    "judgement": {
+      "groundedness": 1,
+      "relevance": 1,
+      "completeness": 1,
+      "unsupported_claims": 0,
+      "reason": "The answer 'Manager approval' is grounded in the context provided, which states that 'Annual leave requires manager approval before the leave is taken.' The answer directly addresses the question and includes the important information needed to answer the question based on the context."
+    }
+  },
+  {
+    "context_size": 20,
+    "position": "quarter",
+    "relevant_index": 5,
+    "context_characters": 2907,
+    "latency_seconds": 0.7576206000521779,
+    "answer": "Manager approval.",
+    "judgement": {
+      "groundedness": 1,
+      "relevance": 1,
+      "completeness": 1,
+      "unsupported_claims": 0,
+      "reason": "The answer 'Manager approval' is directly supported by the context, which states that 'Annual leave requires manager approval before the leave is taken.' The answer is relevant to the question and includes the important information needed to answer the question based on the context."
+    }
+  },
+  {
+    "context_size": 20,
+    "position": "middle",
+    "relevant_index": 10,
+    "context_characters": 2907,
+    "latency_seconds": 0.9821093000937253,
+    "answer": "Manager approval is required for annual leave.",
+    "judgement": {
+      "groundedness": 1,
+      "relevance": 1,
+      "completeness": 1,
+      "unsupported_claims": 0,
+      "reason": "The answer 'Manager approval is required for annual leave' is grounded in the context provided, as it is directly stated in the retrieved context that 'Annual leave requires manager approval before the leave is taken.' The answer is relevant to the question 'Who approves annual leave?' and includes the important information needed to answer the question based on the context."
+    }
+  },
+  {
+    "context_size": 20,
+    "position": "three_quarters",
+    "relevant_index": 15,
+    "context_characters": 2907,
+    "latency_seconds": 0.6832801999989897,
+    "answer": "Manager approval is required for annual leave.",
+    "judgement": {
+      "groundedness": 1,
+      "relevance": 1,
+      "completeness": 1,
+      "unsupported_claims": 0,
+      "reason": "The answer 'Manager approval is required for annual leave' is grounded in the context provided, which states that 'Annual leave requires manager approval before the leave is taken.' The answer directly addresses the question and includes the important information needed to answer the question based on the context."
+    }
+  },
+  {
+    "context_size": 20,
+    "position": "end",
+    "relevant_index": 19,
+    "context_characters": 2907,
+    "latency_seconds": 1.4958304000319913,
+    "answer": "Manager approval is required for annual leave.",
+    "judgement": {
+      "groundedness": 1,
+      "relevance": 1,
+      "completeness": 1,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, which states that annual leave requires manager approval. The answer directly addresses the question and includes the important information needed to answer it."
+    }
+  }
+]

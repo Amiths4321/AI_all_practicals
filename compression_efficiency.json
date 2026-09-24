@@ -1,0 +1,62 @@
+{
+  "1": {
+    "max_documents": 1,
+    "average_context_chars": 169,
+    "average_latency_seconds": 1.0690800333007549,
+    "average_groundedness": 2,
+    "average_completeness": 2,
+    "average_relevance": 2,
+    "average_unsupported_claims": 0,
+    "quality_index": 1.0,
+    "context_reduction": 0.3524904214559387,
+    "latency_reduction": 0.004463809082483006
+  },
+  "2": {
+    "max_documents": 2,
+    "average_context_chars": 261,
+    "average_latency_seconds": 1.2366273999990274,
+    "average_groundedness": 2,
+    "average_completeness": 2,
+    "average_relevance": 2,
+    "average_unsupported_claims": 0,
+    "quality_index": 1.0,
+    "context_reduction": 0.0,
+    "latency_reduction": -0.15155768794807134
+  },
+  "3": {
+    "max_documents": 3,
+    "average_context_chars": 261,
+    "average_latency_seconds": 1.0339358333343018,
+    "average_groundedness": 2,
+    "average_completeness": 2,
+    "average_relevance": 2,
+    "average_unsupported_claims": 0,
+    "quality_index": 1.0,
+    "context_reduction": 0.0,
+    "latency_reduction": 0.03719037947723991
+  },
+  "5": {
+    "max_documents": 5,
+    "average_context_chars": 261,
+    "average_latency_seconds": 0.989910833343553,
+    "average_groundedness": 2,
+    "average_completeness": 2,
+    "average_relevance": 2,
+    "average_unsupported_claims": 0,
+    "quality_index": 1.0,
+    "context_reduction": 0.0,
+    "latency_reduction": 0.07818682448670711
+  },
+  "10": {
+    "max_documents": 10,
+    "average_context_chars": 261,
+    "average_latency_seconds": 1.0738736000300075,
+    "average_groundedness": 2,
+    "average_completeness": 2,
+    "average_relevance": 2,
+    "average_unsupported_claims": 0,
+    "quality_index": 1.0,
+    "context_reduction": 0.0,
+    "latency_reduction": 0.0
+  }
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "question": "Who approves annual leave?",
+        "answerable": true,
+        "relevant_sources": [
+            "leave_policy.txt"
+        ],
+        "required_evidence": [
+            "annual leave approval authority"
+        ],
+        "answer": "Use the answer supported by your leave policy."
+    },
+    {
+        "question": "How do employees apply for leave?",
+        "answerable": true,
+        "relevant_sources": [
+            "leave_policy.txt"
+        ],
+        "required_evidence": [
+            "leave application process"
+        ],
+        "answer": "Use the answer supported by your leave policy."
+    },
+    {
+        "question": "Can medical leave require documents?",
+        "answerable": true,
+        "relevant_sources": [
+            "leave_policy.txt"
+        ],
+        "required_evidence": [
+            "medical leave documentation requirement"
+        ],
+        "answer": "Use the answer supported by your leave policy."
+    },
+    {
+        "question": "What is the company's remote work policy?",
+        "answerable": false,
+        "relevant_sources": [],
+        "required_evidence": [],
+        "answer": ""
+    }
+]

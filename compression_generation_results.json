@@ -1,0 +1,125 @@
+[
+  {
+    "question": "Who approves annual leave?",
+    "strategies": {
+      "full": {
+        "answer": "Manager approval is required for annual leave.",
+        "latency_seconds": 7.447146399994381,
+        "context_characters": 261,
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "top_n": {
+        "answer": "Manager approval is required for annual leave.",
+        "latency_seconds": 0.4534037000266835,
+        "context_characters": 261,
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "evidence_aware": {
+        "answer": "Manager approval is required for annual leave.",
+        "latency_seconds": 0.4906154000200331,
+        "context_characters": 261,
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      }
+    }
+  },
+  {
+    "question": "How do employees apply for leave?",
+    "strategies": {
+      "full": {
+        "answer": "Employees apply for leave through the HR portal. Annual leave requires manager approval, and medical leave may require supporting documents. Employees must inform their manager before taking leave.",
+        "latency_seconds": 1.753997499938123,
+        "context_characters": 261,
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it based on the context."
+        }
+      },
+      "top_n": {
+        "answer": "Employees apply for leave through the HR portal. Annual leave requires manager approval, and medical leave may require supporting documents. Employees must inform their manager before taking leave.",
+        "latency_seconds": 1.1286013000644743,
+        "context_characters": 261,
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it based on the context."
+        }
+      },
+      "evidence_aware": {
+        "answer": "Employees apply for leave through the HR portal. Annual leave requires manager approval, and medical leave may require supporting documents. Employees must inform their manager before taking leave.",
+        "latency_seconds": 1.0915344000095502,
+        "context_characters": 261,
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it based on the context."
+        }
+      }
+    }
+  },
+  {
+    "question": "Can medical leave require documents?",
+    "strategies": {
+      "full": {
+        "answer": "Yes, medical leave may require supporting documents.",
+        "latency_seconds": 0.5368670999305323,
+        "context_characters": 261,
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "top_n": {
+        "answer": "Yes, medical leave may require supporting documents.",
+        "latency_seconds": 1.210268500028178,
+        "context_characters": 261,
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "evidence_aware": {
+        "answer": "Yes, medical leave may require supporting documents.",
+        "latency_seconds": 0.5407834000652656,
+        "context_characters": 261,
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      }
+    }
+  }
+]

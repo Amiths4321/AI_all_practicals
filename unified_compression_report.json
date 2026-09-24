@@ -1,0 +1,32 @@
+{
+  "top_n": {
+    "questions": 3,
+    "average_context_characters": 261,
+    "average_latency_seconds": 1.2269909666307892,
+    "average_groundedness": 2,
+    "average_completeness": 2,
+    "average_relevance": 2,
+    "average_unsupported_claims": 0,
+    "quality_index": 1.0
+  },
+  "evidence_aware": {
+    "questions": 3,
+    "average_context_characters": 261,
+    "average_latency_seconds": 0.6982405332770819,
+    "average_groundedness": 2,
+    "average_completeness": 2,
+    "average_relevance": 2,
+    "average_unsupported_claims": 0,
+    "quality_index": 1.0
+  },
+  "sentence": {
+    "questions": 3,
+    "average_context_characters": 212.66666666666666,
+    "average_latency_seconds": 0.9649792000030478,
+    "average_groundedness": 2,
+    "average_completeness": 2,
+    "average_relevance": 2,
+    "average_unsupported_claims": 0,
+    "quality_index": 1.0
+  }
+}

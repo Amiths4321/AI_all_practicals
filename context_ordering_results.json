@@ -1,0 +1,60 @@
+[
+  {
+    "question": "Can medical leave require documents?",
+    "evidence_id": "leave_policy.txt_0",
+    "results": {
+      "original": {
+        "evidence_index": 0,
+        "context_characters": 261,
+        "latency_seconds": 1.326184600009583,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "evidence_first": {
+        "evidence_index": 0,
+        "context_characters": 261,
+        "latency_seconds": 0.5311675000702962,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "evidence_last": {
+        "evidence_index": 1,
+        "context_characters": 261,
+        "latency_seconds": 0.5131503999000415,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "alternating": {
+        "evidence_index": 0,
+        "context_characters": 261,
+        "latency_seconds": 1.3105481000384316,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      }
+    }
+  }
+]

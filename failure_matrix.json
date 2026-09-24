@@ -1,0 +1,115 @@
+{
+  "strategies": [
+    "original",
+    "top_n",
+    "evidence_aware",
+    "evidence_first",
+    "evidence_last",
+    "sentence"
+  ],
+  "matrix": {
+    "Who approves annual leave?": {
+      "original": "retrieval_failure",
+      "top_n": "retrieval_failure",
+      "evidence_aware": "retrieval_failure",
+      "evidence_first": "retrieval_failure",
+      "evidence_last": "retrieval_failure",
+      "sentence": "retrieval_failure"
+    },
+    "How do employees apply for leave?": {
+      "original": "retrieval_failure",
+      "top_n": "retrieval_failure",
+      "evidence_aware": "retrieval_failure",
+      "evidence_first": "retrieval_failure",
+      "evidence_last": "retrieval_failure",
+      "sentence": "retrieval_failure"
+    },
+    "Can medical leave require documents?": {
+      "original": "success",
+      "top_n": "success",
+      "evidence_aware": "success",
+      "evidence_first": "success",
+      "evidence_last": "success",
+      "sentence": "success"
+    }
+  },
+  "question_summary": {
+    "Who approves annual leave?": {
+      "strategies_tested": 6,
+      "failures": 6,
+      "successes": 0,
+      "failure_rate": 1.0,
+      "failure_types": {
+        "retrieval_failure": 6
+      }
+    },
+    "How do employees apply for leave?": {
+      "strategies_tested": 6,
+      "failures": 6,
+      "successes": 0,
+      "failure_rate": 1.0,
+      "failure_types": {
+        "retrieval_failure": 6
+      }
+    },
+    "Can medical leave require documents?": {
+      "strategies_tested": 6,
+      "failures": 0,
+      "successes": 6,
+      "failure_rate": 0.0,
+      "failure_types": {
+        "success": 6
+      }
+    }
+  },
+  "strategy_summary": {
+    "original": {
+      "questions": 3,
+      "failures": 2,
+      "failure_rate": 0.6666666666666666,
+      "context_loss_count": 0,
+      "retrieval_failure_count": 2,
+      "generation_failure_count": 0
+    },
+    "top_n": {
+      "questions": 3,
+      "failures": 2,
+      "failure_rate": 0.6666666666666666,
+      "context_loss_count": 0,
+      "retrieval_failure_count": 2,
+      "generation_failure_count": 0
+    },
+    "evidence_aware": {
+      "questions": 3,
+      "failures": 2,
+      "failure_rate": 0.6666666666666666,
+      "context_loss_count": 0,
+      "retrieval_failure_count": 2,
+      "generation_failure_count": 0
+    },
+    "evidence_first": {
+      "questions": 3,
+      "failures": 2,
+      "failure_rate": 0.6666666666666666,
+      "context_loss_count": 0,
+      "retrieval_failure_count": 2,
+      "generation_failure_count": 0
+    },
+    "evidence_last": {
+      "questions": 3,
+      "failures": 2,
+      "failure_rate": 0.6666666666666666,
+      "context_loss_count": 0,
+      "retrieval_failure_count": 2,
+      "generation_failure_count": 0
+    },
+    "sentence": {
+      "questions": 3,
+      "failures": 2,
+      "failure_rate": 0.6666666666666666,
+      "context_loss_count": 0,
+      "retrieval_failure_count": 2,
+      "generation_failure_count": 0
+    }
+  }
+}

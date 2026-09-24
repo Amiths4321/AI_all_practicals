@@ -1,0 +1,41 @@
+{
+  "question": "Who approves annual leave?",
+  "results": {
+    "beginning": {
+      "answer": "Managers approve annual leave.",
+      "context_characters": 552,
+      "latency_seconds": 7.122424099943601,
+      "judgement": {
+        "groundedness": 2,
+        "relevance": 2,
+        "completeness": 2,
+        "unsupported_claims": 0,
+        "reason": "The answer is directly supported by the context, which states that 'Annual leave requires manager approval before the leave is taken.' The answer is relevant to the question and includes the important information needed to answer the question based on the context."
+      }
+    },
+    "middle": {
+      "answer": "Manager approval is required before annual leave is taken.",
+      "context_characters": 552,
+      "latency_seconds": 0.5151973000029102,
+      "judgement": {
+        "groundedness": 2,
+        "relevance": 2,
+        "completeness": 2,
+        "unsupported_claims": 0,
+        "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+      }
+    },
+    "end": {
+      "answer": "Managers approve annual leave.",
+      "context_characters": 552,
+      "latency_seconds": 0.45950170001015067,
+      "judgement": {
+        "groundedness": 2,
+        "relevance": 2,
+        "completeness": 2,
+        "unsupported_claims": 0,
+        "reason": "The answer is directly supported by the context, which states that 'Annual leave requires manager approval before the leave is taken.' The answer is relevant to the question and includes the important information needed to answer the question based on the context."
+      }
+    }
+  }
+}

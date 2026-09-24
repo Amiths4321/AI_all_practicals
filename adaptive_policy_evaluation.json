@@ -1,0 +1,72 @@
+{
+  "summary": {
+    "questions": 5,
+    "classification_counts": {
+      "quality_loss": 3,
+      "no_savings": 2
+    },
+    "efficient_success_rate": 0.0,
+    "evidence_loss_rate": 0.0,
+    "quality_loss_rate": 0.6,
+    "no_savings_rate": 0.4,
+    "average_context_reduction": 0.6,
+    "average_quality_delta": -0.6
+  },
+  "questions": [
+    {
+      "question": "Who approves annual leave?",
+      "classification": "quality_loss",
+      "fixed_quality": 1.0,
+      "adaptive_quality": 0.0,
+      "quality_delta": -1.0,
+      "fixed_evidence": 0.0,
+      "adaptive_evidence": 0.0,
+      "context_saved": true,
+      "context_reduction": 1.0
+    },
+    {
+      "question": "How do employees apply for leave?",
+      "classification": "quality_loss",
+      "fixed_quality": 1.0,
+      "adaptive_quality": 0.0,
+      "quality_delta": -1.0,
+      "fixed_evidence": 0.0,
+      "adaptive_evidence": 0.0,
+      "context_saved": true,
+      "context_reduction": 1.0
+    },
+    {
+      "question": "Can medical leave require documents?",
+      "classification": "quality_loss",
+      "fixed_quality": 1.0,
+      "adaptive_quality": 0.0,
+      "quality_delta": -1.0,
+      "fixed_evidence": 0.0,
+      "adaptive_evidence": 0.0,
+      "context_saved": true,
+      "context_reduction": 1.0
+    },
+    {
+      "question": "What is the maternity leave policy?",
+      "classification": "no_savings",
+      "fixed_quality": 1.0,
+      "adaptive_quality": 1.0,
+      "quality_delta": 0.0,
+      "fixed_evidence": 1.0,
+      "adaptive_evidence": 1.0,
+      "context_saved": false,
+      "context_reduction": 0.0
+    },
+    {
+      "question": "What is the company's remote work policy?",
+      "classification": "no_savings",
+      "fixed_quality": 0.0,
+      "adaptive_quality": 0.0,
+      "quality_delta": 0.0,
+      "fixed_evidence": 1.0,
+      "adaptive_evidence": 1.0,
+      "context_saved": false,
+      "context_reduction": 0.0
+    }
+  ]
+}

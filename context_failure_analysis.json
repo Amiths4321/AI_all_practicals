@@ -1,0 +1,251 @@
+{
+  "total_evaluations": 18,
+  "overall_failure_counts": {
+    "retrieval_failure": 12,
+    "success": 6
+  },
+  "strategy_failure_counts": {
+    "original": {
+      "retrieval_failure": 2,
+      "success": 1
+    },
+    "top_n": {
+      "retrieval_failure": 2,
+      "success": 1
+    },
+    "evidence_aware": {
+      "retrieval_failure": 2,
+      "success": 1
+    },
+    "evidence_first": {
+      "retrieval_failure": 2,
+      "success": 1
+    },
+    "evidence_last": {
+      "retrieval_failure": 2,
+      "success": 1
+    },
+    "sentence": {
+      "retrieval_failure": 2,
+      "success": 1
+    }
+  },
+  "question_results": [
+    {
+      "question": "Who approves annual leave?",
+      "strategy": "original",
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "failure_type": "retrieval_failure",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    },
+    {
+      "question": "Who approves annual leave?",
+      "strategy": "top_n",
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "failure_type": "retrieval_failure",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    },
+    {
+      "question": "Who approves annual leave?",
+      "strategy": "evidence_aware",
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "failure_type": "retrieval_failure",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    },
+    {
+      "question": "Who approves annual leave?",
+      "strategy": "evidence_first",
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "failure_type": "retrieval_failure",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    },
+    {
+      "question": "Who approves annual leave?",
+      "strategy": "evidence_last",
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "failure_type": "retrieval_failure",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    },
+    {
+      "question": "Who approves annual leave?",
+      "strategy": "sentence",
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 1.0,
+      "failure_type": "retrieval_failure",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    },
+    {
+      "question": "How do employees apply for leave?",
+      "strategy": "original",
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "failure_type": "retrieval_failure",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it based on the context."
+    },
+    {
+      "question": "How do employees apply for leave?",
+      "strategy": "top_n",
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "failure_type": "retrieval_failure",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it based on the context."
+    },
+    {
+      "question": "How do employees apply for leave?",
+      "strategy": "evidence_aware",
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "failure_type": "retrieval_failure",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it based on the context."
+    },
+    {
+      "question": "How do employees apply for leave?",
+      "strategy": "evidence_first",
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "failure_type": "retrieval_failure",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it based on the context."
+    },
+    {
+      "question": "How do employees apply for leave?",
+      "strategy": "evidence_last",
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "failure_type": "retrieval_failure",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it based on the context."
+    },
+    {
+      "question": "How do employees apply for leave?",
+      "strategy": "sentence",
+      "retrieval_evidence_recall": 0.0,
+      "strategy_evidence_recall": 0.0,
+      "failure_type": "retrieval_failure",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it based on the context."
+    },
+    {
+      "question": "Can medical leave require documents?",
+      "strategy": "original",
+      "retrieval_evidence_recall": 1.0,
+      "strategy_evidence_recall": 1.0,
+      "failure_type": "success",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    },
+    {
+      "question": "Can medical leave require documents?",
+      "strategy": "top_n",
+      "retrieval_evidence_recall": 1.0,
+      "strategy_evidence_recall": 1.0,
+      "failure_type": "success",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    },
+    {
+      "question": "Can medical leave require documents?",
+      "strategy": "evidence_aware",
+      "retrieval_evidence_recall": 1.0,
+      "strategy_evidence_recall": 1.0,
+      "failure_type": "success",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    },
+    {
+      "question": "Can medical leave require documents?",
+      "strategy": "evidence_first",
+      "retrieval_evidence_recall": 1.0,
+      "strategy_evidence_recall": 1.0,
+      "failure_type": "success",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    },
+    {
+      "question": "Can medical leave require documents?",
+      "strategy": "evidence_last",
+      "retrieval_evidence_recall": 1.0,
+      "strategy_evidence_recall": 1.0,
+      "failure_type": "success",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    },
+    {
+      "question": "Can medical leave require documents?",
+      "strategy": "sentence",
+      "retrieval_evidence_recall": 1.0,
+      "strategy_evidence_recall": 1.0,
+      "failure_type": "success",
+      "groundedness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "unsupported_claims": 0,
+      "reason": "The answer is grounded in the context, directly addresses the question, and includes the important information needed to answer the question based on the context."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "question": "Can medical leave require documents?",
+    "required_evidence": [
+      "medical leave documentation"
+    ],
+    "evidence_id": "leave_policy.txt_0",
+    "evidence_similarity": 0.676710307598114,
+    "results": {
+      "beginning": {
+        "evidence_id": "leave_policy.txt_0",
+        "evidence_similarity": 0.676710307598114,
+        "evidence_index": 0,
+        "context_characters": 261,
+        "latency_seconds": 7.569527100073174,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "quarter": {
+        "evidence_id": "leave_policy.txt_0",
+        "evidence_similarity": 0.676710307598114,
+        "evidence_index": 0,
+        "context_characters": 261,
+        "latency_seconds": 0.5266126000788063,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "middle": {
+        "evidence_id": "leave_policy.txt_0",
+        "evidence_similarity": 0.676710307598114,
+        "evidence_index": 1,
+        "context_characters": 261,
+        "latency_seconds": 1.3155400999821723,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "three_quarters": {
+        "evidence_id": "leave_policy.txt_0",
+        "evidence_similarity": 0.676710307598114,
+        "evidence_index": 1,
+        "context_characters": 261,
+        "latency_seconds": 0.4994643999962136,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "end": {
+        "evidence_id": "leave_policy.txt_0",
+        "evidence_similarity": 0.676710307598114,
+        "evidence_index": 1,
+        "context_characters": 261,
+        "latency_seconds": 0.590258099953644,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      }
+    }
+  }
+]

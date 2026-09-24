@@ -1,0 +1,18 @@
+[
+  {
+    "chunk_size": 200,
+    "overlap": 40
+  },
+  {
+    "chunk_size": 300,
+    "overlap": 60
+  },
+  {
+    "chunk_size": 500,
+    "overlap": 100
+  },
+  {
+    "chunk_size": 800,
+    "overlap": 160
+  }
+]

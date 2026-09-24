@@ -1,0 +1,84 @@
+{
+  "pareto_frontier": [
+    "evidence_last",
+    "sentence"
+  ],
+  "strategies": {
+    "original": {
+      "average_context_characters": 261.0,
+      "average_latency_seconds": 3.1651569333625957,
+      "evidence_retention_vs_original": 1.0,
+      "average_strategy_evidence_recall": 0.3333333333333333,
+      "quality_index": 1.0,
+      "failure_rate": 1.0,
+      "dominated_by": [
+        "top_n",
+        "evidence_aware",
+        "evidence_first",
+        "evidence_last",
+        "sentence"
+      ],
+      "on_pareto_frontier": false
+    },
+    "top_n": {
+      "average_context_characters": 261.0,
+      "average_latency_seconds": 0.6927060666494071,
+      "evidence_retention_vs_original": 1.0,
+      "average_strategy_evidence_recall": 0.3333333333333333,
+      "quality_index": 1.0,
+      "failure_rate": 1.0,
+      "dominated_by": [
+        "evidence_last"
+      ],
+      "on_pareto_frontier": false
+    },
+    "evidence_aware": {
+      "average_context_characters": 261.0,
+      "average_latency_seconds": 1.123589766677469,
+      "evidence_retention_vs_original": 1.0,
+      "average_strategy_evidence_recall": 0.3333333333333333,
+      "quality_index": 1.0,
+      "failure_rate": 1.0,
+      "dominated_by": [
+        "top_n",
+        "evidence_first",
+        "evidence_last",
+        "sentence"
+      ],
+      "on_pareto_frontier": false
+    },
+    "evidence_first": {
+      "average_context_characters": 261.0,
+      "average_latency_seconds": 0.9104125999923175,
+      "evidence_retention_vs_original": 1.0,
+      "average_strategy_evidence_recall": 0.3333333333333333,
+      "quality_index": 1.0,
+      "failure_rate": 1.0,
+      "dominated_by": [
+        "top_n",
+        "evidence_last"
+      ],
+      "on_pareto_frontier": false
+    },
+    "evidence_last": {
+      "average_context_characters": 261.0,
+      "average_latency_seconds": 0.6148924333198617,
+      "evidence_retention_vs_original": 1.0,
+      "average_strategy_evidence_recall": 0.3333333333333333,
+      "quality_index": 1.0,
+      "failure_rate": 1.0,
+      "dominated_by": [],
+      "on_pareto_frontier": true
+    },
+    "sentence": {
+      "average_context_characters": 212.66666666666666,
+      "average_latency_seconds": 0.9781955333504205,
+      "evidence_retention_vs_original": 2.0,
+      "average_strategy_evidence_recall": 0.6666666666666666,
+      "quality_index": 1.0,
+      "failure_rate": 1.0,
+      "dominated_by": [],
+      "on_pareto_frontier": true
+    }
+  }
+}

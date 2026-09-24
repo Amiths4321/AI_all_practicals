@@ -1,0 +1,14 @@
+[
+    {
+        "question": "Who approves annual leave?",
+        "relevant_ids": ["leave_policy.txt"]
+    },
+    {
+        "question": "How do employees apply for leave?",
+        "relevant_ids": ["leave_policy.txt"]
+    },
+    {
+        "question": "Can medical leave require documents?",
+        "relevant_ids": ["leave_policy.txt"]
+    }
+]

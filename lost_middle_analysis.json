@@ -1,0 +1,113 @@
+{
+  "5": {
+    "beginning": {
+      "groundedness": 2,
+      "completeness": 2,
+      "relevance": 2,
+      "unsupported_claims": 0,
+      "latency_seconds": 0.9364769000094384
+    },
+    "quarter": {
+      "groundedness": 2,
+      "completeness": 2,
+      "relevance": 2,
+      "unsupported_claims": 0,
+      "latency_seconds": 0.9645524000516161
+    },
+    "middle": {
+      "groundedness": 2,
+      "completeness": 2,
+      "relevance": 2,
+      "unsupported_claims": 0,
+      "latency_seconds": 0.49694650003220886
+    },
+    "three_quarters": {
+      "groundedness": 1,
+      "completeness": 1,
+      "relevance": 1,
+      "unsupported_claims": 0,
+      "latency_seconds": 0.5006169999251142
+    },
+    "end": {
+      "groundedness": 1,
+      "completeness": 1,
+      "relevance": 1,
+      "unsupported_claims": 0,
+      "latency_seconds": 1.3281757000368088
+    }
+  },
+  "10": {
+    "beginning": {
+      "groundedness": 1,
+      "completeness": 1,
+      "relevance": 1,
+      "unsupported_claims": 0,
+      "latency_seconds": 0.37692860001698136
+    },
+    "quarter": {
+      "groundedness": 1,
+      "completeness": 1,
+      "relevance": 1,
+      "unsupported_claims": 0,
+      "latency_seconds": 0.44355219998396933
+    },
+    "middle": {
+      "groundedness": 1,
+      "completeness": 1,
+      "relevance": 1,
+      "unsupported_claims": 0,
+      "latency_seconds": 1.374811999965459
+    },
+    "three_quarters": {
+      "groundedness": 1,
+      "completeness": 1,
+      "relevance": 1,
+      "unsupported_claims": 0,
+      "latency_seconds": 0.9150627999333665
+    },
+    "end": {
+      "groundedness": 1,
+      "completeness": 1,
+      "relevance": 1,
+      "unsupported_claims": 0,
+      "latency_seconds": 0.7228489000117406
+    }
+  },
+  "20": {
+    "beginning": {
+      "groundedness": 1,
+      "completeness": 1,
+      "relevance": 1,
+      "unsupported_claims": 0,
+      "latency_seconds": 1.1922292000381276
+    },
+    "quarter": {
+      "groundedness": 1,
+      "completeness": 1,
+      "relevance": 1,
+      "unsupported_claims": 0,
+      "latency_seconds": 0.7576206000521779
+    },
+    "middle": {
+      "groundedness": 1,
+      "completeness": 1,
+      "relevance": 1,
+      "unsupported_claims": 0,
+      "latency_seconds": 0.9821093000937253
+    },
+    "three_quarters": {
+      "groundedness": 1,
+      "completeness": 1,
+      "relevance": 1,
+      "unsupported_claims": 0,
+      "latency_seconds": 0.6832801999989897
+    },
+    "end": {
+      "groundedness": 1,
+      "completeness": 1,
+      "relevance": 1,
+      "unsupported_claims": 0,
+      "latency_seconds": 1.4958304000319913
+    }
+  }
+}
