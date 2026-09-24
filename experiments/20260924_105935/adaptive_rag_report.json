@@ -1,0 +1,617 @@
+{
+  "config": {
+    "chunk_size": 500,
+    "overlap": 100,
+    "vector_k": 10,
+    "hybrid_k": 10,
+    "rerank_k": 10,
+    "default_budget": 3,
+    "evidence_threshold": 0.6
+  },
+  "summary": {
+    "questions": 5,
+    "answered": 2,
+    "abstained": 3,
+    "answer_rate": 0.4,
+    "abstention_rate": 0.6,
+    "error_rate": 0.0
+  },
+  "results": [
+    {
+      "question": "Who approves annual leave?",
+      "answerable": true,
+      "status": "abstained",
+      "reason": "insufficient_context_evidence",
+      "budget": 0,
+      "decision": {
+        "budget": 0,
+        "reason": "insufficient_evidence"
+      },
+      "retrieval_evidence_recall": 0.0,
+      "context_evidence_recall": 0.0,
+      "answer": "I don't have enough information in the provided documents.",
+      "judgement": null,
+      "retrieval": {
+        "vector_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+            }
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+            }
+          }
+        ],
+        "keyword_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt",
+              "chunk_index": 0
+            },
+            "score": -0.4023594781085253
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt",
+              "chunk_index": 0
+            },
+            "score": -0.4023594781085253
+          }
+        ],
+        "hybrid_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+            },
+            "vector_rank": 1,
+            "keyword_rank": 1,
+            "rrf_score": 0.03278688524590164
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+            },
+            "vector_rank": 2,
+            "keyword_rank": 2,
+            "rrf_score": 0.03225806451612903
+          }
+        ]
+      },
+      "reranked_documents": [
+        {
+          "id": "leave_policy.txt_chunk_0",
+          "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+          "metadata": {
+            "chunk_index": 0,
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          },
+          "vector_rank": 1,
+          "keyword_rank": 1,
+          "rrf_score": 0.03278688524590164,
+          "rerank_score": 6.1697516441345215
+        },
+        {
+          "id": "employee_handbook.txt_chunk_0",
+          "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+          "metadata": {
+            "chunk_index": 0,
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+          },
+          "vector_rank": 2,
+          "keyword_rank": 2,
+          "rrf_score": 0.03225806451612903,
+          "rerank_score": 6.1697516441345215
+        }
+      ],
+      "selected_documents": []
+    },
+    {
+      "question": "How do employees apply for leave?",
+      "answerable": true,
+      "status": "abstained",
+      "reason": "insufficient_context_evidence",
+      "budget": 0,
+      "decision": {
+        "budget": 0,
+        "reason": "insufficient_evidence"
+      },
+      "retrieval_evidence_recall": 0.0,
+      "context_evidence_recall": 0.0,
+      "answer": "I don't have enough information in the provided documents.",
+      "judgement": null,
+      "retrieval": {
+        "vector_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+            }
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+            }
+          }
+        ],
+        "keyword_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt",
+              "chunk_index": 0
+            },
+            "score": -1.379518210657801
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt",
+              "chunk_index": 0
+            },
+            "score": -1.379518210657801
+          }
+        ],
+        "hybrid_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+            },
+            "vector_rank": 1,
+            "keyword_rank": 1,
+            "rrf_score": 0.03278688524590164
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+            },
+            "vector_rank": 2,
+            "keyword_rank": 2,
+            "rrf_score": 0.03225806451612903
+          }
+        ]
+      },
+      "reranked_documents": [
+        {
+          "id": "leave_policy.txt_chunk_0",
+          "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+          "metadata": {
+            "chunk_index": 0,
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          },
+          "vector_rank": 1,
+          "keyword_rank": 1,
+          "rrf_score": 0.03278688524590164,
+          "rerank_score": 8.906116485595703
+        },
+        {
+          "id": "employee_handbook.txt_chunk_0",
+          "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+          "metadata": {
+            "chunk_index": 0,
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+          },
+          "vector_rank": 2,
+          "keyword_rank": 2,
+          "rrf_score": 0.03225806451612903,
+          "rerank_score": 8.906116485595703
+        }
+      ],
+      "selected_documents": []
+    },
+    {
+      "question": "Can medical leave require documents?",
+      "answerable": true,
+      "status": "abstained",
+      "reason": "insufficient_context_evidence",
+      "budget": 0,
+      "decision": {
+        "budget": 0,
+        "reason": "insufficient_evidence"
+      },
+      "retrieval_evidence_recall": 0.0,
+      "context_evidence_recall": 0.0,
+      "answer": "I don't have enough information in the provided documents.",
+      "judgement": null,
+      "retrieval": {
+        "vector_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+            }
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+            }
+          }
+        ],
+        "keyword_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt",
+              "chunk_index": 0
+            },
+            "score": -1.9808466614573552
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt",
+              "chunk_index": 0
+            },
+            "score": -1.9808466614573552
+          }
+        ],
+        "hybrid_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+            },
+            "vector_rank": 1,
+            "keyword_rank": 1,
+            "rrf_score": 0.03278688524590164
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+            },
+            "vector_rank": 2,
+            "keyword_rank": 2,
+            "rrf_score": 0.03225806451612903
+          }
+        ]
+      },
+      "reranked_documents": [
+        {
+          "id": "leave_policy.txt_chunk_0",
+          "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+          "metadata": {
+            "chunk_index": 0,
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          },
+          "vector_rank": 1,
+          "keyword_rank": 1,
+          "rrf_score": 0.03278688524590164,
+          "rerank_score": 7.989272594451904
+        },
+        {
+          "id": "employee_handbook.txt_chunk_0",
+          "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+          "metadata": {
+            "chunk_index": 0,
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+          },
+          "vector_rank": 2,
+          "keyword_rank": 2,
+          "rrf_score": 0.03225806451612903,
+          "rerank_score": 7.989272594451904
+        }
+      ],
+      "selected_documents": []
+    },
+    {
+      "question": "What is the maternity leave policy?",
+      "answerable": false,
+      "status": "answered",
+      "reason": "sufficient_evidence",
+      "budget": 3,
+      "decision": {
+        "budget": 3,
+        "reason": "default_budget"
+      },
+      "retrieval_evidence_recall": 1.0,
+      "context_evidence_recall": 1.0,
+      "context_characters": 781,
+      "latency_seconds": 0.6824398000026122,
+      "answer": "Maternity leave information should be confirmed with HR.",
+      "judgement": {
+        "groundedness": 2,
+        "relevance": 2,
+        "completeness": 2,
+        "unsupported_claims": 0,
+        "reason": "The answer is directly supported by the context and directly addresses the question. It is grounded in the information provided and does not include any unsupported claims."
+      },
+      "retrieval": {
+        "vector_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+            }
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+            }
+          }
+        ],
+        "keyword_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt",
+              "chunk_index": 0
+            },
+            "score": -1.5784871833488299
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt",
+              "chunk_index": 0
+            },
+            "score": -1.5784871833488299
+          }
+        ],
+        "hybrid_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+            },
+            "vector_rank": 1,
+            "keyword_rank": 1,
+            "rrf_score": 0.03278688524590164
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+            },
+            "vector_rank": 2,
+            "keyword_rank": 2,
+            "rrf_score": 0.03225806451612903
+          }
+        ]
+      },
+      "reranked_documents": [
+        {
+          "id": "leave_policy.txt_chunk_0",
+          "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+          "metadata": {
+            "chunk_index": 0,
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          },
+          "vector_rank": 1,
+          "keyword_rank": 1,
+          "rrf_score": 0.03278688524590164,
+          "rerank_score": 2.4727871417999268
+        },
+        {
+          "id": "employee_handbook.txt_chunk_0",
+          "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+          "metadata": {
+            "chunk_index": 0,
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+          },
+          "vector_rank": 2,
+          "keyword_rank": 2,
+          "rrf_score": 0.03225806451612903,
+          "rerank_score": 2.4727871417999268
+        }
+      ],
+      "selected_documents": [
+        {
+          "id": "leave_policy.txt_chunk_0",
+          "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+          "metadata": {
+            "chunk_index": 0,
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          },
+          "vector_rank": 1,
+          "keyword_rank": 1,
+          "rrf_score": 0.03278688524590164,
+          "rerank_score": 2.4727871417999268
+        },
+        {
+          "id": "employee_handbook.txt_chunk_0",
+          "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+          "metadata": {
+            "chunk_index": 0,
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+          },
+          "vector_rank": 2,
+          "keyword_rank": 2,
+          "rrf_score": 0.03225806451612903,
+          "rerank_score": 2.4727871417999268
+        }
+      ]
+    },
+    {
+      "question": "What is the company's remote work policy?",
+      "answerable": false,
+      "status": "answered",
+      "reason": "sufficient_evidence",
+      "budget": 3,
+      "decision": {
+        "budget": 3,
+        "reason": "default_budget"
+      },
+      "retrieval_evidence_recall": 1.0,
+      "context_evidence_recall": 1.0,
+      "context_characters": 781,
+      "latency_seconds": 1.400089000002481,
+      "answer": "I don't have enough information in the provided documents.",
+      "judgement": {
+        "groundedness": 0,
+        "relevance": 0,
+        "completeness": 0,
+        "unsupported_claims": 0,
+        "reason": "The answer does not provide any information about the company's remote work policy, which is the focus of the question. The context only discusses leave policies, not remote work policies."
+      },
+      "retrieval": {
+        "vector_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+            }
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+            }
+          }
+        ],
+        "keyword_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt",
+              "chunk_index": 0
+            },
+            "score": -0.4023594781085253
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt",
+              "chunk_index": 0
+            },
+            "score": -0.4023594781085253
+          }
+        ],
+        "hybrid_results": [
+          {
+            "id": "leave_policy.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+            },
+            "vector_rank": 1,
+            "keyword_rank": 1,
+            "rrf_score": 0.03278688524590164
+          },
+          {
+            "id": "employee_handbook.txt_chunk_0",
+            "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+            "metadata": {
+              "chunk_index": 0,
+              "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+            },
+            "vector_rank": 2,
+            "keyword_rank": 2,
+            "rrf_score": 0.03225806451612903
+          }
+        ]
+      },
+      "reranked_documents": [
+        {
+          "id": "leave_policy.txt_chunk_0",
+          "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+          "metadata": {
+            "chunk_index": 0,
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          },
+          "vector_rank": 1,
+          "keyword_rank": 1,
+          "rrf_score": 0.03278688524590164,
+          "rerank_score": -7.2075958251953125
+        },
+        {
+          "id": "employee_handbook.txt_chunk_0",
+          "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+          "metadata": {
+            "chunk_index": 0,
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+          },
+          "vector_rank": 2,
+          "keyword_rank": 2,
+          "rrf_score": 0.03225806451612903,
+          "rerank_score": -7.2075958251953125
+        }
+      ],
+      "selected_documents": [
+        {
+          "id": "leave_policy.txt_chunk_0",
+          "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+          "metadata": {
+            "chunk_index": 0,
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          },
+          "vector_rank": 1,
+          "keyword_rank": 1,
+          "rrf_score": 0.03278688524590164,
+          "rerank_score": -7.2075958251953125
+        },
+        {
+          "id": "employee_handbook.txt_chunk_0",
+          "document": "Company Leave Policy Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+          "metadata": {
+            "chunk_index": 0,
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\employee_handbook.txt"
+          },
+          "vector_rank": 2,
+          "keyword_rank": 2,
+          "rrf_score": 0.03225806451612903,
+          "rerank_score": -7.2075958251953125
+        }
+      ]
+    }
+  ]
+}

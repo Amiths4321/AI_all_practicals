@@ -1,0 +1,17 @@
+{
+  "timestamp": "20260924_110123",
+  "scripts": [
+    "adaptive_rag.py",
+    "final_adaptive_evaluation.py",
+    "final_rag_report.py"
+  ],
+  "configuration": {
+    "chunk_size": 500,
+    "overlap": 100,
+    "vector_k": 10,
+    "hybrid_k": 10,
+    "rerank_k": 10,
+    "default_budget": 3,
+    "evidence_threshold": 0.6
+  }
+}

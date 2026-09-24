@@ -1,0 +1,7 @@
+RAG Experiment
+Timestamp: 20260924_105240
+
+Scripts:
+- adaptive_rag.py
+- final_adaptive_evaluation.py
+- final_rag_report.py
