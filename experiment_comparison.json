@@ -1,0 +1,74 @@
+{
+  "experiments": [
+    {
+      "experiment": "20260924_105240",
+      "questions": 5,
+      "context_reduction": 0.6000000000000001,
+      "fixed_context": 781.0,
+      "adaptive_context": 312.4,
+      "fixed_evidence_recall": 0.4,
+      "adaptive_evidence_recall": 0.4,
+      "fixed_quality": 0.8,
+      "adaptive_quality": 0.2,
+      "quality_delta": -0.6000000000000001,
+      "evidence_delta": 0.0,
+      "latency_delta": -0.522882100008428
+    },
+    {
+      "experiment": "20260924_105723",
+      "questions": 5,
+      "context_reduction": 0.6000000000000001,
+      "fixed_context": 781.0,
+      "adaptive_context": 312.4,
+      "fixed_evidence_recall": 0.4,
+      "adaptive_evidence_recall": 0.4,
+      "fixed_quality": 0.8,
+      "adaptive_quality": 0.2,
+      "quality_delta": -0.6000000000000001,
+      "evidence_delta": 0.0,
+      "latency_delta": -0.30773304000031204
+    },
+    {
+      "experiment": "20260924_105935",
+      "questions": 5,
+      "context_reduction": 0.6000000000000001,
+      "fixed_context": 781.0,
+      "adaptive_context": 312.4,
+      "fixed_evidence_recall": 0.4,
+      "adaptive_evidence_recall": 0.4,
+      "fixed_quality": 0.8,
+      "adaptive_quality": 0.2,
+      "quality_delta": -0.6000000000000001,
+      "evidence_delta": 0.0,
+      "latency_delta": -0.31933685999829325
+    },
+    {
+      "experiment": "20260924_110123",
+      "questions": 5,
+      "context_reduction": 0.6000000000000001,
+      "fixed_context": 781.0,
+      "adaptive_context": 312.4,
+      "fixed_evidence_recall": 0.4,
+      "adaptive_evidence_recall": 0.4,
+      "fixed_quality": 0.8,
+      "adaptive_quality": 0.2,
+      "quality_delta": -0.6000000000000001,
+      "evidence_delta": 0.0,
+      "latency_delta": -0.2568337599746883
+    },
+    {
+      "experiment": "20260924_110614",
+      "questions": 5,
+      "context_reduction": 0.6000000000000001,
+      "fixed_context": 781.0,
+      "adaptive_context": 312.4,
+      "fixed_evidence_recall": 0.4,
+      "adaptive_evidence_recall": 0.4,
+      "fixed_quality": 0.8,
+      "adaptive_quality": 0.2,
+      "quality_delta": -0.6000000000000001,
+      "evidence_delta": 0.0,
+      "latency_delta": -0.514609199995175
+    }
+  ]
+}
