@@ -1,0 +1,8 @@
+{
+  "total_requests": 3,
+  "successful_requests": 3,
+  "failed_requests": 0,
+  "degraded_requests": 0,
+  "total_latency_seconds": 1.0993466000072658,
+  "alerts": []
+}

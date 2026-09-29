@@ -1,4 +1,5 @@
 {
+  "config_version": 1,
   "chunking": {
     "chunk_size": 500,
     "overlap": 100
@@ -18,5 +19,18 @@
     "url": "http://10.22.39.192:11434",
     "model": "qwen2.5vl:latest",
     "timeout": 300
+  },
+  "model": "qwen2.5vl:latest",
+  "operational": {
+    "max_concurrent_requests": 4,
+    "request_timeout_seconds": 180,
+    "index_monitor_interval_seconds": 30,
+    "metrics_file_max_size_mb": 5,
+    "slo": {
+      "availability": 0.99,
+      "error_rate": 0.01,
+      "p95_latency_seconds": 10.0,
+      "degraded_rate": 0.01
+    }
   }
 }

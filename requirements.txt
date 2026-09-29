@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+chromadb
+sentence-transformers
+torch
+numpy
+requests
+rank-bm25
+posthog<6
