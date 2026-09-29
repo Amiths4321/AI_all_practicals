@@ -1,0 +1,61 @@
+{
+  "drift_detection_version": 1,
+  "timestamp": "2026-09-28T15:02:01.148505",
+  "baseline_timestamp": "2026-09-28T14:32:03.946111",
+  "current_timestamp": "2026-09-28T15:02:01.060905",
+  "threshold": 0.1,
+  "metrics": {
+    "success_rate": {
+      "baseline": 0.2,
+      "current": 0.2,
+      "change": 0.0,
+      "absolute_change": 0.0,
+      "drift_detected": false
+    },
+    "retrieval_failure_rate": {
+      "baseline": 0.6,
+      "current": 0.6,
+      "change": 0.0,
+      "absolute_change": 0.0,
+      "drift_detected": false
+    },
+    "abstention_rate": {
+      "baseline": 0.0,
+      "current": 0.0,
+      "change": 0.0,
+      "absolute_change": 0.0,
+      "drift_detected": false
+    },
+    "unsupported_claim_rate": {
+      "baseline": 0.0,
+      "current": 0.0,
+      "change": 0.0,
+      "absolute_change": 0.0,
+      "drift_detected": false
+    },
+    "ungrounded_rate": {
+      "baseline": 0.2,
+      "current": 0.2,
+      "change": 0.0,
+      "absolute_change": 0.0,
+      "drift_detected": false
+    },
+    "irrelevant_rate": {
+      "baseline": 0.0,
+      "current": 0.0,
+      "change": 0.0,
+      "absolute_change": 0.0,
+      "drift_detected": false
+    },
+    "incomplete_rate": {
+      "baseline": 0.0,
+      "current": 0.0,
+      "change": 0.0,
+      "absolute_change": 0.0,
+      "drift_detected": false
+    }
+  },
+  "drift_detected": false,
+  "drifted_metrics": [],
+  "status": "stable"
+}

@@ -1,69 +1,72 @@
-import json
-from collections import Counter
+def analyze_retrieval_failure(
+    candidates,
+    results,
+    expected_document,
+    expected_section
+):
 
+    # 1. Nothing retrieved
+    if not candidates:
+        return {
+            "status": "FAILED",
+            "stage": "RETRIEVAL",
+            "reason": "NO_CANDIDATES"
+        }
 
-DETAILS_FILE = "experiment_details.json"
+    # Check whether expected source
+    # entered the candidate set.
+    candidate_found = False
 
+    for result in candidates:
+        document = result.get("document", {})
 
-def load_results():
-    with open(
-        DETAILS_FILE,
-        "r",
-        encoding="utf-8"
-    ) as file:
-        return json.load(file)
+        if (
+            document.get("document") == expected_document
+            and document.get("section") == expected_section
+        ):
+            candidate_found = True
+            break
 
+    # Expected source was never retrieved
+    if not candidate_found:
+        return {
+            "status": "FAILED",
+            "stage": "RETRIEVAL",
+            "reason": "EXPECTED_SOURCE_NOT_RETRIEVED"
+        }
 
-def classify_failure(result):
-    answerable = result["answerable"]
-    gate_passed = result["gate_passed"]
-    evidence_recall = result["evidence_recall"]
+    # 2. Candidates exist but reranking produced nothing
+    if not results:
+        return {
+            "status": "FAILED",
+            "stage": "RERANKING",
+            "reason": "NO_RERANKED_RESULTS"
+        }
 
-    if answerable and gate_passed:
-        if evidence_recall >= 1.0:
-            return "supported_answer"
-        return "partial_evidence"
+    # 3. Expected source entered candidates
+    # but disappeared after reranking.
+    reranked_found = False
 
-    if answerable and not gate_passed:
-        return "over_abstention"
+    for result in results:
+        document = result.get("document", {})
 
-    if not answerable and gate_passed:
-        return "false_answer"
+        if (
+            document.get("document") == expected_document
+            and document.get("section") == expected_section
+        ):
+            reranked_found = True
+            break
 
-    if not answerable and not gate_passed:
-        return "correct_abstention"
+    if not reranked_found:
+        return {
+            "status": "FAILED",
+            "stage": "RERANKING",
+            "reason": "RERANKER_DROPPED_EXPECTED_SOURCE"
+        }
 
-    return "unknown"
-
-
-def main():
-    experiments = load_results()
-
-    overall_counts = Counter()
-
-    for experiment in experiments:
-        for result in experiment["question_results"]:
-            category =      classify_failure (result)
-            overall_counts[category] += 1
-
-    print("=" * 70)
-    print("PER-QUESTION FAILURE ANALYSIS")
-    print("=" * 70)
-
-    total = sum(overall_counts.values())
-
-    print(f"Total evaluated cases: {total}")
-    print()
-
-    for category, count in sorted(overall_counts.items()):
-        percentage = count / total if total else 0
-
-        print(
-            f"{category:<25} "
-            f"{count:>5} "
-            f"({percentage:.1%})"
-        )
-
-
-if __name__ == "__main__":
-    main()
+    # 4. Everything worked
+    return {
+        "status": "PASSED",
+        "stage": "RETRIEVAL_AND_RERANKING",
+        "reason": None
+    }

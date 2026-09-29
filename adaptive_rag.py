@@ -1,39 +1,163 @@
 import json
 import time
 from pathlib import Path
-
-from chunking import chunk_text
+import hashlib
+import chromadb
+from config import load_config
 from hybrid_search import HybridRetriever
 from reranking import DocumentReranker
+# Add this import near the top of adaptive_rag.py
+from chunking import chunk_text
 from semantic_evidence import SemanticEvidenceEvaluator
+from cached_generation import cached_generate_answer
+from cached_judge import cached_judge_answer
 from context_builder import ContextBuilder
-from generation import generate_answer
-from rag_judge import judge_answer
-
-
 BASE_DIR = Path(__file__).resolve().parent
 
-OUTPUT_FILE = BASE_DIR / "adaptive_rag_report.json"
+# --- Load configuration values ---
+config = load_config() # Or define them directly below if config.py works differently
+
+INDEX_VERSION = config.get("INDEX_VERSION", "v1")
+EVIDENCE_THRESHOLD = config.get("EVIDENCE_THRESHOLD", 0.7)
+CHUNK_SIZE = config.get("CHUNK_SIZE", 500)
+OVERLAP = config.get("OVERLAP", 50)
+VECTOR_K = config.get("VECTOR_K", 5)
+HYBRID_K = config.get("HYBRID_K", 5)
+RERANK_K = config.get("RERANK_K", 3)
+DEFAULT_BUDGET = config.get("DEFAULT_BUDGET", 3)
+
+# File Paths
+INDEX_DIR = BASE_DIR / "chroma_db"
+INDEX_STATE_FILE = INDEX_DIR / "active_index.json"
+INDEX_HISTORY_FILE = INDEX_DIR / "index_history.json"
+INDEX_MANIFEST = INDEX_DIR / "manifest.json"
+EVALUATION_FILE = BASE_DIR / "evaluation.json"
+POLICY_FILE = BASE_DIR / "policy.json"
+OUTPUT_FILE = BASE_DIR / "output_report.json"
 
 DOCUMENT_FILES = [
+    BASE_DIR / "documents" / "employee_handbook.txt",
     BASE_DIR / "documents" / "leave_policy.txt",
-    BASE_DIR / "documents" / "employee_handbook.txt"
 ]
 
-EVALUATION_FILE = BASE_DIR / "evaluation_data.json"
 
-POLICY_FILE = BASE_DIR / "empirical_context_policy.json"
+        
+# Add this near the top of adaptive_rag.py
+def load_index_history():
+    if not INDEX_HISTORY_FILE.exists():
+        return []
 
-CHUNK_SIZE = 500
-OVERLAP = 100
+    with open(INDEX_HISTORY_FILE, "r", encoding="utf-8") as file:
+        return json.load(file)
 
-VECTOR_K = 10
-HYBRID_K = 10
-RERANK_K = 10
 
-DEFAULT_BUDGET = 3
-EVIDENCE_THRESHOLD = 0.60
 
+
+def save_index_history(history):
+    INDEX_HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+    temporary_file = INDEX_HISTORY_FILE.with_suffix(".tmp")
+
+    with open(temporary_file, "w", encoding="utf-8") as file:
+        json.dump(history[:5], file, indent=2)
+
+    temporary_file.replace(INDEX_HISTORY_FILE)
+
+def index_name(fingerprint):
+    return (
+        f"adaptive_rag_"
+        f"{fingerprint[:16]}"
+    )
+
+
+def load_active_index():
+
+    if not INDEX_STATE_FILE.exists():
+        return None
+
+    with open(
+        INDEX_STATE_FILE,
+        "r",
+        encoding="utf-8"
+    ) as file:
+        return json.load(file)
+
+
+def save_active_index(collection_name, fingerprint, chunk_count):
+    INDEX_STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+    current = load_active_index()
+    history = load_index_history()
+
+    if current and current.get("collection"):
+        history.insert(0, current)
+
+    history = history[:5]
+    save_index_history(history)
+
+    state = {
+        "collection": collection_name,
+        "fingerprint": fingerprint,
+        "chunk_count": chunk_count,
+        "updated_at": time.time()
+    }
+
+    temporary_file = INDEX_STATE_FILE.with_suffix(".tmp")
+
+    with open(temporary_file, "w", encoding="utf-8") as file:
+        json.dump(state, file, indent=2)
+
+    temporary_file.replace(INDEX_STATE_FILE)
+
+def validate_index_state(client, state):
+    if not state:
+        return False
+
+    collection_name = state.get("collection")
+    expected_count = state.get("chunk_count")
+
+    if not collection_name:
+        return False
+
+    try:
+        collection = client.get_collection(collection_name)
+    except Exception:
+        return False
+
+    actual_count = collection.count()
+
+    return actual_count == expected_count
+
+def rollback_index():
+    client = chromadb.PersistentClient(path=str(INDEX_DIR))
+
+    current = load_active_index()
+    history = load_index_history()
+
+    if not history:
+        raise RuntimeError("No previous index available for rollback")
+
+    previous = history[0]
+
+    if not validate_index_state(client, previous):
+        raise RuntimeError(
+            f"Previous index is invalid: {previous.get('collection')}"
+        )
+
+    temporary_file = INDEX_STATE_FILE.with_suffix(".tmp")
+
+    with open(temporary_file, "w", encoding="utf-8") as file:
+        json.dump(previous, file, indent=2)
+
+    temporary_file.replace(INDEX_STATE_FILE)
+
+    # Move the current index into history.
+    if current:
+        history = [current] + history[1:]
+
+    save_index_history(history)
+
+    return previous
 
 def load_documents():
     documents = []
@@ -69,6 +193,45 @@ def load_policy():
 
     return data.get("policy", {})
 
+def load_index_manifest():
+
+    if not INDEX_MANIFEST.exists():
+        return None
+
+    with open(
+        INDEX_MANIFEST,
+        "r",
+        encoding="utf-8"
+    ) as file:
+
+        return json.load(file)
+
+
+def save_index_manifest(fingerprint, chunk_count):
+
+    INDEX_DIR.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    manifest = {
+        "fingerprint": fingerprint,
+        "chunk_count": chunk_count,
+        "chunk_size": CHUNK_SIZE,
+        "overlap": OVERLAP
+    }
+
+    with open(
+        INDEX_MANIFEST,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        json.dump(
+            manifest,
+            file,
+            indent=2
+        )
 
 def build_chunks(documents):
     chunks = []
@@ -94,21 +257,136 @@ def build_chunks(documents):
 
 
 def create_collection(chunks):
+
     import chromadb
 
-    client = chromadb.Client()
-
-    collection = client.create_collection(
-        name=f"adaptive_rag_{int(time.time() * 1000)}"
+    fingerprint = calculate_index_fingerprint(
+        chunks
     )
 
-    collection.add(
-        ids=[item["id"] for item in chunks],
-        documents=[item["document"] for item in chunks],
-        metadatas=[item["metadata"] for item in chunks]
+    client = chromadb.PersistentClient(
+        path=str(INDEX_DIR)
     )
 
-    return collection
+    collection_name = index_name(
+        fingerprint
+    )
+
+    active = load_active_index()
+
+    # --------------------------------------------------
+    # EXISTING CORRECT INDEX
+    # --------------------------------------------------
+
+    if (
+        active is not None
+        and active.get("fingerprint") == fingerprint
+    ):
+
+        try:
+
+            collection = client.get_collection(
+                name=active["collection"]
+            )
+
+            if collection.count() == len(chunks):
+
+                print(
+                    "Using active Chroma index"
+                )
+
+                print(
+                    f"Collection: "
+                    f"{active['collection']}"
+                )
+
+                return collection
+
+        except Exception:
+
+            print(
+                "Active index unavailable."
+            )
+
+    # --------------------------------------------------
+    # BUILD NEW INDEX BESIDE LIVE INDEX
+    # --------------------------------------------------
+
+    print(
+        "Building new Chroma index..."
+    )
+
+    print(
+        f"New fingerprint: "
+        f"{fingerprint[:16]}"
+    )
+
+    new_collection = (
+        client.get_or_create_collection(
+            name=collection_name
+        )
+    )
+
+    # Protect against a partially-created collection.
+
+    if new_collection.count() != len(chunks):
+
+        if new_collection.count() > 0:
+
+            client.delete_collection(
+                collection_name
+            )
+
+            new_collection = (
+                client.create_collection(
+                    name=collection_name
+                )
+            )
+
+        new_collection.add(
+            ids=[
+                item["id"]
+                for item in chunks
+            ],
+            documents=[
+                item["document"]
+                for item in chunks
+            ],
+            metadatas=[
+                item["metadata"]
+                for item in chunks
+            ]
+        )
+
+    # --------------------------------------------------
+    # VERIFY BEFORE ACTIVATION
+    # --------------------------------------------------
+
+    if new_collection.count() != len(chunks):
+
+        raise RuntimeError(
+            "New Chroma index failed verification"
+        )
+
+    # --------------------------------------------------
+    # ATOMIC ACTIVE-INDEX SWITCH
+    # --------------------------------------------------
+
+    save_active_index(
+        collection_name=collection_name,
+        fingerprint=fingerprint,
+        chunk_count=len(chunks)
+    )
+
+    print(
+        "New Chroma index activated."
+    )
+
+    print(
+        f"Collection: {collection_name}"
+    )
+
+    return new_collection
 
 
 def vector_search(collection, question, top_k):
@@ -257,6 +535,31 @@ def choose_budget(
         "reason": "default_budget"
     }
 
+def calculate_index_fingerprint(chunks):
+    hasher = hashlib.sha256()
+
+    for item in sorted(
+        chunks,
+        key=lambda x: x["id"]
+    ):
+        hasher.update(
+            item["id"].encode("utf-8")
+        )
+
+        hasher.update(
+            item["document"].encode("utf-8")
+        )
+
+        source = (
+            item.get("metadata", {})
+            .get("source", "")
+        )
+
+        hasher.update(
+            str(source).encode("utf-8")
+        )
+
+    return hasher.hexdigest()
 
 def build_adaptive_context(
     question,
@@ -295,148 +598,160 @@ def build_context(documents):
 def generate(question, documents):
     if not documents:
         return {
-            "answer": (
-                "I don't have enough information "
-                "in the provided documents."
-            ),
+            "answer": "I don't have enough information in the provided documents.",
             "latency_seconds": 0.0,
-            "context_characters": 0
+            "context_characters": 0,
+            "cache_hit": False,
         }
 
     context = build_context(documents)
 
     start = time.perf_counter()
-
-    answer = generate_answer(question, documents)
-
+    result = cached_generate_answer(question=question, documents=documents)
     latency = time.perf_counter() - start
 
     return {
-        "answer": answer,
+        "answer": result["answer"],
         "latency_seconds": latency,
-        "context_characters": len(context)
+        "context_characters": len(context),
+        "cache_hit": result.get("cache_hit", False),
     }
 
 
-def process_question(
-    case,
-    collection,
-    hybrid_retriever,
-    reranker,
-    evidence_evaluator,
-    context_builder,
-    policy
-):
+def process_question(case, collection, hybrid_retriever, reranker,
+                     evidence_evaluator, context_builder, policy):
+    timings = {}
+    total_started = time.perf_counter()
+
     question = case["question"]
     required_evidence = case.get("required_evidence", [])
     answerable = case.get("answerable", True)
 
-    # RETRIEVAL
-    retrieval = retrieve(
-        question=question,
-        collection=collection,
-        hybrid_retriever=hybrid_retriever
-    )
+    t = time.perf_counter()
+    retrieval = retrieve(question, collection, hybrid_retriever)
+    timings["retrieval_seconds"] = time.perf_counter() - t
 
-    # RERANK
-    reranked_documents = rerank(
-        question=question,
-        hybrid_results=retrieval["hybrid_results"],
-        reranker=reranker
-    )
+    t = time.perf_counter()
+    reranked_documents = rerank(question, retrieval["hybrid_results"], reranker)
+    timings["reranking_seconds"] = time.perf_counter() - t
 
-    # RETRIEVAL-LEVEL EVIDENCE
-    evidence_result = evaluate_evidence(
-        required_evidence=required_evidence,
-        documents=reranked_documents,
-        evidence_evaluator=evidence_evaluator
-    )
-
+    t = time.perf_counter()
+    evidence_result = evaluate_evidence(required_evidence, reranked_documents, evidence_evaluator)
     retrieval_evidence_recall = evidence_result["evidence_recall"]
+    timings["evidence_seconds"] = time.perf_counter() - t
 
-    # ADAPTIVE POLICY
     decision = choose_budget(
         question=question,
-        reranked_documents=reranked_documents,
         evidence_recall=retrieval_evidence_recall,
-        policy=policy
+        reranked_documents=reranked_documents,
+        policy=policy,
+        default_budget=DEFAULT_BUDGET,
     )
-
     budget = decision["budget"]
 
-    # CONTEXT
+    t = time.perf_counter()
     selected_documents = build_adaptive_context(
-        question=question,
-        required_evidence=required_evidence,
-        reranked_documents=reranked_documents,
-        budget=budget,
-        context_builder=context_builder
+        question, required_evidence, reranked_documents, budget, context_builder
     )
+    timings["context_seconds"] = time.perf_counter() - t
 
-    # STRATEGY-LEVEL EVIDENCE
-    context_evidence = evaluate_evidence(
-        required_evidence=required_evidence,
-        documents=selected_documents,
-        evidence_evaluator=evidence_evaluator
-    )
-
+    context_evidence = evaluate_evidence(required_evidence, selected_documents, evidence_evaluator)
     context_evidence_recall = context_evidence["evidence_recall"]
 
-    # FINAL EVIDENCE GATE
     if not selected_documents or context_evidence_recall < 1.0:
+        timings["total_seconds"] = time.perf_counter() - total_started
         return {
-            "question": question,
-            "answerable": answerable,
+            "question": question, "answerable": answerable,
             "status": "abstained",
-            "reason": "insufficient_context_evidence",
-            "budget": budget,
-            "decision": decision,
+            "reason": decision["reason"] if budget == 0 else "insufficient_context_evidence",
+            "budget": budget, "decision": decision,
             "retrieval_evidence_recall": retrieval_evidence_recall,
             "context_evidence_recall": context_evidence_recall,
-            "answer": (
-                "I don't have enough information "
-                "in the provided documents."
-            ),
-            "judgement": None,
+            "answer": "I don't have enough information in the provided documents.",
+            "judgement": None, "timings": timings,
             "retrieval": retrieval,
             "reranked_documents": reranked_documents,
-            "selected_documents": selected_documents
+            "selected_documents": selected_documents,
         }
 
-    # GENERATION
-    generation = generate(
-        question=question,
-        documents=selected_documents
-    )
+    generation = generate(question, selected_documents)
+    timings["generation_seconds"] = generation["latency_seconds"]
 
-    # JUDGE
-    context = build_context(selected_documents)
-
-    judgement = judge_answer(
+    judgement_result = cached_judge_answer(
         question=question,
-        context=context,
-        answer=generation["answer"]
+        context=build_context(selected_documents),
+        answer=generation["answer"],
     )
+    judgement = {k: v for k, v in judgement_result.items() if k != "cache_hit"}
+
+    timings["total_seconds"] = time.perf_counter() - total_started
 
     return {
-        "question": question,
-        "answerable": answerable,
-        "status": "answered",
-        "reason": "sufficient_evidence",
-        "budget": budget,
-        "decision": decision,
+        "question": question, "answerable": answerable, "status": "answered",
+        "budget": budget, "budget_reason": decision["reason"],
         "retrieval_evidence_recall": retrieval_evidence_recall,
         "context_evidence_recall": context_evidence_recall,
-        "context_characters": generation["context_characters"],
-        "latency_seconds": generation["latency_seconds"],
         "answer": generation["answer"],
+        "latency_seconds": generation["latency_seconds"],
+        "context_characters": generation["context_characters"],
         "judgement": judgement,
+        "generation_cache_hit": generation["cache_hit"],
+        "judge_cache_hit": judgement_result["cache_hit"],
+        "timings": timings,
         "retrieval": retrieval,
         "reranked_documents": reranked_documents,
-        "selected_documents": selected_documents
+        "selected_documents": selected_documents,
     }
+def load_active_collection():
+    state = load_active_index()
 
+    if not state:
+        raise RuntimeError("No active index configured")
 
+    client = chromadb.PersistentClient(
+        path=str(INDEX_DIR)
+    )
+
+    collection = client.get_collection(
+        state["collection"]
+    )
+
+    if collection.count() != state["chunk_count"]:
+        raise RuntimeError(
+            "Active index failed validation"
+        )
+
+    return collection
+
+    logger.info(
+        "RAG request completed request_id=%s",
+        request_id,
+    )
+
+    logger.exception(
+        "RAG request failed request_id=%s",
+        request_id,
+    )
+
+def recover_active_index():
+    client = chromadb.PersistentClient(
+        path=str(INDEX_DIR)
+    )
+
+    history = load_index_history()
+
+    for candidate in history:
+        if validate_index_state(client, candidate):
+            temporary_file = INDEX_STATE_FILE.with_suffix(".tmp")
+
+            with open(temporary_file, "w", encoding="utf-8") as file:
+                json.dump(candidate, file, indent=2)
+
+            temporary_file.replace(INDEX_STATE_FILE)
+
+            return candidate
+
+    raise RuntimeError("No valid recovery index available")
 def main():
     print("=" * 70)
     print("ADAPTIVE RAG")

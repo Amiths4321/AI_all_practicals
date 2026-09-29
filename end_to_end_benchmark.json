@@ -1,0 +1,91 @@
+{
+  "benchmark_version": 1,
+  "timestamp": "2026-09-28T14:54:06.600356",
+  "questions": 5,
+  "total_benchmark_latency_seconds": 0.00035119999665766954,
+  "results": [
+    {
+      "request_id": "rag-000001",
+      "timestamp": "2026-09-28T14:54:06.600356",
+      "status": "error",
+      "question": "Who approves annual leave?",
+      "performance": {
+        "controller_latency_seconds": 1.0400020983070135e-05
+      },
+      "error": {
+        "type": "TypeError",
+        "message": "process_question() missing 6 required positional arguments: 'collection', 'hybrid_retriever', 'reranker', 'evidence_evaluator', 'context_builder', and 'policy'"
+      },
+      "benchmark_latency_seconds": 2.4499953724443913e-05
+    },
+    {
+      "request_id": "rag-000002",
+      "timestamp": "2026-09-28T14:54:06.600356",
+      "status": "error",
+      "question": "How do employees apply for leave?",
+      "performance": {
+        "controller_latency_seconds": 1.1000025551766157e-05
+      },
+      "error": {
+        "type": "TypeError",
+        "message": "process_question() missing 6 required positional arguments: 'collection', 'hybrid_retriever', 'reranker', 'evidence_evaluator', 'context_builder', and 'policy'"
+      },
+      "benchmark_latency_seconds": 2.239999594166875e-05
+    },
+    {
+      "request_id": "rag-000003",
+      "timestamp": "2026-09-28T14:54:06.600356",
+      "status": "error",
+      "question": "Can medical leave require documents?",
+      "performance": {
+        "controller_latency_seconds": 4.100031219422817e-06
+      },
+      "error": {
+        "type": "TypeError",
+        "message": "process_question() missing 6 required positional arguments: 'collection', 'hybrid_retriever', 'reranker', 'evidence_evaluator', 'context_builder', and 'policy'"
+      },
+      "benchmark_latency_seconds": 1.0000017937272787e-05
+    },
+    {
+      "request_id": "rag-000004",
+      "timestamp": "2026-09-28T14:54:06.600356",
+      "status": "error",
+      "question": "What is the maternity leave policy?",
+      "performance": {
+        "controller_latency_seconds": 3.8000289350748062e-06
+      },
+      "error": {
+        "type": "TypeError",
+        "message": "process_question() missing 6 required positional arguments: 'collection', 'hybrid_retriever', 'reranker', 'evidence_evaluator', 'context_builder', and 'policy'"
+      },
+      "benchmark_latency_seconds": 9.000010322779417e-06
+    },
+    {
+      "request_id": "rag-000005",
+      "timestamp": "2026-09-28T14:54:06.600356",
+      "status": "error",
+      "question": "What is the company's remote work policy?",
+      "performance": {
+        "controller_latency_seconds": 4.999979864805937e-06
+      },
+      "error": {
+        "type": "TypeError",
+        "message": "process_question() missing 6 required positional arguments: 'collection', 'hybrid_retriever', 'reranker', 'evidence_evaluator', 'context_builder', and 'policy'"
+      },
+      "benchmark_latency_seconds": 1.190003240481019e-05
+    }
+  ],
+  "summary": {
+    "questions": 5,
+    "answered": 0,
+    "abstained": 0,
+    "errors": 5,
+    "answer_rate": 0.0,
+    "abstention_rate": 0.0,
+    "error_rate": 1.0,
+    "mean_context_evidence_recall": null,
+    "mean_latency_seconds": 1.556000206619501e-05,
+    "generation_cache_hit_rate": 0.0,
+    "judge_cache_hit_rate": 0.0
+  }
+}

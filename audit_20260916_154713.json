@@ -1,0 +1,80 @@
+{
+    "timestamp": "2026-09-16T15:47:13.750650",
+    "query": {
+        "original": "What is the minimum monthly income required for a home loan?",
+        "rewritten": "What is the minimum monthly income required for a home loan?",
+        "product": "home_loan"
+    },
+    "decision": {
+        "status": null,
+        "confidence_score": 7.182643890380859,
+        "confidence_level": "HIGH",
+        "review_required": true,
+        "review_reason": "INVALID_CITATION"
+    },
+    "citation_validation": {
+        "valid": false,
+        "cited_ids": [],
+        "valid_ids": [
+            "E002",
+            "E001",
+            "E003"
+        ],
+        "invalid_ids": [],
+        "missing_citations": [
+            "NO_EVIDENCE_ID"
+        ]
+    },
+    "citation_support": {
+        "valid": false,
+        "citations": []
+    },
+    "performance": {
+        "retrieval_seconds": 0.0555,
+        "reranking_seconds": 0.0643,
+        "llm_seconds": 2.8868,
+        "total_seconds": 3.0066
+    },
+    "answer": "The minimum monthly income required for a home loan is ₹60,000. \n\nEvidence ID: E001",
+    "conflicts": [],
+    "sources": [
+        {
+            "evidence_id": "E001",
+            "rank": 1,
+            "document": "banking_policy_v2.txt",
+            "section": "Eligibility",
+            "chunk_id": 6,
+            "product": "home_loan",
+            "policy_version": "v2.0",
+            "effective_date": "2026-06-01",
+            "text": "Eligibility:\nApplicants must have a minimum monthly income of ₹60,000.\nApplicants must be at least 21 years old.\nThe maximum applicant age at loan maturity is 65 years.",
+            "reranker_score": 7.182643890380859
+        },
+        {
+            "evidence_id": "E002",
+            "rank": 2,
+            "document": "banking_policy_v2.txt",
+            "section": "General",
+            "chunk_id": 5,
+            "product": "home_loan",
+            "policy_version": "v2.0",
+            "effective_date": "2026-06-01",
+            "text": "HOME LOAN POLICY",
+            "reranker_score": -6.834082126617432
+        },
+        {
+            "evidence_id": "E003",
+            "rank": 3,
+            "document": "banking_policy_v2.txt",
+            "section": "Documents",
+            "chunk_id": 3,
+            "product": "home_loan",
+            "policy_version": "v2.0",
+            "effective_date": "2026-06-01",
+            "text": "Documents:\nApplicants must provide valid identity proof.\nApplicants must provide address proof.\nApplicants must provide income proof.",
+            "reranker_score": -10.577218055725098
+        }
+    ],
+    "status": null,
+    "request_id": null
+}

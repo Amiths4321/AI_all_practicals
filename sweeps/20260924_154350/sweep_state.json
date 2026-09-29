@@ -1,0 +1,63 @@
+{
+  "created_at": "20260924_154350",
+  "status": "completed",
+  "results": [
+    {
+      "configuration_id": "config_001",
+      "configuration": {
+        "chunk_size": 300,
+        "overlap": 50,
+        "rerank_k": 5,
+        "default_budget": 1,
+        "id": "config_001"
+      },
+      "status": "completed",
+      "started_at": "2026-09-24T15:44:14.154902",
+      "finished_at": "2026-09-24T15:44:49.633370",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.00033330000005662443,
+        "context_characters": 312.4
+      }
+    },
+    {
+      "configuration_id": "config_002",
+      "configuration": {
+        "chunk_size": 300,
+        "overlap": 50,
+        "rerank_k": 5,
+        "default_budget": 2,
+        "id": "config_002"
+      },
+      "status": "completed",
+      "started_at": "2026-09-24T15:44:49.636397",
+      "finished_at": "2026-09-24T15:45:24.986717",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.00035910001024603845,
+        "context_characters": 312.4
+      }
+    },
+    {
+      "configuration_id": "config_003",
+      "configuration": {
+        "chunk_size": 300,
+        "overlap": 50,
+        "rerank_k": 5,
+        "default_budget": 3,
+        "id": "config_003"
+      },
+      "status": "completed",
+      "started_at": "2026-09-24T15:45:24.989672",
+      "finished_at": "2026-09-24T15:46:00.068701",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.0003958399873226881,
+        "context_characters": 312.4
+      }
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "experiment_count": 1,
+  "parameters": [
+    "chunk_size",
+    "overlap",
+    "rerank_k",
+    "default_budget"
+  ],
+  "metrics": [
+    "evidence_recall",
+    "quality",
+    "latency",
+    "context",
+    "success_rate"
+  ],
+  "correlations": {
+    "chunk_size": {
+      "evidence_recall": null,
+      "quality": null,
+      "latency": null,
+      "context": null,
+      "success_rate": null
+    },
+    "overlap": {
+      "evidence_recall": null,
+      "quality": null,
+      "latency": null,
+      "context": null,
+      "success_rate": null
+    },
+    "rerank_k": {
+      "evidence_recall": null,
+      "quality": null,
+      "latency": null,
+      "context": null,
+      "success_rate": null
+    },
+    "default_budget": {
+      "evidence_recall": null,
+      "quality": null,
+      "latency": null,
+      "context": null,
+      "success_rate": null
+    }
+  },
+  "effect_strength": {
+    "chunk_size": [],
+    "overlap": [],
+    "rerank_k": [],
+    "default_budget": []
+  },
+  "group_means": {
+    "chunk_size": {
+      "300": {
+        "evidence_recall": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "quality": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "latency": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "context": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "success_rate": {
+          "count": 1,
+          "mean": 0.2,
+          "stdev": null
+        }
+      }
+    },
+    "overlap": {
+      "50": {
+        "evidence_recall": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "quality": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "latency": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "context": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "success_rate": {
+          "count": 1,
+          "mean": 0.2,
+          "stdev": null
+        }
+      }
+    },
+    "rerank_k": {
+      "5": {
+        "evidence_recall": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "quality": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "latency": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "context": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "success_rate": {
+          "count": 1,
+          "mean": 0.2,
+          "stdev": null
+        }
+      }
+    },
+    "default_budget": {
+      "1": {
+        "evidence_recall": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "quality": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "latency": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "context": {
+          "count": 0,
+          "mean": null,
+          "stdev": null
+        },
+        "success_rate": {
+          "count": 1,
+          "mean": 0.2,
+          "stdev": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "baseline_experiment": "20260924_151026",
+  "current_experiment": "current",
+  "passed": true,
+  "checks": {
+    "evidence_recall": {
+      "baseline": 0.4,
+      "current": 0.4,
+      "change": -0.0,
+      "passed": true
+    },
+    "quality": {
+      "baseline": 0.2,
+      "current": 0.2,
+      "change": -0.0,
+      "passed": true
+    },
+    "latency": {
+      "baseline": 1.699446239997633,
+      "current": 1.699446239997633,
+      "change": 0.0,
+      "passed": true
+    },
+    "context": {
+      "baseline": 312.4,
+      "current": 312.4,
+      "change": 0.0,
+      "passed": true
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+    "timestamp": "2026-09-16T09:50:58.203828",
+    "query": {
+        "original": "What is the home loan processing fee?",
+        "rewritten": "What is the home loan processing fee?",
+        "product": "home_loan"
+    },
+    "decision": {
+        "status": null,
+        "confidence_score": -6.633196830749512,
+        "confidence_level": "HIGH",
+        "review_required": true,
+        "review_reason": "INVALID_CITATION"
+    },
+    "citation_validation": {
+        "valid": false,
+        "cited_ids": [],
+        "valid_ids": [
+            "E002",
+            "E003",
+            "E001"
+        ],
+        "invalid_ids": [],
+        "missing_citations": [
+            "NO_EVIDENCE_ID"
+        ]
+    },
+    "citation_support": {
+        "valid": false,
+        "citations": []
+    },
+    "performance": {
+        "retrieval_seconds": 0.0668,
+        "reranking_seconds": 0.0822,
+        "llm_seconds": 17.6918,
+        "total_seconds": 17.8408
+    },
+    "answer": "The available policy information is insufficient to answer this question.",
+    "conflicts": [],
+    "sources": [
+        {
+            "evidence_id": "E001",
+            "rank": 1,
+            "document": "banking_policy_v2.txt",
+            "section": "General",
+            "chunk_id": 5,
+            "product": "home_loan",
+            "policy_version": "v2.0",
+            "effective_date": "2026-06-01",
+            "text": "HOME LOAN POLICY",
+            "reranker_score": -6.633196830749512
+        },
+        {
+            "evidence_id": "E002",
+            "rank": 2,
+            "document": "banking_policy_v2.txt",
+            "section": "Eligibility",
+            "chunk_id": 2,
+            "product": "home_loan",
+            "policy_version": "v2.0",
+            "effective_date": "2026-06-01",
+            "text": "Eligibility:\nApplicants must have a minimum monthly income of ₹60,000.\nApplicants must be at least 21 years old.\nThe maximum applicant age at loan maturity is 65 years.",
+            "reranker_score": -8.248414039611816
+        },
+        {
+            "evidence_id": "E003",
+            "rank": 3,
+            "document": "banking_policy_v2.txt",
+            "section": "Documents",
+            "chunk_id": 3,
+            "product": "home_loan",
+            "policy_version": "v2.0",
+            "effective_date": "2026-06-01",
+            "text": "Documents:\nApplicants must provide valid identity proof.\nApplicants must provide address proof.\nApplicants must provide income proof.",
+            "reranker_score": -11.181918144226074
+        }
+    ],
+    "status": null,
+    "request_id": null
+}

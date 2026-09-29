@@ -11,7 +11,7 @@
     "adaptive_average_quality_index": 0.2,
     "average_quality_delta": -0.6000000000000001,
     "average_evidence_delta": 0.0,
-    "average_latency_delta_seconds": -0.514609199995175,
+    "average_latency_delta_seconds": -0.7353243399877102,
     "adaptive_answer_rate": 0.4,
     "adaptive_abstention_rate": 0.6
   },
@@ -80,8 +80,8 @@
       "quality_delta": 0.0,
       "context_reduction": 0.0,
       "fixed_latency": 0.6056329000275582,
-      "adaptive_latency": 0.5338508000131696,
-      "adaptive_decision_reason": "sufficient_evidence",
+      "adaptive_latency": 0.0014383000088855624,
+      "adaptive_decision_reason": "default_budget",
       "adaptive_abstained": false
     },
     {
@@ -96,8 +96,8 @@
       "quality_delta": 0.0,
       "context_reduction": 0.0,
       "fixed_latency": 0.5865644000004977,
-      "adaptive_latency": 0.5723163000075147,
-      "adaptive_decision_reason": "sufficient_evidence",
+      "adaptive_latency": 0.001153100049123168,
+      "adaptive_decision_reason": "default_budget",
       "adaptive_abstained": false
     }
   ]

@@ -1,0 +1,7 @@
+{
+  "groundedness": 2,
+  "relevance": 2,
+  "completeness": 2,
+  "unsupported_claims": 0,
+  "reason": "The answer is directly supported by the context and directly addresses the question. It is also complete and does not contain any unsupported claims."
+}

@@ -1,0 +1,88 @@
+{
+  "experiment_count": 1,
+  "valid_experiment_count": 1,
+  "summary": {
+    "evidence_recall": {
+      "count": 0,
+      "mean": null,
+      "min": null,
+      "max": null
+    },
+    "quality": {
+      "count": 0,
+      "mean": null,
+      "min": null,
+      "max": null
+    },
+    "latency": {
+      "count": 0,
+      "mean": null,
+      "min": null,
+      "max": null
+    },
+    "context": {
+      "count": 0,
+      "mean": null,
+      "min": null,
+      "max": null
+    },
+    "success_rate": {
+      "count": 1,
+      "mean": 0.2,
+      "min": 0.2,
+      "max": 0.2
+    },
+    "failure_rate": {
+      "count": 1,
+      "mean": 0.8,
+      "min": 0.8,
+      "max": 0.8
+    }
+  },
+  "pareto_frontier": [
+    "config_001"
+  ],
+  "pareto_count": 1,
+  "parameter_analysis": {
+    "chunk_size": {
+      "300": {
+        "count": 1,
+        "evidence_recall": null,
+        "quality": null,
+        "latency": null,
+        "context": null,
+        "success_rate": 0.2
+      }
+    },
+    "overlap": {
+      "50": {
+        "count": 1,
+        "evidence_recall": null,
+        "quality": null,
+        "latency": null,
+        "context": null,
+        "success_rate": 0.2
+      }
+    },
+    "rerank_k": {
+      "5": {
+        "count": 1,
+        "evidence_recall": null,
+        "quality": null,
+        "latency": null,
+        "context": null,
+        "success_rate": 0.2
+      }
+    },
+    "default_budget": {
+      "1": {
+        "count": 1,
+        "evidence_recall": null,
+        "quality": null,
+        "latency": null,
+        "context": null,
+        "success_rate": 0.2
+      }
+    }
+  }
+}

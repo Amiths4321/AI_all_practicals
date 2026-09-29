@@ -1,0 +1,294 @@
+[
+    {
+        "review_id": "REV-20260916094419",
+        "request_id": "TEST-001",
+        "timestamp": "2026-09-16T09:44:19.103768",
+        "query": "What is the processing fee?",
+        "product": "home_loan",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "answer": "The available policy information is insufficient.",
+        "evidence": [],
+        "status": "APPROVED",
+        "reviewer": "Amit",
+        "reviewer_comment": "Verified against current policy.",
+        "resolved_at": "2026-09-16T10:15:35.034929",
+        "resolution": {
+            "decision": "APPROVED",
+            "reviewer": "Amit",
+            "comment": "Verified against current policy.",
+            "resolved_at": "2026-09-16T10:15:35.034929"
+        }
+    },
+    {
+        "review_id": "REV-20260916094457",
+        "request_id": "TEST-001",
+        "timestamp": "2026-09-16T09:44:57.776324",
+        "query": "What is the processing fee?",
+        "product": "home_loan",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "answer": "The available policy information is insufficient.",
+        "evidence": [],
+        "status": "APPROVED",
+        "reviewer": "AMit",
+        "reviewer_comment": "What is the home loan processing fee?",
+        "resolved_at": "2026-09-16T10:16:06.605851",
+        "resolution": {
+            "decision": "APPROVED",
+            "reviewer": "AMit",
+            "comment": "What is the home loan processing fee?",
+            "resolved_at": "2026-09-16T10:16:06.605851"
+        }
+    },
+    {
+        "review_id": "REV-20260916095058",
+        "request_id": "cd3ce86d-cf4f-4d2d-bcbd-7816b8d360c6",
+        "timestamp": "2026-09-16T09:50:58.202828",
+        "query": "What is the home loan processing fee?",
+        "product": "home_loan",
+        "reason": "INVALID_CITATION",
+        "answer": "The available policy information is insufficient to answer this question.",
+        "evidence": [
+            {
+                "evidence_id": "E001",
+                "rank": 1,
+                "document": "banking_policy_v2.txt",
+                "section": "General",
+                "chunk_id": 5,
+                "product": "home_loan",
+                "policy_version": "v2.0",
+                "effective_date": "2026-06-01",
+                "text": "HOME LOAN POLICY",
+                "reranker_score": -6.633196830749512
+            },
+            {
+                "evidence_id": "E002",
+                "rank": 2,
+                "document": "banking_policy_v2.txt",
+                "section": "Eligibility",
+                "chunk_id": 2,
+                "product": "home_loan",
+                "policy_version": "v2.0",
+                "effective_date": "2026-06-01",
+                "text": "Eligibility:\nApplicants must have a minimum monthly income of ₹60,000.\nApplicants must be at least 21 years old.\nThe maximum applicant age at loan maturity is 65 years.",
+                "reranker_score": -8.248414039611816
+            },
+            {
+                "evidence_id": "E003",
+                "rank": 3,
+                "document": "banking_policy_v2.txt",
+                "section": "Documents",
+                "chunk_id": 3,
+                "product": "home_loan",
+                "policy_version": "v2.0",
+                "effective_date": "2026-06-01",
+                "text": "Documents:\nApplicants must provide valid identity proof.\nApplicants must provide address proof.\nApplicants must provide income proof.",
+                "reranker_score": -11.181918144226074
+            }
+        ],
+        "status": "APPROVED",
+        "reviewer": "Amit",
+        "reviewer_comment": "Verified against current policy.",
+        "resolved_at": "2026-09-16T10:16:25.917237",
+        "resolution": {
+            "decision": "APPROVED",
+            "reviewer": "Amit",
+            "comment": "Verified against current policy.",
+            "resolved_at": "2026-09-16T10:16:25.917237"
+        }
+    },
+    {
+        "review_id": "REV-20260916095058",
+        "request_id": "cd3ce86d-cf4f-4d2d-bcbd-7816b8d360c6",
+        "timestamp": "2026-09-16T09:50:58.217040",
+        "query": "What is the home loan processing fee?",
+        "product": "home_loan",
+        "reason": "NO_CANDIDATES",
+        "answer": "The available policy information is insufficient to answer this question.",
+        "evidence": [],
+        "status": "PENDING"
+    },
+    {
+        "review_id": "REV-20260916095334",
+        "request_id": "0dd0cf1f-cad3-42c1-a80e-c1c12724468c",
+        "timestamp": "2026-09-16T09:53:34.257413",
+        "query": "What is the home loan processing fee?",
+        "product": "home_loan",
+        "reason": "INVALID_CITATION",
+        "answer": "The available policy information is insufficient to answer this question.",
+        "evidence": [
+            {
+                "evidence_id": "E001",
+                "rank": 1,
+                "document": "banking_policy_v2.txt",
+                "section": "General",
+                "chunk_id": 5,
+                "product": "home_loan",
+                "policy_version": "v2.0",
+                "effective_date": "2026-06-01",
+                "text": "HOME LOAN POLICY",
+                "reranker_score": -6.633196830749512
+            },
+            {
+                "evidence_id": "E002",
+                "rank": 2,
+                "document": "banking_policy_v2.txt",
+                "section": "Eligibility",
+                "chunk_id": 2,
+                "product": "home_loan",
+                "policy_version": "v2.0",
+                "effective_date": "2026-06-01",
+                "text": "Eligibility:\nApplicants must have a minimum monthly income of ₹60,000.\nApplicants must be at least 21 years old.\nThe maximum applicant age at loan maturity is 65 years.",
+                "reranker_score": -8.248414039611816
+            },
+            {
+                "evidence_id": "E003",
+                "rank": 3,
+                "document": "banking_policy_v2.txt",
+                "section": "Documents",
+                "chunk_id": 3,
+                "product": "home_loan",
+                "policy_version": "v2.0",
+                "effective_date": "2026-06-01",
+                "text": "Documents:\nApplicants must provide valid identity proof.\nApplicants must provide address proof.\nApplicants must provide income proof.",
+                "reranker_score": -11.181918144226074
+            }
+        ],
+        "status": "APPROVED",
+        "reviewer": "AMit",
+        "reviewer_comment": "Verified against current policy.",
+        "resolved_at": "2026-09-16T10:16:42.189242",
+        "resolution": {
+            "decision": "APPROVED",
+            "reviewer": "AMit",
+            "comment": "Verified against current policy.",
+            "resolved_at": "2026-09-16T10:16:42.189242"
+        }
+    },
+    {
+        "review_id": "REV-20260916095334",
+        "request_id": "0dd0cf1f-cad3-42c1-a80e-c1c12724468c",
+        "timestamp": "2026-09-16T09:53:34.272906",
+        "query": "What is the home loan processing fee?",
+        "product": "home_loan",
+        "reason": "NO_CANDIDATES",
+        "answer": "The available policy information is insufficient to answer this question.",
+        "evidence": [],
+        "status": "PENDING"
+    },
+    {
+        "review_id": "REV-20260916095530",
+        "request_id": "DUPLICATE-TEST-001",
+        "timestamp": "2026-09-16T09:55:30.916595",
+        "query": "What is the processing fee?",
+        "product": "home_loan",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "answer": "Manual review required.",
+        "evidence": [],
+        "status": "APPROVED",
+        "reviewer": "Amit",
+        "reviewer_comment": "Verified against current policy.",
+        "resolved_at": "2026-09-16T10:17:02.747637",
+        "resolution": {
+            "decision": "APPROVED",
+            "reviewer": "Amit",
+            "comment": "Verified against current policy.",
+            "resolved_at": "2026-09-16T10:17:02.747637"
+        }
+    },
+    {
+        "review_id": "REV-f83369b7-261c-4783-a05a-4813d8af9484",
+        "request_id": "233bc09e-b1c1-4030-a957-09c485d9c602",
+        "timestamp": "2026-09-16T15:45:09.160921",
+        "query": "What is the minimum monthly income required for a home loan?",
+        "product": "home_loan",
+        "reason": "INVALID_CITATION",
+        "answer": "The minimum monthly income required for a home loan is ₹60,000.",
+        "evidence": [
+            {
+                "evidence_id": "E001",
+                "rank": 1,
+                "document": "banking_policy_v2.txt",
+                "section": "Eligibility",
+                "chunk_id": 6,
+                "product": "home_loan",
+                "policy_version": "v2.0",
+                "effective_date": "2026-06-01",
+                "text": "Eligibility:\nApplicants must have a minimum monthly income of ₹60,000.\nApplicants must be at least 21 years old.\nThe maximum applicant age at loan maturity is 65 years.",
+                "reranker_score": 7.182643890380859
+            },
+            {
+                "evidence_id": "E002",
+                "rank": 2,
+                "document": "banking_policy_v2.txt",
+                "section": "General",
+                "chunk_id": 5,
+                "product": "home_loan",
+                "policy_version": "v2.0",
+                "effective_date": "2026-06-01",
+                "text": "HOME LOAN POLICY",
+                "reranker_score": -6.834082126617432
+            },
+            {
+                "evidence_id": "E003",
+                "rank": 3,
+                "document": "banking_policy_v2.txt",
+                "section": "Documents",
+                "chunk_id": 3,
+                "product": "home_loan",
+                "policy_version": "v2.0",
+                "effective_date": "2026-06-01",
+                "text": "Documents:\nApplicants must provide valid identity proof.\nApplicants must provide address proof.\nApplicants must provide income proof.",
+                "reranker_score": -10.577218055725098
+            }
+        ],
+        "status": "PENDING"
+    },
+    {
+        "review_id": "REV-5eea791c-1302-4cdd-a19f-48dafc347b57",
+        "request_id": "37b36604-b3b4-4674-94dc-dd80ca353bda",
+        "timestamp": "2026-09-16T15:47:13.748449",
+        "query": "What is the minimum monthly income required for a home loan?",
+        "product": "home_loan",
+        "reason": "INVALID_CITATION",
+        "answer": "The minimum monthly income required for a home loan is ₹60,000. \n\nEvidence ID: E001",
+        "evidence": [
+            {
+                "evidence_id": "E001",
+                "rank": 1,
+                "document": "banking_policy_v2.txt",
+                "section": "Eligibility",
+                "chunk_id": 6,
+                "product": "home_loan",
+                "policy_version": "v2.0",
+                "effective_date": "2026-06-01",
+                "text": "Eligibility:\nApplicants must have a minimum monthly income of ₹60,000.\nApplicants must be at least 21 years old.\nThe maximum applicant age at loan maturity is 65 years.",
+                "reranker_score": 7.182643890380859
+            },
+            {
+                "evidence_id": "E002",
+                "rank": 2,
+                "document": "banking_policy_v2.txt",
+                "section": "General",
+                "chunk_id": 5,
+                "product": "home_loan",
+                "policy_version": "v2.0",
+                "effective_date": "2026-06-01",
+                "text": "HOME LOAN POLICY",
+                "reranker_score": -6.834082126617432
+            },
+            {
+                "evidence_id": "E003",
+                "rank": 3,
+                "document": "banking_policy_v2.txt",
+                "section": "Documents",
+                "chunk_id": 3,
+                "product": "home_loan",
+                "policy_version": "v2.0",
+                "effective_date": "2026-06-01",
+                "text": "Documents:\nApplicants must provide valid identity proof.\nApplicants must provide address proof.\nApplicants must provide income proof.",
+                "reranker_score": -10.577218055725098
+            }
+        ],
+        "status": "PENDING"
+    }
+]

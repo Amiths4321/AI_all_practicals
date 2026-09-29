@@ -1,0 +1,86 @@
+{
+  "summary": {
+    "questions": 5,
+    "successes": 1,
+    "retrieval_failures": 3,
+    "context_losses": 0,
+    "abstentions": 0,
+    "processing_errors": 0,
+    "unsupported_claims": 0,
+    "ungrounded_answers": 1,
+    "irrelevant_answers": 0,
+    "incomplete_answers": 0,
+    "missing_judgements": 0,
+    "category_counts": {
+      "retrieval_failure": 3,
+      "success": 1,
+      "generation_ungrounded": 1
+    },
+    "success_rate": 0.2,
+    "failure_rate": 0.8
+  },
+  "question_results": [
+    {
+      "question": "Who approves annual leave?",
+      "status": "abstained",
+      "category": "retrieval_failure",
+      "budget": 0,
+      "retrieval_evidence_recall": 0.0,
+      "context_evidence_recall": 0.0,
+      "judgement": null,
+      "reason": "insufficient_context_evidence"
+    },
+    {
+      "question": "How do employees apply for leave?",
+      "status": "abstained",
+      "category": "retrieval_failure",
+      "budget": 0,
+      "retrieval_evidence_recall": 0.0,
+      "context_evidence_recall": 0.0,
+      "judgement": null,
+      "reason": "insufficient_context_evidence"
+    },
+    {
+      "question": "Can medical leave require documents?",
+      "status": "abstained",
+      "category": "retrieval_failure",
+      "budget": 0,
+      "retrieval_evidence_recall": 0.0,
+      "context_evidence_recall": 0.0,
+      "judgement": null,
+      "reason": "insufficient_context_evidence"
+    },
+    {
+      "question": "What is the maternity leave policy?",
+      "status": "answered",
+      "category": "success",
+      "budget": 3,
+      "retrieval_evidence_recall": 1.0,
+      "context_evidence_recall": 1.0,
+      "judgement": {
+        "groundedness": 2,
+        "relevance": 2,
+        "completeness": 2,
+        "unsupported_claims": 0,
+        "reason": "The answer is directly supported by the context and directly addresses the question. It is also complete and does not contain any unsupported claims."
+      },
+      "reason": null
+    },
+    {
+      "question": "What is the company's remote work policy?",
+      "status": "answered",
+      "category": "generation_ungrounded",
+      "budget": 3,
+      "retrieval_evidence_recall": 1.0,
+      "context_evidence_recall": 1.0,
+      "judgement": {
+        "groundedness": 0,
+        "relevance": 0,
+        "completeness": 0,
+        "unsupported_claims": 0,
+        "reason": "The generated answer does not provide any information about the company's remote work policy, which is the focus of the question. The context only discusses leave policies, not remote work policies."
+      },
+      "reason": null
+    }
+  ]
+}

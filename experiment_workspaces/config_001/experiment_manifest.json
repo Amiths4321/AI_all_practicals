@@ -1,0 +1,79 @@
+{
+  "experiment_id": "config_001",
+  "created_at": 1790583665.7427824,
+  "started_at": 1790583633.5975482,
+  "finished_at": 1790583665.7421567,
+  "duration_seconds": 32.14460849761963,
+  "configuration": {
+    "chunk_size": 300,
+    "overlap": 50,
+    "rerank_k": 5,
+    "default_budget": 1,
+    "id": "config_001"
+  },
+  "python": {
+    "version": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+    "executable": "C:\\Users\\amith\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+  },
+  "platform": {
+    "system": "Windows",
+    "release": "11",
+    "machine": "AMD64"
+  },
+  "pipeline_fingerprint": {
+    "adaptive_rag.py": "40a958ea5c4561c4f328ed18965d78081f5c236b29d1c07cc8b2c6d295e0abad",
+    "final_adaptive_evaluation.py": "c9e84c63ec0ef6f7ce491ca31b1a0741b53107099f25bc403ab2664d36cfb7b8",
+    "final_rag_report.py": "5723c9ada67985a42af7792a20ef8e34d6e0b878fab122c37bfca5db251fedc2",
+    "failure_monitor.py": "1ea37aaeb0bb868c64f4dcf8b7bea745a4b633619a3889d50d902ced97305f04",
+    "config.py": "c3f4e4ee71d4230ce1f29876127803f5248a98cb819e505f848dbe1bf596adc9",
+    "chunking.py": "480341a1ece23e20379e1e4d49dcdbd1368545e8823f097c6c49eccd2ce63984",
+    "hybrid_search.py": "9fb210d6520e513f336cdeba7cb3b67877c763a2abfc72352122264af66d0b4a",
+    "reranking.py": "eddeaca7108016718b61bcc5dd1649f6a62164976cd33693c065f989ed89088c",
+    "semantic_evidence.py": "58438c1852aaa7dd8c0eca51aae01b3970c2ebf03986f8f90b6e8c424a54451f",
+    "context_builder.py": "2d462807c8759d457b51a74bcc3cf5278cca0c40b6c64735ae1046a4b1c71cab",
+    "context_compression.py": "b2a42e29828ebd0f38d416346d3e21145680c4f9ba4a66f5f0f50e31a41911f0",
+    "sentence_compression.py": "e17a647d15c1dd7c7afc8b1d8de26922272a43eb130760fd28cceb27622c7f5a",
+    "cached_generation.py": "44bba33fbfe6384e5dd0a2500b6beee5a56a982075e1e97eb9aba89c0730dfca",
+    "cached_judge.py": "045206b81c3fa2f0998379b517e6b0203ac4f4d341366a12066bbae44b43c8c5",
+    "cache.py": "227163af5fae0651f047a88e1dee0d17c99589a62ddead467025eb06c46493e0",
+    "generation.py": "e56e4cdc9557235b887f53665450ee1deb07f56399aceb587a6a9529a57a3cd0",
+    "rag_judge.py": "d48148560d98718c823aa496926a9b497e8f92989236b31744c117ab3182704e"
+  },
+  "input_fingerprint": {
+    "evaluation_data.json": "3ca1c7016b5bb969db5441eeb46f5d29a8e9f0474c4f389e8d7a870771506a25",
+    "evidence_policy_benchmark.json": "180fa6203b2b21ca6f5835b835dfe6d62f697dec9da8a8b74089211f4de60424",
+    "empirical_context_policy.json": "ff2e3ff19f9d4e180ed1c1c9dd270167d0daac46d875c18a5be76873514ed5a7",
+    "documents/leave_policy.txt": "853fa1fef06dcb2570d12f0a4496f8042eeb17e1b0f6d75ef7d8b1c6e2961f69",
+    "documents/employee_handbook.txt": "853fa1fef06dcb2570d12f0a4496f8042eeb17e1b0f6d75ef7d8b1c6e2961f69"
+  },
+  "outputs": [
+    "adaptive_rag.py",
+    "adaptive_rag_report.json",
+    "cache.py",
+    "cached_generation.py",
+    "cached_judge.py",
+    "chunking.py",
+    "config.json",
+    "config.py",
+    "context_builder.py",
+    "context_compression.py",
+    "empirical_context_policy.json",
+    "evaluation_data.json",
+    "evidence_compression.py",
+    "evidence_policy_benchmark.json",
+    "experiment_manifest.py",
+    "failure_monitor.py",
+    "failure_monitoring.json",
+    "final_adaptive_evaluation.json",
+    "final_adaptive_evaluation.py",
+    "final_rag_report.json",
+    "final_rag_report.py",
+    "generation.py",
+    "hybrid_search.py",
+    "rag_judge.py",
+    "reranking.py",
+    "semantic_evidence.py",
+    "sentence_compression.py"
+  ],
+  "retry_history": []
+}

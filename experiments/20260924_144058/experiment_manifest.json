@@ -1,0 +1,41 @@
+{
+  "experiment": {
+    "timestamp": "20260924_144058",
+    "configuration_fingerprint": "c7dc25916581",
+    "directory": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiments\\20260924_144058"
+  },
+  "scripts": [
+    "adaptive_rag.py",
+    "final_adaptive_evaluation.py",
+    "final_rag_report.py"
+  ],
+  "input_files": [
+    "config.json",
+    "evaluation_data.json",
+    "empirical_context_policy.json",
+    "documents/leave_policy.txt",
+    "documents/employee_handbook.txt"
+  ],
+  "configuration": {
+    "chunking": {
+      "chunk_size": 500,
+      "overlap": 100
+    },
+    "retrieval": {
+      "vector_k": 10,
+      "hybrid_k": 10,
+      "rerank_k": 10
+    },
+    "evidence": {
+      "threshold": 0.6
+    },
+    "context": {
+      "default_budget": 3
+    },
+    "ollama": {
+      "url": "http://10.22.39.192:11434",
+      "model": "qwen2.5vl:latest",
+      "timeout": 300
+    }
+  }
+}

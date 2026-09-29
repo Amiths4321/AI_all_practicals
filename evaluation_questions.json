@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What is the minimum monthly income required for a home loan?",
+    "expected_product": "home loan",
+    "expected_term": "60000"
+  },
+  {
+    "question": "What is the minimum monthly income required for a personal loan?",
+    "expected_product": "personal loan",
+    "expected_term": "30000"
+  },
+  {
+    "question": "What is the minimum age required for a home loan?",
+    "expected_product": "home loan",
+    "expected_term": "21"
+  },
+  {
+    "question": "What documents are required for a home loan?",
+    "expected_product": "home loan",
+    "expected_term": "identity"
+  }
+]

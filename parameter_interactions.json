@@ -1,0 +1,173 @@
+{
+  "experiment_count": 1,
+  "parameter_pairs": {
+    "chunk_size__overlap": {
+      "parameters": [
+        "chunk_size",
+        "overlap"
+      ],
+      "metrics": {
+        "evidence_recall": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "quality": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "latency": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "context": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "success_rate": {
+          "groups": {},
+          "interaction_strength": 0.0
+        }
+      }
+    },
+    "chunk_size__rerank_k": {
+      "parameters": [
+        "chunk_size",
+        "rerank_k"
+      ],
+      "metrics": {
+        "evidence_recall": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "quality": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "latency": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "context": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "success_rate": {
+          "groups": {},
+          "interaction_strength": 0.0
+        }
+      }
+    },
+    "chunk_size__default_budget": {
+      "parameters": [
+        "chunk_size",
+        "default_budget"
+      ],
+      "metrics": {
+        "evidence_recall": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "quality": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "latency": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "context": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "success_rate": {
+          "groups": {},
+          "interaction_strength": 0.0
+        }
+      }
+    },
+    "overlap__rerank_k": {
+      "parameters": [
+        "overlap",
+        "rerank_k"
+      ],
+      "metrics": {
+        "evidence_recall": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "quality": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "latency": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "context": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "success_rate": {
+          "groups": {},
+          "interaction_strength": 0.0
+        }
+      }
+    },
+    "overlap__default_budget": {
+      "parameters": [
+        "overlap",
+        "default_budget"
+      ],
+      "metrics": {
+        "evidence_recall": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "quality": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "latency": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "context": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "success_rate": {
+          "groups": {},
+          "interaction_strength": 0.0
+        }
+      }
+    },
+    "rerank_k__default_budget": {
+      "parameters": [
+        "rerank_k",
+        "default_budget"
+      ],
+      "metrics": {
+        "evidence_recall": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "quality": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "latency": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "context": {
+          "groups": {},
+          "interaction_strength": 0.0
+        },
+        "success_rate": {
+          "groups": {},
+          "interaction_strength": 0.0
+        }
+      }
+    }
+  }
+}

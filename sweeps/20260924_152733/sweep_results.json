@@ -1,0 +1,102 @@
+{
+  "timestamp": "20260924_152733",
+  "configurations": 6,
+  "results": [
+    {
+      "configuration": {
+        "name": "baseline",
+        "chunk_size": 500,
+        "overlap": 100,
+        "rerank_k": 10,
+        "default_budget": 3
+      },
+      "status": "completed",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.0003891199827194214,
+        "context_characters": 312.4
+      }
+    },
+    {
+      "configuration": {
+        "name": "small_chunks",
+        "chunk_size": 300,
+        "overlap": 50,
+        "rerank_k": 10,
+        "default_budget": 3
+      },
+      "status": "completed",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.00044928002171218395,
+        "context_characters": 312.4
+      }
+    },
+    {
+      "configuration": {
+        "name": "large_chunks",
+        "chunk_size": 700,
+        "overlap": 150,
+        "rerank_k": 10,
+        "default_budget": 3
+      },
+      "status": "completed",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.00036681999918073414,
+        "context_characters": 312.4
+      }
+    },
+    {
+      "configuration": {
+        "name": "small_budget",
+        "chunk_size": 500,
+        "overlap": 100,
+        "rerank_k": 10,
+        "default_budget": 1
+      },
+      "status": "completed",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.00037348000332713125,
+        "context_characters": 312.4
+      }
+    },
+    {
+      "configuration": {
+        "name": "medium_budget",
+        "chunk_size": 500,
+        "overlap": 100,
+        "rerank_k": 10,
+        "default_budget": 2
+      },
+      "status": "completed",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.0003440599888563156,
+        "context_characters": 312.4
+      }
+    },
+    {
+      "configuration": {
+        "name": "larger_rerank",
+        "chunk_size": 500,
+        "overlap": 100,
+        "rerank_k": 15,
+        "default_budget": 3
+      },
+      "status": "completed",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.00035551998298615216,
+        "context_characters": 312.4
+      }
+    }
+  ]
+}

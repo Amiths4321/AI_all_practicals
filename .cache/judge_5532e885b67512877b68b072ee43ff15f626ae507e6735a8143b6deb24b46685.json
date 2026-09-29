@@ -1,0 +1,7 @@
+{
+  "groundedness": 2,
+  "relevance": 2,
+  "completeness": 2,
+  "unsupported_claims": 0,
+  "reason": "The generated answer is fully grounded in the provided context, directly addresses the question, and includes all the important information needed to answer the question based on the context."
+}

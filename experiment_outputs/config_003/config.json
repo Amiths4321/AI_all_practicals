@@ -1,0 +1,17 @@
+{
+  "chunking": {
+    "chunk_size": 300,
+    "overlap": 50
+  },
+  "retrieval": {
+    "vector_k": 10,
+    "hybrid_k": 10,
+    "rerank_k": 5
+  },
+  "context": {
+    "default_budget": 3
+  },
+  "evidence": {
+    "threshold": 0.6
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "package_version": 1,
+  "created_at": "2026-09-28T14:59:11.082236",
+  "package_name": "production_rag",
+  "files": [
+    "production_controller.py",
+    "rag_service.py",
+    "adaptive_rag.py",
+    "retriever.py",
+    "hybrid_retriever.py",
+    "reranker.py",
+    "context_builder.py",
+    "context_compression.py",
+    "sentence_compression.py",
+    "generation.py",
+    "rag_judge.py",
+    "semantic_evidence.py",
+    "config.py",
+    "config.json",
+    "experiment_logger.py",
+    "experiment_manifest.py",
+    "production_monitor.py",
+    "drift_detector.py",
+    "service_health.py",
+    "regression_tests.py",
+    "validate_pipeline.py",
+    "quality_gate.py",
+    "final_validation.py",
+    "version_manager.py"
+  ],
+  "directories": [
+    "documents"
+  ],
+  "artifacts": [
+    "production_health.json",
+    "drift_report.json",
+    "final_validation_report.json",
+    "version_record.json"
+  ],
+  "entry_point": "production_controller.py",
+  "health_check": "service_health.py",
+  "validation": "final_validation.py"
+}

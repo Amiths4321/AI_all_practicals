@@ -1,0 +1,76 @@
+{
+  "validation_version": 1,
+  "started_at": "2026-09-28T14:58:31.047789",
+  "finished_at": "2026-09-28T14:59:01.634730",
+  "overall_status": "FAILED",
+  "checks": [
+    {
+      "name": "regression_tests",
+      "command": [
+        "python",
+        "regression_tests.py"
+      ],
+      "return_code": 0,
+      "passed": true
+    },
+    {
+      "name": "validate_pipeline",
+      "command": [
+        "python",
+        "validate_pipeline.py"
+      ],
+      "return_code": 1,
+      "passed": false
+    },
+    {
+      "name": "quality_gate",
+      "command": [
+        "python",
+        "quality_gate.py"
+      ],
+      "return_code": 1,
+      "passed": false
+    },
+    {
+      "name": "production_evaluation",
+      "command": [
+        "python",
+        "production_evaluation.py"
+      ],
+      "return_code": 2,
+      "passed": false
+    },
+    {
+      "name": "production_monitor",
+      "command": [
+        "python",
+        "production_monitor.py"
+      ],
+      "return_code": 0,
+      "passed": true
+    },
+    {
+      "name": "drift_detector",
+      "command": [
+        "python",
+        "drift_detector.py"
+      ],
+      "return_code": 0,
+      "passed": true
+    },
+    {
+      "name": "end_to_end_optimization",
+      "command": [
+        "python",
+        "end_to_end_optimization.py"
+      ],
+      "return_code": 0,
+      "passed": true
+    }
+  ],
+  "failed_checks": [
+    "validate_pipeline",
+    "quality_gate",
+    "production_evaluation"
+  ]
+}

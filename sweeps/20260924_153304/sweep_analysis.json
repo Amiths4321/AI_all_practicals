@@ -1,0 +1,21 @@
+{
+  "source_sweep": "20260924_153304",
+  "completed_configurations": 6,
+  "pareto_frontier": [
+    {
+      "configuration": {
+        "name": "baseline",
+        "chunk_size": 500,
+        "overlap": 100,
+        "rerank_k": 10,
+        "default_budget": 3
+      },
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.0003223000094294548,
+        "context_characters": 312.4
+      }
+    }
+  ]
+}

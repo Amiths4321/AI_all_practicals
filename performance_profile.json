@@ -1,0 +1,136 @@
+{
+  "configuration": {
+    "chunk_size": 500,
+    "overlap": 100,
+    "vector_k": 10,
+    "hybrid_k": 10,
+    "rerank_k": 10,
+    "budget": 3
+  },
+  "averages": {
+    "retrieval_seconds": 0.05956803997978568,
+    "reranking_seconds": 0.05536158001050353,
+    "evidence_seconds": 0.033763379976153376,
+    "context_seconds": 0.02813116000033915,
+    "generation_seconds": 2.106941760005429,
+    "judge_seconds": 2.9235317799961194,
+    "total_seconds": 5.20730525997933
+  },
+  "question_results": [
+    {
+      "question": "Who approves annual leave?",
+      "timings": {
+        "retrieval_seconds": 0.05533429991919547,
+        "reranking_seconds": 0.061175000038929284,
+        "evidence_seconds": 0.0935747999465093,
+        "context_seconds": 0.05307869997341186,
+        "generation_seconds": 7.264403700013645,
+        "judge_seconds": 2.860429699998349,
+        "total_seconds": 10.388006299966946
+      },
+      "answer": "Manager approval is required for annual leave.",
+      "judgement": {
+        "groundedness": 2,
+        "relevance": 2,
+        "completeness": 2,
+        "unsupported_claims": 0,
+        "reason": "The answer 'Manager approval is required for annual leave' is directly supported by the context from both sources, which state that annual leave requires manager approval. The answer is relevant to the question and includes all the necessary information from the context."
+      },
+      "documents_used": 2,
+      "context_characters": 781,
+      "evidence_recall": 0.0
+    },
+    {
+      "question": "How do employees apply for leave?",
+      "timings": {
+        "retrieval_seconds": 0.07400549994781613,
+        "reranking_seconds": 0.050006499979645014,
+        "evidence_seconds": 0.03771710000000894,
+        "context_seconds": 0.043273900053463876,
+        "generation_seconds": 1.5721908999839798,
+        "judge_seconds": 2.686271099955775,
+        "total_seconds": 4.463474399992265
+      },
+      "answer": "Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+      "judgement": {
+        "groundedness": 2,
+        "relevance": 2,
+        "completeness": 2,
+        "unsupported_claims": 0,
+        "reason": "The answer is fully grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it."
+      },
+      "documents_used": 2,
+      "context_characters": 781,
+      "evidence_recall": 0.0
+    },
+    {
+      "question": "Can medical leave require documents?",
+      "timings": {
+        "retrieval_seconds": 0.046948799979873,
+        "reranking_seconds": 0.048718900070525706,
+        "evidence_seconds": 0.03752010001335293,
+        "context_seconds": 0.04427929990924895,
+        "generation_seconds": 0.5305599999846891,
+        "judge_seconds": 3.121158800087869,
+        "total_seconds": 3.829193399986252
+      },
+      "answer": "Yes, medical leave may require supporting documents.",
+      "judgement": {
+        "groundedness": 2,
+        "relevance": 2,
+        "completeness": 2,
+        "unsupported_claims": 0,
+        "reason": "The answer is directly supported by the context, which states that medical leave may require supporting documents. The answer is relevant to the question and includes all the necessary information from the context."
+      },
+      "documents_used": 2,
+      "context_characters": 781,
+      "evidence_recall": 0.0
+    },
+    {
+      "question": "What is the maternity leave policy?",
+      "timings": {
+        "retrieval_seconds": 0.061613199999555945,
+        "reranking_seconds": 0.05620699992869049,
+        "evidence_seconds": 2.100015990436077e-06,
+        "context_seconds": 1.2199976481497288e-05,
+        "generation_seconds": 0.5496979000745341,
+        "judge_seconds": 2.880365499993786,
+        "total_seconds": 3.5479036999167874
+      },
+      "answer": "Maternity leave information should be confirmed with HR.",
+      "judgement": {
+        "groundedness": 2,
+        "relevance": 2,
+        "completeness": 2,
+        "unsupported_claims": 0,
+        "reason": "The answer is directly supported by the context and directly addresses the question. It is grounded in the information provided and does not include any unsupported claims."
+      },
+      "documents_used": 2,
+      "context_characters": 781,
+      "evidence_recall": 1.0
+    },
+    {
+      "question": "What is the company's remote work policy?",
+      "timings": {
+        "retrieval_seconds": 0.05993840005248785,
+        "reranking_seconds": 0.060700500034727156,
+        "evidence_seconds": 2.7999049052596092e-06,
+        "context_seconds": 1.170008908957243e-05,
+        "generation_seconds": 0.617856299970299,
+        "judge_seconds": 3.069433799944818,
+        "total_seconds": 3.8079485000343993
+      },
+      "answer": "I don't have enough information in the provided documents.",
+      "judgement": {
+        "groundedness": 0,
+        "relevance": 0,
+        "completeness": 0,
+        "unsupported_claims": 0,
+        "reason": "The answer does not provide any information about the company's remote work policy, which is the focus of the question. The context only discusses leave policies, not remote work policies."
+      },
+      "documents_used": 2,
+      "context_characters": 781,
+      "evidence_recall": 1.0
+    }
+  ]
+}

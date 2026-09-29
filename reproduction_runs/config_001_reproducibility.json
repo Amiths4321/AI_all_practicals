@@ -1,0 +1,18 @@
+{
+  "experiment_id": "config_001",
+  "status": "failed",
+  "original_configuration": {
+    "chunk_size": 300,
+    "overlap": 50,
+    "rerank_k": 5,
+    "default_budget": 1,
+    "id": "config_001"
+  },
+  "reproduction_elapsed_seconds": 13.018389463424683,
+  "pipeline_results": [],
+  "original_metrics": {},
+  "reproduced_metrics": {},
+  "metric_comparison": {},
+  "metrics_reproducible": true,
+  "error": "adaptive_rag.py failed:\nC:\\Users\\amith\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\__init__.py:113: RequestsDependencyWarning: urllib3 (2.7.0) or chardet (7.4.3)/charset_normalizer (3.4.8) doesn't match a supported version!\n  warnings.warn(\nW0928 14:03:43.691000 5496 site-packages\\torch\\utils\\_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.\nW0928 14:03:43.756000 5496 site-packages\\torch\\utils\\_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.\nTraceback (most recent call last):\n  File \"C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\reproduction_runs\\config_001\\adaptive_rag.py\", line 10, in <module>\n    from context_builder import ContextBuilder\n  File \"C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\reproduction_runs\\config_001\\context_builder.py\", line 2, in <module>\n    from evidence_compression import EvidenceAwareCompressor\nModuleNotFoundError: No module named 'evidence_compression'\n"
+}

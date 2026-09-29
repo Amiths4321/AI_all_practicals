@@ -1,0 +1,22 @@
+{
+  "chunking": {
+    "chunk_size": 300,
+    "overlap": 50
+  },
+  "retrieval": {
+    "vector_k": 10,
+    "hybrid_k": 10,
+    "rerank_k": 5
+  },
+  "evidence": {
+    "threshold": 0.6
+  },
+  "context": {
+    "default_budget": 4
+  },
+  "ollama": {
+    "url": "http://10.22.39.192:11434",
+    "model": "qwen2.5vl:latest",
+    "timeout": 300
+  }
+}

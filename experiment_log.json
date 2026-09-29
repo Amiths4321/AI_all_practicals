@@ -1,0 +1,47 @@
+{
+  "experiment_id": "test_observability",
+  "started_at": "2026-09-28T14:28:10.776705",
+  "events": [
+    {
+      "timestamp": "2026-09-28T14:28:10.776705",
+      "event": "stage_start",
+      "stage": "retrieval"
+    },
+    {
+      "timestamp": "2026-09-28T14:28:10.777715",
+      "event": "stage_end",
+      "stage": "retrieval",
+      "latency_seconds": 0.0010149999870918691
+    },
+    {
+      "timestamp": "2026-09-28T14:28:10.778225",
+      "event": "stage_start",
+      "stage": "reranking"
+    },
+    {
+      "timestamp": "2026-09-28T14:28:10.779254",
+      "event": "stage_end",
+      "stage": "reranking",
+      "latency_seconds": 0.0007129000150598586
+    },
+    {
+      "timestamp": "2026-09-28T14:28:10.780269",
+      "event": "stage_start",
+      "stage": "generation"
+    },
+    {
+      "timestamp": "2026-09-28T14:28:10.780269",
+      "event": "stage_end",
+      "stage": "generation",
+      "latency_seconds": 0.0007410999969579279
+    },
+    {
+      "timestamp": "2026-09-28T14:28:10.781266",
+      "event": "experiment_finished",
+      "stage": null,
+      "status": "success",
+      "started_at": "2026-09-28T14:28:10.776705",
+      "finished_at": "2026-09-28T14:28:10.781266"
+    }
+  ]
+}

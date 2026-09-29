@@ -1,51 +1,60 @@
-import requests
+import ollama
+
+MODEL_NAME = "llama3.2"
 
 
-OLLAMA_URL = "http://10.22.39.192:11434"
-MODEL_NAME = "qwen2.5vl:latest"
+def rewrite_query(
+    query,
+    product,
+    conversation_history=None
+):
+    # No history → current query is already standalone
+    if not conversation_history:
+        return query
 
+    history_text = ""
 
-def rewrite_query(question):
+    for item in conversation_history:
+        history_text += (
+            f"User: {item['question']}\n"
+            f"Assistant: {item['answer']}\n"
+        )
+
     prompt = f"""
-Rewrite the following user question into a concise
-retrieval query.
+You are a search query rewriting assistant for a banking RAG system.
+
+Your task is to rewrite the user's current question into ONE
+standalone search query suitable for policy retrieval.
+
+Loan Product:
+{product}
+
+Previous Conversation:
+{history_text}
+
+Current Question:
+{query}
 
 Rules:
-1. Preserve the original meaning.
-2. Keep important names, policies, entities, and terminology.
-3. Do not answer the question.
-4. Do not invent information.
-5. Return ONLY the rewritten query.
-
-Original question:
-{question}
-
-Rewritten query:
+1. Resolve vague references such as "it", "this", "that", "its", "their".
+2. Use the previous conversation when necessary.
+3. Preserve the user's original intent.
+4. Do not answer the question.
+5. Do not add information that is not present in the conversation.
+6. Include the loan product when useful.
+7. Return ONLY the rewritten search query.
 """
 
-    response = requests.post(
-        f"{OLLAMA_URL}/api/generate",
-        json={
-            "model": MODEL_NAME,
-            "prompt": prompt,
-            "stream": False
-        },
-        timeout=3600
+    response = ollama.chat(
+        model=MODEL_NAME,
+        messages=[
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ]
     )
 
-    response.raise_for_status()
+    rewritten_query = response["message"]["content"].strip()
 
-    return response.json()["response"].strip()
-
-
-if __name__ == "__main__":
-
-    question = input("Question: ")
-
-    rewritten = rewrite_query(question)
-
-    print("\nOriginal:")
-    print(question)
-
-    print("\nRewritten:")
-    print(rewritten)
+    return rewritten_query

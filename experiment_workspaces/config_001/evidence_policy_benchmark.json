@@ -1,0 +1,518 @@
+[
+  {
+    "question": "Who approves annual leave?",
+    "required_evidence": [
+      "annual leave approval authority"
+    ],
+    "budgets": {
+      "1": {
+        "documents_used": 1,
+        "context_characters": 387,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "annual leave approval authority",
+            "score": 0.5249553918838501,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 7.939442400005646,
+        "answer": "Manager approval is required for annual leave.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context, which states that 'Annual leave requires manager approval.' The answer is relevant to the question and includes all the necessary information from the context."
+        }
+      },
+      "2": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "annual leave approval authority",
+            "score": 0.5249553918838501,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 0.5235035999212414,
+        "answer": "Manager approval is required for annual leave.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context, which states that 'Annual leave requires manager approval.' The answer is relevant to the question and includes all the necessary information from the context."
+        }
+      },
+      "3": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "annual leave approval authority",
+            "score": 0.5249553918838501,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 0.5176860999781638,
+        "answer": "Manager approval is required for annual leave.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context, which states that 'Annual leave requires manager approval.' The answer is relevant to the question and includes all the necessary information from the context."
+        }
+      },
+      "5": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "annual leave approval authority",
+            "score": 0.5249553918838501,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 0.5365446999203414,
+        "answer": "Manager approval is required for annual leave.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context, which states that 'Annual leave requires manager approval.' The answer is relevant to the question and includes all the necessary information from the context."
+        }
+      },
+      "10": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "annual leave approval authority",
+            "score": 0.5249553918838501,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 0.5338740999577567,
+        "answer": "Manager approval is required for annual leave.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context, which states that 'Annual leave requires manager approval.' The answer is relevant to the question and includes all the necessary information from the context."
+        }
+      }
+    }
+  },
+  {
+    "question": "How do employees apply for leave?",
+    "required_evidence": [
+      "leave application process"
+    ],
+    "budgets": {
+      "1": {
+        "documents_used": 1,
+        "context_characters": 387,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "leave application process",
+            "score": 0.3402946889400482,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 1.3221746999770403,
+        "answer": "Employees apply for leave through the HR portal. Annual leave requires manager approval, while medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is fully grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it based on the context."
+        }
+      },
+      "2": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "leave application process",
+            "score": 0.3402946889400482,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 1.3436637000413612,
+        "answer": "Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is fully grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it."
+        }
+      },
+      "3": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "leave application process",
+            "score": 0.3402946889400482,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 1.4018215000396594,
+        "answer": "Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is fully grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it."
+        }
+      },
+      "5": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "leave application process",
+            "score": 0.3402946889400482,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 1.5128314000321552,
+        "answer": "Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is fully grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it."
+        }
+      },
+      "10": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "leave application process",
+            "score": 0.3402946889400482,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 1.3805429000640288,
+        "answer": "Employees can apply for leave through the HR portal. Annual leave requires manager approval. Medical leave may require supporting documents. Employees must inform their manager before taking leave. Maternity leave information should be confirmed with HR.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is fully grounded in the context provided, directly addresses the question, and includes all the important information needed to answer it."
+        }
+      }
+    }
+  },
+  {
+    "question": "Can medical leave require documents?",
+    "required_evidence": [
+      "medical leave documentation"
+    ],
+    "budgets": {
+      "1": {
+        "documents_used": 1,
+        "context_characters": 387,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "medical leave documentation",
+            "score": 0.5730702877044678,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 0.4887836000416428,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is grounded in the context provided, directly addresses the question, and includes the important information needed to answer the question based on the context."
+        }
+      },
+      "2": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "medical leave documentation",
+            "score": 0.5730702877044678,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 0.5293960999697447,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context, addresses the question, and includes all necessary information."
+        }
+      },
+      "3": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "medical leave documentation",
+            "score": 0.5730702877044678,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 0.5675081999506801,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context, addresses the question, and includes all necessary information."
+        }
+      },
+      "5": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "medical leave documentation",
+            "score": 0.5730702877044678,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 1.3875115000410005,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context, addresses the question, and includes all necessary information."
+        }
+      },
+      "10": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 0.0,
+        "evidence_matches": [
+          {
+            "evidence": "medical leave documentation",
+            "score": 0.5730702877044678,
+            "document_id": "leave_policy.txt_chunk_0",
+            "source": "C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\documents\\leave_policy.txt"
+          }
+        ],
+        "generation_latency_seconds": 0.5058116000145674,
+        "answer": "Yes, medical leave may require supporting documents.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context, addresses the question, and includes all necessary information."
+        }
+      }
+    }
+  },
+  {
+    "question": "What is the maternity leave policy?",
+    "required_evidence": [],
+    "budgets": {
+      "1": {
+        "documents_used": 1,
+        "context_characters": 387,
+        "evidence_recall": 1.0,
+        "evidence_matches": [],
+        "generation_latency_seconds": 0.5472493000561371,
+        "answer": "Maternity leave information should be confirmed with HR.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context and addresses the question about the maternity leave policy. It also includes the important information that maternity leave information should be confirmed with HR."
+        }
+      },
+      "2": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 1.0,
+        "evidence_matches": [],
+        "generation_latency_seconds": 1.2217387000564486,
+        "answer": "Maternity leave information should be confirmed with HR.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context and directly addresses the question. It is grounded in the information provided and does not include any unsupported claims."
+        }
+      },
+      "3": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 1.0,
+        "evidence_matches": [],
+        "generation_latency_seconds": 0.6056329000275582,
+        "answer": "Maternity leave information should be confirmed with HR.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context and directly addresses the question. It is grounded in the information provided and does not include any unsupported claims."
+        }
+      },
+      "5": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 1.0,
+        "evidence_matches": [],
+        "generation_latency_seconds": 0.606831300072372,
+        "answer": "Maternity leave information should be confirmed with HR.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context and directly addresses the question. It is grounded in the information provided and does not include any unsupported claims."
+        }
+      },
+      "10": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 1.0,
+        "evidence_matches": [],
+        "generation_latency_seconds": 1.2387428999645635,
+        "answer": "Maternity leave information should be confirmed with HR.",
+        "judgement": {
+          "groundedness": 2,
+          "relevance": 2,
+          "completeness": 2,
+          "unsupported_claims": 0,
+          "reason": "The answer is directly supported by the context and directly addresses the question. It is grounded in the information provided and does not include any unsupported claims."
+        }
+      }
+    }
+  },
+  {
+    "question": "What is the company's remote work policy?",
+    "required_evidence": [],
+    "budgets": {
+      "1": {
+        "documents_used": 1,
+        "context_characters": 387,
+        "evidence_recall": 1.0,
+        "evidence_matches": [],
+        "generation_latency_seconds": 0.5932067000539973,
+        "answer": "I don't have enough information in the provided documents.",
+        "judgement": {
+          "groundedness": 0,
+          "relevance": 0,
+          "completeness": 0,
+          "unsupported_claims": 0,
+          "reason": "The answer does not provide any information about the company's remote work policy, which is the focus of the question. The context only discusses leave policies and does not mention anything about remote work policies."
+        }
+      },
+      "2": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 1.0,
+        "evidence_matches": [],
+        "generation_latency_seconds": 0.5570285000139847,
+        "answer": "I don't have enough information in the provided documents.",
+        "judgement": {
+          "groundedness": 0,
+          "relevance": 0,
+          "completeness": 0,
+          "unsupported_claims": 0,
+          "reason": "The generated answer does not provide any information about the company's remote work policy, which is the focus of the question. The context only discusses leave policies and does not mention anything about remote work policies."
+        }
+      },
+      "3": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 1.0,
+        "evidence_matches": [],
+        "generation_latency_seconds": 0.5865644000004977,
+        "answer": "I don't have enough information in the provided documents.",
+        "judgement": {
+          "groundedness": 0,
+          "relevance": 0,
+          "completeness": 0,
+          "unsupported_claims": 0,
+          "reason": "The generated answer does not provide any information about the company's remote work policy, which is the focus of the question. The context only discusses leave policies and does not mention anything about remote work policies."
+        }
+      },
+      "5": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 1.0,
+        "evidence_matches": [],
+        "generation_latency_seconds": 0.5696596999187022,
+        "answer": "I don't have enough information in the provided documents.",
+        "judgement": {
+          "groundedness": 0,
+          "relevance": 0,
+          "completeness": 0,
+          "unsupported_claims": 0,
+          "reason": "The generated answer does not provide any information about the company's remote work policy, which is the focus of the question. The context only discusses leave policies and does not mention anything about remote work policies."
+        }
+      },
+      "10": {
+        "documents_used": 2,
+        "context_characters": 781,
+        "evidence_recall": 1.0,
+        "evidence_matches": [],
+        "generation_latency_seconds": 0.5839483999880031,
+        "answer": "I don't have enough information in the provided documents.",
+        "judgement": {
+          "groundedness": 0,
+          "relevance": 0,
+          "completeness": 0,
+          "unsupported_claims": 0,
+          "reason": "The generated answer does not provide any information about the company's remote work policy, which is the focus of the question. The context only discusses leave policies and does not mention anything about remote work policies."
+        }
+      }
+    }
+  }
+]

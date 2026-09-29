@@ -1,0 +1,146 @@
+{
+  "experiments": {
+    "config_001": {
+      "status": "failed_permanent",
+      "attempts": 1,
+      "history": [
+        {
+          "attempt": 1,
+          "status": "failed",
+          "started_at": 1790582565.506706,
+          "failure_type": "permanent",
+          "error": "[WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\Users\\\\amith\\\\Desktop\\\\Confidential\\\\Misc Projects\\\\P10\\\\python\\\\rag_project\\\\subprocess_sweep_state.tmp' -> 'C:\\\\Users\\\\amith\\\\Desktop\\\\Confidential\\\\Misc Projects\\\\P10\\\\python\\\\rag_project\\\\subprocess_sweep_state.json'",
+          "finished_at": 1790582565.5095036
+        }
+      ],
+      "result": {
+        "id": "config_001",
+        "status": "failed",
+        "failure_type": "exception",
+        "error": "[WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\Users\\\\amith\\\\Desktop\\\\Confidential\\\\Misc Projects\\\\P10\\\\python\\\\rag_project\\\\subprocess_sweep_state.tmp' -> 'C:\\\\Users\\\\amith\\\\Desktop\\\\Confidential\\\\Misc Projects\\\\P10\\\\python\\\\rag_project\\\\subprocess_sweep_state.json'"
+      }
+    },
+    "config_002": {
+      "status": "success",
+      "attempts": 1,
+      "history": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "started_at": 1790582565.506706,
+          "finished_at": 1790582602.7479146
+        }
+      ],
+      "result": {
+        "id": "config_002",
+        "status": "success",
+        "configuration": {
+          "chunk_size": 300,
+          "overlap": 50,
+          "rerank_k": 5,
+          "default_budget": 2,
+          "id": "config_002"
+        },
+        "logs": [
+          {
+            "script": "adaptive_rag.py",
+            "returncode": 0,
+            "stdout": "======================================================================\nADAPTIVE RAG\n======================================================================\nDocuments: 2\nQuestions: 5\nPolicy entries: 0\nChunks: 2\n\n[1/5]\nWho approves annual leave?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[2/5]\nHow do employees apply for leave?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[3/5]\nCan medical leave require documents?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[4/5]\nWhat is the maternity leave policy?\nStatus: answered\nBudget: 3\nRetrieval evidence: 1.0\nContext evidence: 1.0\nLatency: 0.799 seconds\n\n[5/5]\nWhat is the company's remote work policy?\nStatus: answered\nBudget: 3\nRetrieval evidence: 1.0\nContext evidence: 1.0\nLatency: 0.625 seconds\n\n======================================================================\nFINAL SUMMARY\n======================================================================\nQuestions: 5\nAnswered: 2\nAbstained: 3\nErrors: 0\nAnswer rate: 0.4\nAbstention rate: 0.6\nError rate: 0.0\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_002\\adaptive_rag_report.json\n",
+            "stderr": "C:\\Users\\amith\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\__init__.py:113: RequestsDependencyWarning: urllib3 (2.7.0) or chardet (7.4.3)/charset_normalizer (3.4.8) doesn't match a supported version!\n  warnings.warn(\nW0928 13:32:56.751000 15100 site-packages\\torch\\utils\\_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.\nW0928 13:32:56.827000 15100 site-packages\\torch\\utils\\_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.\nFailed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\n"
+          },
+          {
+            "script": "final_adaptive_evaluation.py",
+            "returncode": 0,
+            "stdout": "Loading fixed-budget results...\nLoading adaptive results...\n\n============================================================\nFINAL ADAPTIVE RAG EVALUATION\n============================================================\nQuestions: 5\nFixed average context: 781.0\nAdaptive average context: 338.8\nContext reduction: 56.6%\nFixed evidence recall: 0.400\nAdaptive evidence recall: 0.400\nFixed quality index: 0.800\nAdaptive quality index: 0.200\nQuality delta: -0.600\nLatency delta: -0.451s\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_002\\final_adaptive_evaluation.json\n",
+            "stderr": ""
+          },
+          {
+            "script": "final_rag_report.py",
+            "returncode": 0,
+            "stdout": "Loading evaluation...\nLoading adaptive report...\n\n======================================================================\nFINAL RAG REPORT\n======================================================================\nQuestions: 5\nFixed context: 781.0\nAdaptive context: 338.8\nContext reduction: 56.6 %\nFixed evidence recall: 0.4\nAdaptive evidence recall: 0.4\nFixed quality: 0.8\nAdaptive quality: 0.2\nQuality delta: -0.6\nEvidence delta: 0.0\n\nClassifications:\n  no_material_saving: 2\n  quality_regression: 3\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_002\\final_rag_report.json\n",
+            "stderr": ""
+          },
+          {
+            "script": "failure_monitor.py",
+            "returncode": 0,
+            "stdout": "\n======================================================================\nRAG FAILURE MONITOR\n======================================================================\nQuestions: 5\nSuccesses: 1\nRetrieval failures: 3\nContext losses: 0\nAbstentions: 0\nProcessing errors: 0\nUnsupported claims: 0\nUngrounded answers: 1\nIncomplete answers: 0\nIrrelevant answers: 0\n\nSuccess rate: 0.200\nFailure rate: 0.800\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_002\\failure_monitoring.json\n",
+            "stderr": ""
+          }
+        ],
+        "elapsed_seconds": 37.23841094970703
+      }
+    },
+    "config_003": {
+      "status": "failed_permanent",
+      "attempts": 1,
+      "history": [
+        {
+          "attempt": 1,
+          "status": "failed",
+          "started_at": 1790582565.5084672,
+          "failure_type": "permanent",
+          "error": "[Errno 13] Permission denied: 'C:\\\\Users\\\\amith\\\\Desktop\\\\Confidential\\\\Misc Projects\\\\P10\\\\python\\\\rag_project\\\\subprocess_sweep_state.tmp'",
+          "finished_at": 1790582565.5126894
+        }
+      ],
+      "result": {
+        "id": "config_003",
+        "status": "failed",
+        "failure_type": "exception",
+        "error": "[Errno 13] Permission denied: 'C:\\\\Users\\\\amith\\\\Desktop\\\\Confidential\\\\Misc Projects\\\\P10\\\\python\\\\rag_project\\\\subprocess_sweep_state.tmp'"
+      }
+    },
+    "config_004": {
+      "status": "success",
+      "attempts": 1,
+      "history": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "started_at": 1790582565.5095036,
+          "finished_at": 1790582600.5182798
+        }
+      ],
+      "result": {
+        "id": "config_004",
+        "status": "success",
+        "configuration": {
+          "chunk_size": 300,
+          "overlap": 50,
+          "rerank_k": 5,
+          "default_budget": 4,
+          "id": "config_004"
+        },
+        "logs": [
+          {
+            "script": "adaptive_rag.py",
+            "returncode": 0,
+            "stdout": "======================================================================\nADAPTIVE RAG\n======================================================================\nDocuments: 2\nQuestions: 5\nPolicy entries: 0\nChunks: 2\n\n[1/5]\nWho approves annual leave?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[2/5]\nHow do employees apply for leave?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[3/5]\nCan medical leave require documents?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[4/5]\nWhat is the maternity leave policy?\nStatus: answered\nBudget: 3\nRetrieval evidence: 1.0\nContext evidence: 1.0\nLatency: 0.614 seconds\n\n[5/5]\nWhat is the company's remote work policy?\nStatus: answered\nBudget: 3\nRetrieval evidence: 1.0\nContext evidence: 1.0\nLatency: 2.239 seconds\n\n======================================================================\nFINAL SUMMARY\n======================================================================\nQuestions: 5\nAnswered: 2\nAbstained: 3\nErrors: 0\nAnswer rate: 0.4\nAbstention rate: 0.6\nError rate: 0.0\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_004\\adaptive_rag_report.json\n",
+            "stderr": "C:\\Users\\amith\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\__init__.py:113: RequestsDependencyWarning: urllib3 (2.7.0) or chardet (7.4.3)/charset_normalizer (3.4.8) doesn't match a supported version!\n  warnings.warn(\nW0928 13:32:56.751000 17752 site-packages\\torch\\utils\\_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.\nW0928 13:32:56.827000 17752 site-packages\\torch\\utils\\_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.\nFailed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\n"
+          },
+          {
+            "script": "final_adaptive_evaluation.py",
+            "returncode": 0,
+            "stdout": "Loading fixed-budget results...\nLoading adaptive results...\n\n============================================================\nFINAL ADAPTIVE RAG EVALUATION\n============================================================\nQuestions: 5\nFixed average context: 781.0\nAdaptive average context: 338.8\nContext reduction: 56.6%\nFixed evidence recall: 0.400\nAdaptive evidence recall: 0.400\nFixed quality index: 0.800\nAdaptive quality index: 0.200\nQuality delta: -0.600\nLatency delta: -0.165s\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_004\\final_adaptive_evaluation.json\n",
+            "stderr": ""
+          },
+          {
+            "script": "final_rag_report.py",
+            "returncode": 0,
+            "stdout": "Loading evaluation...\nLoading adaptive report...\n\n======================================================================\nFINAL RAG REPORT\n======================================================================\nQuestions: 5\nFixed context: 781.0\nAdaptive context: 338.8\nContext reduction: 56.6 %\nFixed evidence recall: 0.4\nAdaptive evidence recall: 0.4\nFixed quality: 0.8\nAdaptive quality: 0.2\nQuality delta: -0.6\nEvidence delta: 0.0\n\nClassifications:\n  no_material_saving: 2\n  quality_regression: 3\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_004\\final_rag_report.json\n",
+            "stderr": ""
+          },
+          {
+            "script": "failure_monitor.py",
+            "returncode": 0,
+            "stdout": "\n======================================================================\nRAG FAILURE MONITOR\n======================================================================\nQuestions: 5\nSuccesses: 1\nRetrieval failures: 3\nContext losses: 0\nAbstentions: 0\nProcessing errors: 0\nUnsupported claims: 0\nUngrounded answers: 1\nIncomplete answers: 0\nIrrelevant answers: 0\n\nSuccess rate: 0.200\nFailure rate: 0.800\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_004\\failure_monitoring.json\n",
+            "stderr": ""
+          }
+        ],
+        "elapsed_seconds": 35.00658941268921
+      }
+    }
+  },
+  "created_at": 1790582565.5043628,
+  "updated_at": 1790582717.4100153
+}

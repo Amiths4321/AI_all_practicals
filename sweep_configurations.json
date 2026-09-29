@@ -1,0 +1,784 @@
+{
+  "parameter_space": {
+    "chunk_size": [
+      300,
+      500,
+      700
+    ],
+    "overlap": [
+      50,
+      100,
+      150
+    ],
+    "rerank_k": [
+      5,
+      10,
+      15
+    ],
+    "default_budget": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "total_configurations": 108,
+  "configurations": [
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 1,
+      "id": "config_001"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 2,
+      "id": "config_002"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 3,
+      "id": "config_003"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 4,
+      "id": "config_004"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 10,
+      "default_budget": 1,
+      "id": "config_005"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 10,
+      "default_budget": 2,
+      "id": "config_006"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 10,
+      "default_budget": 3,
+      "id": "config_007"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 10,
+      "default_budget": 4,
+      "id": "config_008"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 15,
+      "default_budget": 1,
+      "id": "config_009"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 15,
+      "default_budget": 2,
+      "id": "config_010"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 15,
+      "default_budget": 3,
+      "id": "config_011"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 15,
+      "default_budget": 4,
+      "id": "config_012"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 100,
+      "rerank_k": 5,
+      "default_budget": 1,
+      "id": "config_013"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 100,
+      "rerank_k": 5,
+      "default_budget": 2,
+      "id": "config_014"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 100,
+      "rerank_k": 5,
+      "default_budget": 3,
+      "id": "config_015"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 100,
+      "rerank_k": 5,
+      "default_budget": 4,
+      "id": "config_016"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 100,
+      "rerank_k": 10,
+      "default_budget": 1,
+      "id": "config_017"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 100,
+      "rerank_k": 10,
+      "default_budget": 2,
+      "id": "config_018"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 100,
+      "rerank_k": 10,
+      "default_budget": 3,
+      "id": "config_019"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 100,
+      "rerank_k": 10,
+      "default_budget": 4,
+      "id": "config_020"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 100,
+      "rerank_k": 15,
+      "default_budget": 1,
+      "id": "config_021"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 100,
+      "rerank_k": 15,
+      "default_budget": 2,
+      "id": "config_022"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 100,
+      "rerank_k": 15,
+      "default_budget": 3,
+      "id": "config_023"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 100,
+      "rerank_k": 15,
+      "default_budget": 4,
+      "id": "config_024"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 150,
+      "rerank_k": 5,
+      "default_budget": 1,
+      "id": "config_025"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 150,
+      "rerank_k": 5,
+      "default_budget": 2,
+      "id": "config_026"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 150,
+      "rerank_k": 5,
+      "default_budget": 3,
+      "id": "config_027"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 150,
+      "rerank_k": 5,
+      "default_budget": 4,
+      "id": "config_028"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 150,
+      "rerank_k": 10,
+      "default_budget": 1,
+      "id": "config_029"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 150,
+      "rerank_k": 10,
+      "default_budget": 2,
+      "id": "config_030"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 150,
+      "rerank_k": 10,
+      "default_budget": 3,
+      "id": "config_031"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 150,
+      "rerank_k": 10,
+      "default_budget": 4,
+      "id": "config_032"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 150,
+      "rerank_k": 15,
+      "default_budget": 1,
+      "id": "config_033"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 150,
+      "rerank_k": 15,
+      "default_budget": 2,
+      "id": "config_034"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 150,
+      "rerank_k": 15,
+      "default_budget": 3,
+      "id": "config_035"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 150,
+      "rerank_k": 15,
+      "default_budget": 4,
+      "id": "config_036"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 1,
+      "id": "config_037"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 2,
+      "id": "config_038"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 3,
+      "id": "config_039"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 4,
+      "id": "config_040"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 50,
+      "rerank_k": 10,
+      "default_budget": 1,
+      "id": "config_041"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 50,
+      "rerank_k": 10,
+      "default_budget": 2,
+      "id": "config_042"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 50,
+      "rerank_k": 10,
+      "default_budget": 3,
+      "id": "config_043"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 50,
+      "rerank_k": 10,
+      "default_budget": 4,
+      "id": "config_044"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 50,
+      "rerank_k": 15,
+      "default_budget": 1,
+      "id": "config_045"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 50,
+      "rerank_k": 15,
+      "default_budget": 2,
+      "id": "config_046"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 50,
+      "rerank_k": 15,
+      "default_budget": 3,
+      "id": "config_047"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 50,
+      "rerank_k": 15,
+      "default_budget": 4,
+      "id": "config_048"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 100,
+      "rerank_k": 5,
+      "default_budget": 1,
+      "id": "config_049"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 100,
+      "rerank_k": 5,
+      "default_budget": 2,
+      "id": "config_050"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 100,
+      "rerank_k": 5,
+      "default_budget": 3,
+      "id": "config_051"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 100,
+      "rerank_k": 5,
+      "default_budget": 4,
+      "id": "config_052"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 100,
+      "rerank_k": 10,
+      "default_budget": 1,
+      "id": "config_053"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 100,
+      "rerank_k": 10,
+      "default_budget": 2,
+      "id": "config_054"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 100,
+      "rerank_k": 10,
+      "default_budget": 3,
+      "id": "config_055"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 100,
+      "rerank_k": 10,
+      "default_budget": 4,
+      "id": "config_056"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 100,
+      "rerank_k": 15,
+      "default_budget": 1,
+      "id": "config_057"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 100,
+      "rerank_k": 15,
+      "default_budget": 2,
+      "id": "config_058"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 100,
+      "rerank_k": 15,
+      "default_budget": 3,
+      "id": "config_059"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 100,
+      "rerank_k": 15,
+      "default_budget": 4,
+      "id": "config_060"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 150,
+      "rerank_k": 5,
+      "default_budget": 1,
+      "id": "config_061"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 150,
+      "rerank_k": 5,
+      "default_budget": 2,
+      "id": "config_062"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 150,
+      "rerank_k": 5,
+      "default_budget": 3,
+      "id": "config_063"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 150,
+      "rerank_k": 5,
+      "default_budget": 4,
+      "id": "config_064"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 150,
+      "rerank_k": 10,
+      "default_budget": 1,
+      "id": "config_065"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 150,
+      "rerank_k": 10,
+      "default_budget": 2,
+      "id": "config_066"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 150,
+      "rerank_k": 10,
+      "default_budget": 3,
+      "id": "config_067"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 150,
+      "rerank_k": 10,
+      "default_budget": 4,
+      "id": "config_068"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 150,
+      "rerank_k": 15,
+      "default_budget": 1,
+      "id": "config_069"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 150,
+      "rerank_k": 15,
+      "default_budget": 2,
+      "id": "config_070"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 150,
+      "rerank_k": 15,
+      "default_budget": 3,
+      "id": "config_071"
+    },
+    {
+      "chunk_size": 500,
+      "overlap": 150,
+      "rerank_k": 15,
+      "default_budget": 4,
+      "id": "config_072"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 1,
+      "id": "config_073"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 2,
+      "id": "config_074"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 3,
+      "id": "config_075"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 4,
+      "id": "config_076"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 50,
+      "rerank_k": 10,
+      "default_budget": 1,
+      "id": "config_077"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 50,
+      "rerank_k": 10,
+      "default_budget": 2,
+      "id": "config_078"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 50,
+      "rerank_k": 10,
+      "default_budget": 3,
+      "id": "config_079"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 50,
+      "rerank_k": 10,
+      "default_budget": 4,
+      "id": "config_080"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 50,
+      "rerank_k": 15,
+      "default_budget": 1,
+      "id": "config_081"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 50,
+      "rerank_k": 15,
+      "default_budget": 2,
+      "id": "config_082"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 50,
+      "rerank_k": 15,
+      "default_budget": 3,
+      "id": "config_083"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 50,
+      "rerank_k": 15,
+      "default_budget": 4,
+      "id": "config_084"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 100,
+      "rerank_k": 5,
+      "default_budget": 1,
+      "id": "config_085"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 100,
+      "rerank_k": 5,
+      "default_budget": 2,
+      "id": "config_086"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 100,
+      "rerank_k": 5,
+      "default_budget": 3,
+      "id": "config_087"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 100,
+      "rerank_k": 5,
+      "default_budget": 4,
+      "id": "config_088"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 100,
+      "rerank_k": 10,
+      "default_budget": 1,
+      "id": "config_089"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 100,
+      "rerank_k": 10,
+      "default_budget": 2,
+      "id": "config_090"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 100,
+      "rerank_k": 10,
+      "default_budget": 3,
+      "id": "config_091"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 100,
+      "rerank_k": 10,
+      "default_budget": 4,
+      "id": "config_092"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 100,
+      "rerank_k": 15,
+      "default_budget": 1,
+      "id": "config_093"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 100,
+      "rerank_k": 15,
+      "default_budget": 2,
+      "id": "config_094"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 100,
+      "rerank_k": 15,
+      "default_budget": 3,
+      "id": "config_095"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 100,
+      "rerank_k": 15,
+      "default_budget": 4,
+      "id": "config_096"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 150,
+      "rerank_k": 5,
+      "default_budget": 1,
+      "id": "config_097"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 150,
+      "rerank_k": 5,
+      "default_budget": 2,
+      "id": "config_098"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 150,
+      "rerank_k": 5,
+      "default_budget": 3,
+      "id": "config_099"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 150,
+      "rerank_k": 5,
+      "default_budget": 4,
+      "id": "config_100"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 150,
+      "rerank_k": 10,
+      "default_budget": 1,
+      "id": "config_101"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 150,
+      "rerank_k": 10,
+      "default_budget": 2,
+      "id": "config_102"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 150,
+      "rerank_k": 10,
+      "default_budget": 3,
+      "id": "config_103"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 150,
+      "rerank_k": 10,
+      "default_budget": 4,
+      "id": "config_104"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 150,
+      "rerank_k": 15,
+      "default_budget": 1,
+      "id": "config_105"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 150,
+      "rerank_k": 15,
+      "default_budget": 2,
+      "id": "config_106"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 150,
+      "rerank_k": 15,
+      "default_budget": 3,
+      "id": "config_107"
+    },
+    {
+      "chunk_size": 700,
+      "overlap": 150,
+      "rerank_k": 15,
+      "default_budget": 4,
+      "id": "config_108"
+    }
+  ]
+}

@@ -1,0 +1,922 @@
+{
+  "experiments": {
+    "config_001": {
+      "status": "success",
+      "attempts": 1,
+      "history": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "started_at": 1790582240.8423731,
+          "finished_at": 1790582276.3051777
+        }
+      ],
+      "started_at": 1790582240.8423731,
+      "result": {
+        "id": "config_001",
+        "status": "success",
+        "configuration": {
+          "chunk_size": 300,
+          "overlap": 50,
+          "rerank_k": 5,
+          "default_budget": 1,
+          "id": "config_001"
+        },
+        "elapsed_seconds": 35.39686036109924,
+        "metrics": {
+          "evaluation": {
+            "summary": {
+              "questions": 5,
+              "fixed_budget": "3",
+              "fixed_average_context_characters": 781.0,
+              "adaptive_average_context_characters": 338.8,
+              "context_reduction": 0.5661971830985915,
+              "fixed_average_latency_seconds": 0.7358426199993119,
+              "adaptive_average_latency_seconds": 0.5773418599972502,
+              "fixed_average_evidence_recall": 0.4,
+              "adaptive_average_evidence_recall": 0.4,
+              "fixed_average_quality_index": 0.8,
+              "adaptive_average_quality_index": 0.2,
+              "average_quality_delta": -0.6000000000000001,
+              "average_evidence_delta": 0.0,
+              "average_latency_delta_seconds": -0.1585007600020617
+            },
+            "question_results": [
+              {
+                "question": "Who approves annual leave?",
+                "fixed_budget": "3",
+                "adaptive_budget": 0,
+                "fixed_evidence_recall": 0.0,
+                "adaptive_evidence_recall": 0.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 0,
+                "context_reduction": 1.0,
+                "fixed_latency": 0.5176860999781638,
+                "adaptive_latency": 0.0,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": -1.0,
+                "evidence_delta": 0.0,
+                "latency_delta": -0.5176860999781638,
+                "adaptive_decision_reason": "insufficient_context_evidence",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "How do employees apply for leave?",
+                "fixed_budget": "3",
+                "adaptive_budget": 0,
+                "fixed_evidence_recall": 0.0,
+                "adaptive_evidence_recall": 0.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 0,
+                "context_reduction": 1.0,
+                "fixed_latency": 1.4018215000396594,
+                "adaptive_latency": 0.0,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": -1.0,
+                "evidence_delta": 0.0,
+                "latency_delta": -1.4018215000396594,
+                "adaptive_decision_reason": "insufficient_context_evidence",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "Can medical leave require documents?",
+                "fixed_budget": "3",
+                "adaptive_budget": 0,
+                "fixed_evidence_recall": 0.0,
+                "adaptive_evidence_recall": 0.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 0,
+                "context_reduction": 1.0,
+                "fixed_latency": 0.5675081999506801,
+                "adaptive_latency": 0.0,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": -1.0,
+                "evidence_delta": 0.0,
+                "latency_delta": -0.5675081999506801,
+                "adaptive_decision_reason": "insufficient_context_evidence",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "What is the maternity leave policy?",
+                "fixed_budget": "3",
+                "adaptive_budget": 3,
+                "fixed_evidence_recall": 1.0,
+                "adaptive_evidence_recall": 1.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 847,
+                "context_reduction": -0.08450704225352124,
+                "fixed_latency": 0.6056329000275582,
+                "adaptive_latency": 0.6587771999766119,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 1.0,
+                "quality_delta": 0.0,
+                "evidence_delta": 0.0,
+                "latency_delta": 0.053144299949053675,
+                "adaptive_decision_reason": "default_budget",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "What is the company's remote work policy?",
+                "fixed_budget": "3",
+                "adaptive_budget": 3,
+                "fixed_evidence_recall": 1.0,
+                "adaptive_evidence_recall": 1.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 847,
+                "context_reduction": -0.08450704225352124,
+                "fixed_latency": 0.5865644000004977,
+                "adaptive_latency": 2.227932100009639,
+                "fixed_quality_index": 0.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": 0.0,
+                "evidence_delta": 0.0,
+                "latency_delta": 1.6413677000091411,
+                "adaptive_decision_reason": "default_budget",
+                "adaptive_abstained": false
+              }
+            ]
+          },
+          "failure_monitoring": {
+            "summary": {
+              "questions": 5,
+              "successes": 1,
+              "retrieval_failures": 3,
+              "context_losses": 0,
+              "abstentions": 0,
+              "processing_errors": 0,
+              "unsupported_claims": 0,
+              "ungrounded_answers": 1,
+              "irrelevant_answers": 0,
+              "incomplete_answers": 0,
+              "missing_judgements": 0,
+              "category_counts": {
+                "retrieval_failure": 3,
+                "success": 1,
+                "generation_ungrounded": 1
+              },
+              "success_rate": 0.2,
+              "failure_rate": 0.8
+            },
+            "question_results": [
+              {
+                "question": "Who approves annual leave?",
+                "status": "abstained",
+                "category": "retrieval_failure",
+                "budget": 0,
+                "retrieval_evidence_recall": 0.0,
+                "context_evidence_recall": 0.0,
+                "judgement": null,
+                "reason": "insufficient_context_evidence"
+              },
+              {
+                "question": "How do employees apply for leave?",
+                "status": "abstained",
+                "category": "retrieval_failure",
+                "budget": 0,
+                "retrieval_evidence_recall": 0.0,
+                "context_evidence_recall": 0.0,
+                "judgement": null,
+                "reason": "insufficient_context_evidence"
+              },
+              {
+                "question": "Can medical leave require documents?",
+                "status": "abstained",
+                "category": "retrieval_failure",
+                "budget": 0,
+                "retrieval_evidence_recall": 0.0,
+                "context_evidence_recall": 0.0,
+                "judgement": null,
+                "reason": "insufficient_context_evidence"
+              },
+              {
+                "question": "What is the maternity leave policy?",
+                "status": "answered",
+                "category": "success",
+                "budget": 3,
+                "retrieval_evidence_recall": 1.0,
+                "context_evidence_recall": 1.0,
+                "judgement": {
+                  "groundedness": 2,
+                  "relevance": 2,
+                  "completeness": 2,
+                  "unsupported_claims": 0,
+                  "reason": "The answer is directly supported by the context and directly addresses the question. It is also complete and does not contain any unsupported claims."
+                },
+                "reason": null
+              },
+              {
+                "question": "What is the company's remote work policy?",
+                "status": "answered",
+                "category": "generation_ungrounded",
+                "budget": 3,
+                "retrieval_evidence_recall": 1.0,
+                "context_evidence_recall": 1.0,
+                "judgement": {
+                  "groundedness": 0,
+                  "relevance": 0,
+                  "completeness": 0,
+                  "unsupported_claims": 0,
+                  "reason": "The generated answer does not provide any information about the company's remote work policy, which is the focus of the question. The context only discusses the company's leave policy, not its remote work policy."
+                },
+                "reason": null
+              }
+            ]
+          }
+        },
+        "worker_elapsed_seconds": 35.45976972579956
+      }
+    },
+    "config_002": {
+      "status": "success",
+      "attempts": 1,
+      "history": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "started_at": 1790582240.845408,
+          "finished_at": 1790582278.5912127
+        }
+      ],
+      "started_at": 1790582240.845408,
+      "result": {
+        "id": "config_002",
+        "status": "success",
+        "configuration": {
+          "chunk_size": 300,
+          "overlap": 50,
+          "rerank_k": 5,
+          "default_budget": 2,
+          "id": "config_002"
+        },
+        "elapsed_seconds": 37.67519402503967,
+        "metrics": {
+          "evaluation": {
+            "summary": {
+              "questions": 5,
+              "fixed_budget": "3",
+              "fixed_average_context_characters": 781.0,
+              "adaptive_average_context_characters": 338.8,
+              "context_reduction": 0.5661971830985915,
+              "fixed_average_latency_seconds": 0.7358426199993119,
+              "adaptive_average_latency_seconds": 0.31550434000091626,
+              "fixed_average_evidence_recall": 0.4,
+              "adaptive_average_evidence_recall": 0.4,
+              "fixed_average_quality_index": 0.8,
+              "adaptive_average_quality_index": 0.2,
+              "average_quality_delta": -0.6000000000000001,
+              "average_evidence_delta": 0.0,
+              "average_latency_delta_seconds": -0.4203382799983956
+            },
+            "question_results": [
+              {
+                "question": "Who approves annual leave?",
+                "fixed_budget": "3",
+                "adaptive_budget": 0,
+                "fixed_evidence_recall": 0.0,
+                "adaptive_evidence_recall": 0.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 0,
+                "context_reduction": 1.0,
+                "fixed_latency": 0.5176860999781638,
+                "adaptive_latency": 0.0,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": -1.0,
+                "evidence_delta": 0.0,
+                "latency_delta": -0.5176860999781638,
+                "adaptive_decision_reason": "insufficient_context_evidence",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "How do employees apply for leave?",
+                "fixed_budget": "3",
+                "adaptive_budget": 0,
+                "fixed_evidence_recall": 0.0,
+                "adaptive_evidence_recall": 0.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 0,
+                "context_reduction": 1.0,
+                "fixed_latency": 1.4018215000396594,
+                "adaptive_latency": 0.0,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": -1.0,
+                "evidence_delta": 0.0,
+                "latency_delta": -1.4018215000396594,
+                "adaptive_decision_reason": "insufficient_context_evidence",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "Can medical leave require documents?",
+                "fixed_budget": "3",
+                "adaptive_budget": 0,
+                "fixed_evidence_recall": 0.0,
+                "adaptive_evidence_recall": 0.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 0,
+                "context_reduction": 1.0,
+                "fixed_latency": 0.5675081999506801,
+                "adaptive_latency": 0.0,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": -1.0,
+                "evidence_delta": 0.0,
+                "latency_delta": -0.5675081999506801,
+                "adaptive_decision_reason": "insufficient_context_evidence",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "What is the maternity leave policy?",
+                "fixed_budget": "3",
+                "adaptive_budget": 3,
+                "fixed_evidence_recall": 1.0,
+                "adaptive_evidence_recall": 1.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 847,
+                "context_reduction": -0.08450704225352124,
+                "fixed_latency": 0.6056329000275582,
+                "adaptive_latency": 0.9863936000037938,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 1.0,
+                "quality_delta": 0.0,
+                "evidence_delta": 0.0,
+                "latency_delta": 0.38076069997623563,
+                "adaptive_decision_reason": "default_budget",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "What is the company's remote work policy?",
+                "fixed_budget": "3",
+                "adaptive_budget": 3,
+                "fixed_evidence_recall": 1.0,
+                "adaptive_evidence_recall": 1.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 847,
+                "context_reduction": -0.08450704225352124,
+                "fixed_latency": 0.5865644000004977,
+                "adaptive_latency": 0.5911281000007875,
+                "fixed_quality_index": 0.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": 0.0,
+                "evidence_delta": 0.0,
+                "latency_delta": 0.004563700000289828,
+                "adaptive_decision_reason": "default_budget",
+                "adaptive_abstained": false
+              }
+            ]
+          },
+          "failure_monitoring": {
+            "summary": {
+              "questions": 5,
+              "successes": 1,
+              "retrieval_failures": 3,
+              "context_losses": 0,
+              "abstentions": 0,
+              "processing_errors": 0,
+              "unsupported_claims": 0,
+              "ungrounded_answers": 1,
+              "irrelevant_answers": 0,
+              "incomplete_answers": 0,
+              "missing_judgements": 0,
+              "category_counts": {
+                "retrieval_failure": 3,
+                "success": 1,
+                "generation_ungrounded": 1
+              },
+              "success_rate": 0.2,
+              "failure_rate": 0.8
+            },
+            "question_results": [
+              {
+                "question": "Who approves annual leave?",
+                "status": "abstained",
+                "category": "retrieval_failure",
+                "budget": 0,
+                "retrieval_evidence_recall": 0.0,
+                "context_evidence_recall": 0.0,
+                "judgement": null,
+                "reason": "insufficient_context_evidence"
+              },
+              {
+                "question": "How do employees apply for leave?",
+                "status": "abstained",
+                "category": "retrieval_failure",
+                "budget": 0,
+                "retrieval_evidence_recall": 0.0,
+                "context_evidence_recall": 0.0,
+                "judgement": null,
+                "reason": "insufficient_context_evidence"
+              },
+              {
+                "question": "Can medical leave require documents?",
+                "status": "abstained",
+                "category": "retrieval_failure",
+                "budget": 0,
+                "retrieval_evidence_recall": 0.0,
+                "context_evidence_recall": 0.0,
+                "judgement": null,
+                "reason": "insufficient_context_evidence"
+              },
+              {
+                "question": "What is the maternity leave policy?",
+                "status": "answered",
+                "category": "success",
+                "budget": 3,
+                "retrieval_evidence_recall": 1.0,
+                "context_evidence_recall": 1.0,
+                "judgement": {
+                  "groundedness": 2,
+                  "relevance": 2,
+                  "completeness": 2,
+                  "unsupported_claims": 0,
+                  "reason": "The answer is directly supported by the context and directly addresses the question. It also includes the important information needed to answer the question based on the context."
+                },
+                "reason": null
+              },
+              {
+                "question": "What is the company's remote work policy?",
+                "status": "answered",
+                "category": "generation_ungrounded",
+                "budget": 3,
+                "retrieval_evidence_recall": 1.0,
+                "context_evidence_recall": 1.0,
+                "judgement": {
+                  "groundedness": 0,
+                  "relevance": 0,
+                  "completeness": 0,
+                  "unsupported_claims": 0,
+                  "reason": "The generated answer does not provide any information about the company's remote work policy, which is the focus of the question. The context only discusses the company's leave policy, not its remote work policy."
+                },
+                "reason": null
+              }
+            ]
+          }
+        },
+        "worker_elapsed_seconds": 37.741780519485474
+      }
+    },
+    "config_003": {
+      "status": "success",
+      "attempts": 1,
+      "history": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "started_at": 1790582240.8494322,
+          "finished_at": 1790582311.7373502
+        }
+      ],
+      "started_at": 1790582240.8494322,
+      "result": {
+        "id": "config_003",
+        "status": "success",
+        "configuration": {
+          "chunk_size": 300,
+          "overlap": 50,
+          "rerank_k": 5,
+          "default_budget": 3,
+          "id": "config_003"
+        },
+        "elapsed_seconds": 35.37099027633667,
+        "metrics": {
+          "evaluation": {
+            "summary": {
+              "questions": 5,
+              "fixed_budget": "3",
+              "fixed_average_context_characters": 781.0,
+              "adaptive_average_context_characters": 338.8,
+              "context_reduction": 0.5661971830985915,
+              "fixed_average_latency_seconds": 0.7358426199993119,
+              "adaptive_average_latency_seconds": 0.24777539999922737,
+              "fixed_average_evidence_recall": 0.4,
+              "adaptive_average_evidence_recall": 0.4,
+              "fixed_average_quality_index": 0.8,
+              "adaptive_average_quality_index": 0.2,
+              "average_quality_delta": -0.6000000000000001,
+              "average_evidence_delta": 0.0,
+              "average_latency_delta_seconds": -0.4880672200000845
+            },
+            "question_results": [
+              {
+                "question": "Who approves annual leave?",
+                "fixed_budget": "3",
+                "adaptive_budget": 0,
+                "fixed_evidence_recall": 0.0,
+                "adaptive_evidence_recall": 0.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 0,
+                "context_reduction": 1.0,
+                "fixed_latency": 0.5176860999781638,
+                "adaptive_latency": 0.0,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": -1.0,
+                "evidence_delta": 0.0,
+                "latency_delta": -0.5176860999781638,
+                "adaptive_decision_reason": "insufficient_context_evidence",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "How do employees apply for leave?",
+                "fixed_budget": "3",
+                "adaptive_budget": 0,
+                "fixed_evidence_recall": 0.0,
+                "adaptive_evidence_recall": 0.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 0,
+                "context_reduction": 1.0,
+                "fixed_latency": 1.4018215000396594,
+                "adaptive_latency": 0.0,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": -1.0,
+                "evidence_delta": 0.0,
+                "latency_delta": -1.4018215000396594,
+                "adaptive_decision_reason": "insufficient_context_evidence",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "Can medical leave require documents?",
+                "fixed_budget": "3",
+                "adaptive_budget": 0,
+                "fixed_evidence_recall": 0.0,
+                "adaptive_evidence_recall": 0.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 0,
+                "context_reduction": 1.0,
+                "fixed_latency": 0.5675081999506801,
+                "adaptive_latency": 0.0,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": -1.0,
+                "evidence_delta": 0.0,
+                "latency_delta": -0.5675081999506801,
+                "adaptive_decision_reason": "insufficient_context_evidence",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "What is the maternity leave policy?",
+                "fixed_budget": "3",
+                "adaptive_budget": 3,
+                "fixed_evidence_recall": 1.0,
+                "adaptive_evidence_recall": 1.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 847,
+                "context_reduction": -0.08450704225352124,
+                "fixed_latency": 0.6056329000275582,
+                "adaptive_latency": 0.5870200999779627,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 1.0,
+                "quality_delta": 0.0,
+                "evidence_delta": 0.0,
+                "latency_delta": -0.018612800049595535,
+                "adaptive_decision_reason": "default_budget",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "What is the company's remote work policy?",
+                "fixed_budget": "3",
+                "adaptive_budget": 3,
+                "fixed_evidence_recall": 1.0,
+                "adaptive_evidence_recall": 1.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 847,
+                "context_reduction": -0.08450704225352124,
+                "fixed_latency": 0.5865644000004977,
+                "adaptive_latency": 0.6518569000181742,
+                "fixed_quality_index": 0.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": 0.0,
+                "evidence_delta": 0.0,
+                "latency_delta": 0.0652925000176765,
+                "adaptive_decision_reason": "default_budget",
+                "adaptive_abstained": false
+              }
+            ]
+          },
+          "failure_monitoring": {
+            "summary": {
+              "questions": 5,
+              "successes": 1,
+              "retrieval_failures": 3,
+              "context_losses": 0,
+              "abstentions": 0,
+              "processing_errors": 0,
+              "unsupported_claims": 0,
+              "ungrounded_answers": 1,
+              "irrelevant_answers": 0,
+              "incomplete_answers": 0,
+              "missing_judgements": 0,
+              "category_counts": {
+                "retrieval_failure": 3,
+                "success": 1,
+                "generation_ungrounded": 1
+              },
+              "success_rate": 0.2,
+              "failure_rate": 0.8
+            },
+            "question_results": [
+              {
+                "question": "Who approves annual leave?",
+                "status": "abstained",
+                "category": "retrieval_failure",
+                "budget": 0,
+                "retrieval_evidence_recall": 0.0,
+                "context_evidence_recall": 0.0,
+                "judgement": null,
+                "reason": "insufficient_context_evidence"
+              },
+              {
+                "question": "How do employees apply for leave?",
+                "status": "abstained",
+                "category": "retrieval_failure",
+                "budget": 0,
+                "retrieval_evidence_recall": 0.0,
+                "context_evidence_recall": 0.0,
+                "judgement": null,
+                "reason": "insufficient_context_evidence"
+              },
+              {
+                "question": "Can medical leave require documents?",
+                "status": "abstained",
+                "category": "retrieval_failure",
+                "budget": 0,
+                "retrieval_evidence_recall": 0.0,
+                "context_evidence_recall": 0.0,
+                "judgement": null,
+                "reason": "insufficient_context_evidence"
+              },
+              {
+                "question": "What is the maternity leave policy?",
+                "status": "answered",
+                "category": "success",
+                "budget": 3,
+                "retrieval_evidence_recall": 1.0,
+                "context_evidence_recall": 1.0,
+                "judgement": {
+                  "groundedness": 2,
+                  "relevance": 2,
+                  "completeness": 2,
+                  "unsupported_claims": 0,
+                  "reason": "The answer is directly supported by the context and directly addresses the question. It also includes the important information needed to answer the question based on the context."
+                },
+                "reason": null
+              },
+              {
+                "question": "What is the company's remote work policy?",
+                "status": "answered",
+                "category": "generation_ungrounded",
+                "budget": 3,
+                "retrieval_evidence_recall": 1.0,
+                "context_evidence_recall": 1.0,
+                "judgement": {
+                  "groundedness": 0,
+                  "relevance": 0,
+                  "completeness": 0,
+                  "unsupported_claims": 0,
+                  "reason": "The generated answer does not provide any information about the company's remote work policy, which is the focus of the question. The context only discusses the company's leave policy, not its remote work policy."
+                },
+                "reason": null
+              }
+            ]
+          }
+        },
+        "worker_elapsed_seconds": 35.43101263046265
+      }
+    },
+    "config_004": {
+      "status": "success",
+      "attempts": 1,
+      "history": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "started_at": 1790582240.851623,
+          "finished_at": 1790582314.6152236
+        }
+      ],
+      "started_at": 1790582240.851623,
+      "result": {
+        "id": "config_004",
+        "status": "success",
+        "configuration": {
+          "chunk_size": 300,
+          "overlap": 50,
+          "rerank_k": 5,
+          "default_budget": 4,
+          "id": "config_004"
+        },
+        "elapsed_seconds": 35.96802234649658,
+        "metrics": {
+          "evaluation": {
+            "summary": {
+              "questions": 5,
+              "fixed_budget": "3",
+              "fixed_average_context_characters": 781.0,
+              "adaptive_average_context_characters": 338.8,
+              "context_reduction": 0.5661971830985915,
+              "fixed_average_latency_seconds": 0.7358426199993119,
+              "adaptive_average_latency_seconds": 0.6940387000096961,
+              "fixed_average_evidence_recall": 0.4,
+              "adaptive_average_evidence_recall": 0.4,
+              "fixed_average_quality_index": 0.8,
+              "adaptive_average_quality_index": 0.2,
+              "average_quality_delta": -0.6000000000000001,
+              "average_evidence_delta": 0.0,
+              "average_latency_delta_seconds": -0.041803919989615745
+            },
+            "question_results": [
+              {
+                "question": "Who approves annual leave?",
+                "fixed_budget": "3",
+                "adaptive_budget": 0,
+                "fixed_evidence_recall": 0.0,
+                "adaptive_evidence_recall": 0.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 0,
+                "context_reduction": 1.0,
+                "fixed_latency": 0.5176860999781638,
+                "adaptive_latency": 0.0,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": -1.0,
+                "evidence_delta": 0.0,
+                "latency_delta": -0.5176860999781638,
+                "adaptive_decision_reason": "insufficient_context_evidence",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "How do employees apply for leave?",
+                "fixed_budget": "3",
+                "adaptive_budget": 0,
+                "fixed_evidence_recall": 0.0,
+                "adaptive_evidence_recall": 0.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 0,
+                "context_reduction": 1.0,
+                "fixed_latency": 1.4018215000396594,
+                "adaptive_latency": 0.0,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": -1.0,
+                "evidence_delta": 0.0,
+                "latency_delta": -1.4018215000396594,
+                "adaptive_decision_reason": "insufficient_context_evidence",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "Can medical leave require documents?",
+                "fixed_budget": "3",
+                "adaptive_budget": 0,
+                "fixed_evidence_recall": 0.0,
+                "adaptive_evidence_recall": 0.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 0,
+                "context_reduction": 1.0,
+                "fixed_latency": 0.5675081999506801,
+                "adaptive_latency": 0.0,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": -1.0,
+                "evidence_delta": 0.0,
+                "latency_delta": -0.5675081999506801,
+                "adaptive_decision_reason": "insufficient_context_evidence",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "What is the maternity leave policy?",
+                "fixed_budget": "3",
+                "adaptive_budget": 3,
+                "fixed_evidence_recall": 1.0,
+                "adaptive_evidence_recall": 1.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 847,
+                "context_reduction": -0.08450704225352124,
+                "fixed_latency": 0.6056329000275582,
+                "adaptive_latency": 1.0079381000250578,
+                "fixed_quality_index": 1.0,
+                "adaptive_quality_index": 1.0,
+                "quality_delta": 0.0,
+                "evidence_delta": 0.0,
+                "latency_delta": 0.4023051999974996,
+                "adaptive_decision_reason": "default_budget",
+                "adaptive_abstained": false
+              },
+              {
+                "question": "What is the company's remote work policy?",
+                "fixed_budget": "3",
+                "adaptive_budget": 3,
+                "fixed_evidence_recall": 1.0,
+                "adaptive_evidence_recall": 1.0,
+                "fixed_context_characters": 781,
+                "adaptive_context_characters": 847,
+                "context_reduction": -0.08450704225352124,
+                "fixed_latency": 0.5865644000004977,
+                "adaptive_latency": 2.462255400023423,
+                "fixed_quality_index": 0.0,
+                "adaptive_quality_index": 0.0,
+                "quality_delta": 0.0,
+                "evidence_delta": 0.0,
+                "latency_delta": 1.8756910000229254,
+                "adaptive_decision_reason": "default_budget",
+                "adaptive_abstained": false
+              }
+            ]
+          },
+          "failure_monitoring": {
+            "summary": {
+              "questions": 5,
+              "successes": 1,
+              "retrieval_failures": 3,
+              "context_losses": 0,
+              "abstentions": 0,
+              "processing_errors": 0,
+              "unsupported_claims": 0,
+              "ungrounded_answers": 1,
+              "irrelevant_answers": 0,
+              "incomplete_answers": 0,
+              "missing_judgements": 0,
+              "category_counts": {
+                "retrieval_failure": 3,
+                "success": 1,
+                "generation_ungrounded": 1
+              },
+              "success_rate": 0.2,
+              "failure_rate": 0.8
+            },
+            "question_results": [
+              {
+                "question": "Who approves annual leave?",
+                "status": "abstained",
+                "category": "retrieval_failure",
+                "budget": 0,
+                "retrieval_evidence_recall": 0.0,
+                "context_evidence_recall": 0.0,
+                "judgement": null,
+                "reason": "insufficient_context_evidence"
+              },
+              {
+                "question": "How do employees apply for leave?",
+                "status": "abstained",
+                "category": "retrieval_failure",
+                "budget": 0,
+                "retrieval_evidence_recall": 0.0,
+                "context_evidence_recall": 0.0,
+                "judgement": null,
+                "reason": "insufficient_context_evidence"
+              },
+              {
+                "question": "Can medical leave require documents?",
+                "status": "abstained",
+                "category": "retrieval_failure",
+                "budget": 0,
+                "retrieval_evidence_recall": 0.0,
+                "context_evidence_recall": 0.0,
+                "judgement": null,
+                "reason": "insufficient_context_evidence"
+              },
+              {
+                "question": "What is the maternity leave policy?",
+                "status": "answered",
+                "category": "success",
+                "budget": 3,
+                "retrieval_evidence_recall": 1.0,
+                "context_evidence_recall": 1.0,
+                "judgement": {
+                  "groundedness": 2,
+                  "relevance": 2,
+                  "completeness": 2,
+                  "unsupported_claims": 0,
+                  "reason": "The answer is directly supported by the context and directly addresses the question. It also includes the important information needed to answer the question based on the context."
+                },
+                "reason": null
+              },
+              {
+                "question": "What is the company's remote work policy?",
+                "status": "answered",
+                "category": "generation_ungrounded",
+                "budget": 3,
+                "retrieval_evidence_recall": 1.0,
+                "context_evidence_recall": 1.0,
+                "judgement": {
+                  "groundedness": 0,
+                  "relevance": 0,
+                  "completeness": 0,
+                  "unsupported_claims": 0,
+                  "reason": "The generated answer does not provide any information about the company's remote work policy, which is the focus of the question. The context only discusses the company's leave policy, not its remote work policy."
+                },
+                "reason": null
+              }
+            ]
+          }
+        },
+        "worker_elapsed_seconds": 36.02401089668274
+      }
+    }
+  },
+  "created_at": 1790582240.8394504,
+  "updated_at": 1790582314.6238556
+}

@@ -1,0 +1,15 @@
+{
+    "total_audits": 3,
+    "completed": 1,
+    "manual_review": 2,
+    "performance": {
+        "average_retrieval_seconds": 0.0728,
+        "average_reranking_seconds": 0.0908,
+        "average_llm_seconds": 9.8311,
+        "average_total_seconds": 9.9947
+    },
+    "citation": {
+        "valid": 0,
+        "invalid": 2
+    }
+}

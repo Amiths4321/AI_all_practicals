@@ -1,0 +1,18 @@
+{
+  "capstone_version": 1,
+  "started_at": "2026-09-28T15:35:20.405125",
+  "finished_at": "2026-09-28T15:35:43.010102",
+  "summary": {
+    "requests": 0,
+    "answered": 0,
+    "abstained": 0,
+    "errors": 0,
+    "answer_rate": 0.0,
+    "abstention_rate": 0.0,
+    "error_rate": 0.0,
+    "mean_evidence_recall": null,
+    "mean_latency_seconds": null,
+    "generation_cache_hit_rate": 0.0
+  },
+  "results": []
+}

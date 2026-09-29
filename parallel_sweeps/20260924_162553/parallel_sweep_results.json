@@ -1,0 +1,56 @@
+{
+  "timestamp": "20260924_162553",
+  "workers": 2,
+  "configurations": [
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 1,
+      "id": "config_001"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 2,
+      "id": "config_002"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 3,
+      "id": "config_003"
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "rerank_k": 5,
+      "default_budget": 4,
+      "id": "config_004"
+    }
+  ],
+  "results": [
+    {
+      "configuration_id": "config_002",
+      "status": "completed",
+      "runtime_seconds": 33.530926599982195
+    },
+    {
+      "configuration_id": "config_001",
+      "status": "completed",
+      "runtime_seconds": 33.55947980005294
+    },
+    {
+      "configuration_id": "config_003",
+      "status": "completed",
+      "runtime_seconds": 35.5129604000831
+    },
+    {
+      "configuration_id": "config_004",
+      "status": "completed",
+      "runtime_seconds": 35.645764900022186
+    }
+  ]
+}

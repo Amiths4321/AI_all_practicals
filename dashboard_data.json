@@ -1,0 +1,35 @@
+{
+    "generated_at": "2026-09-16T10:36:55.955601",
+    "system": {
+        "name": "Banking RAG System",
+        "status": "ACTIVE"
+    },
+    "rag": {
+        "total_audits": 3,
+        "completed": 1,
+        "manual_review": 2,
+        "citation": {
+            "valid": 0,
+            "invalid": 2
+        },
+        "performance": {
+            "average_retrieval_seconds": 0.0728,
+            "average_reranking_seconds": 0.0908,
+            "average_llm_seconds": 9.8311,
+            "average_total_seconds": 9.9947
+        }
+    },
+    "human_review": {
+        "total_reviews": 7,
+        "pending": 2,
+        "approved": 5,
+        "rejected": 0,
+        "resolved_reviews": 5,
+        "average_resolution_minutes": 26.51,
+        "review_reasons": {
+            "INSUFFICIENT_EVIDENCE": 3,
+            "INVALID_CITATION": 2,
+            "NO_CANDIDATES": 2
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "optimization_version": 1,
+  "benchmark_metrics": {
+    "questions": 5,
+    "answer_rate": 0.0,
+    "abstention_rate": 0.0,
+    "error_rate": 1.0,
+    "evidence_recall": null,
+    "latency_seconds": 1.556000206619501e-05,
+    "generation_cache_hit_rate": 0.0,
+    "judge_cache_hit_rate": 0.0
+  },
+  "tradeoffs": [
+    "Average latency is relatively low.",
+    "No generation cache hits were observed in this benchmark.",
+    "Some requests failed and should be investigated."
+  ],
+  "experiment_context": {
+    "experiment_count": 1,
+    "available": true
+  },
+  "optimization_principles": [
+    "Do not optimize a single metric in isolation.",
+    "Preserve evidence coverage while reducing latency where possible.",
+    "Treat context size as a cost as well as a quality mechanism.",
+    "Use caching when it reduces repeated computation without changing answer correctness.",
+    "Use Pareto analysis to identify trade-offs rather than selecting an overall winner."
+  ]
+}

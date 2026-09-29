@@ -1,0 +1,7 @@
+{
+  "groundedness": 1,
+  "relevance": 1,
+  "completeness": 1,
+  "unsupported_claims": 0,
+  "reason": "The answer is grounded in the context as it correctly states that annual leave requires manager approval. The answer is relevant as it directly addresses the question about the annual leave policy. The answer is complete as it includes the key information from the context. There are no unsupported claims in the answer."
+}

@@ -1,0 +1,7 @@
+{
+  "groundedness": 2,
+  "relevance": 2,
+  "completeness": 2,
+  "unsupported_claims": 0,
+  "reason": "The answer is grounded in the context, directly addresses the question, and includes the important information about manager approval for annual leave. There are no unsupported claims."
+}

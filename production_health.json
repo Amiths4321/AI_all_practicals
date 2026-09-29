@@ -1,0 +1,26 @@
+{
+  "monitoring_version": 1,
+  "timestamp": "2026-09-28T15:02:01.060905",
+  "volume": {
+    "questions": 5
+  },
+  "quality": {
+    "success_rate": 0.2,
+    "retrieval_failure_rate": 0.6,
+    "abstention_rate": 0.0,
+    "unsupported_claim_rate": 0.0,
+    "ungrounded_rate": 0.2,
+    "irrelevant_rate": 0.0,
+    "incomplete_rate": 0.0
+  },
+  "failure_categories": {
+    "retrieval_failure": 3,
+    "success": 1,
+    "generation_ungrounded": 1
+  },
+  "status": "degraded",
+  "source_files": {
+    "adaptive_report": "adaptive_rag_report.json",
+    "failure_report": "failure_monitoring.json"
+  }
+}

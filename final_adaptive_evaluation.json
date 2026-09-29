@@ -6,14 +6,14 @@
     "adaptive_average_context_characters": 312.4,
     "context_reduction": 0.6000000000000001,
     "fixed_average_latency_seconds": 0.7358426199993119,
-    "adaptive_average_latency_seconds": 0.22123342000413687,
+    "adaptive_average_latency_seconds": 0.0005182800116017461,
     "fixed_average_evidence_recall": 0.4,
     "adaptive_average_evidence_recall": 0.4,
     "fixed_average_quality_index": 0.8,
     "adaptive_average_quality_index": 0.2,
     "average_quality_delta": -0.6000000000000001,
     "average_evidence_delta": 0.0,
-    "average_latency_delta_seconds": -0.514609199995175
+    "average_latency_delta_seconds": -0.7353243399877102
   },
   "question_results": [
     {
@@ -83,13 +83,13 @@
       "adaptive_context_characters": 781,
       "context_reduction": 0.0,
       "fixed_latency": 0.6056329000275582,
-      "adaptive_latency": 0.5338508000131696,
+      "adaptive_latency": 0.0014383000088855624,
       "fixed_quality_index": 1.0,
       "adaptive_quality_index": 1.0,
       "quality_delta": 0.0,
       "evidence_delta": 0.0,
-      "latency_delta": -0.07178210001438856,
-      "adaptive_decision_reason": "sufficient_evidence",
+      "latency_delta": -0.6041946000186726,
+      "adaptive_decision_reason": "default_budget",
       "adaptive_abstained": false
     },
     {
@@ -102,13 +102,13 @@
       "adaptive_context_characters": 781,
       "context_reduction": 0.0,
       "fixed_latency": 0.5865644000004977,
-      "adaptive_latency": 0.5723163000075147,
+      "adaptive_latency": 0.001153100049123168,
       "fixed_quality_index": 0.0,
       "adaptive_quality_index": 0.0,
       "quality_delta": 0.0,
       "evidence_delta": 0.0,
-      "latency_delta": -0.014248099992983043,
-      "adaptive_decision_reason": "sufficient_evidence",
+      "latency_delta": -0.5854112999513745,
+      "adaptive_decision_reason": "default_budget",
       "adaptive_abstained": false
     }
   ]

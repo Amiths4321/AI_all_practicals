@@ -1,0 +1,158 @@
+{
+  "created_at": "20260924_154809",
+  "status": "running",
+  "results": [
+    {
+      "configuration_id": "config_001",
+      "configuration": {
+        "chunk_size": 300,
+        "overlap": 50,
+        "rerank_k": 5,
+        "default_budget": 1,
+        "id": "config_001"
+      },
+      "status": "completed",
+      "started_at": "2026-09-24T15:48:09.955408",
+      "finished_at": "2026-09-24T15:48:43.913194",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.00041293997783213853,
+        "context_characters": 312.4
+      }
+    },
+    {
+      "configuration_id": "config_002",
+      "configuration": {
+        "chunk_size": 300,
+        "overlap": 50,
+        "rerank_k": 5,
+        "default_budget": 2,
+        "id": "config_002"
+      },
+      "status": "completed",
+      "started_at": "2026-09-24T15:48:43.915812",
+      "finished_at": "2026-09-24T15:49:18.158895",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.0003631400177255273,
+        "context_characters": 312.4
+      }
+    },
+    {
+      "configuration_id": "config_003",
+      "configuration": {
+        "chunk_size": 300,
+        "overlap": 50,
+        "rerank_k": 5,
+        "default_budget": 3,
+        "id": "config_003"
+      },
+      "status": "completed",
+      "started_at": "2026-09-24T15:49:18.161466",
+      "finished_at": "2026-09-24T15:49:52.171876",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.00035769999958574773,
+        "context_characters": 312.4
+      }
+    },
+    {
+      "configuration_id": "config_004",
+      "configuration": {
+        "chunk_size": 300,
+        "overlap": 50,
+        "rerank_k": 5,
+        "default_budget": 4,
+        "id": "config_004"
+      },
+      "status": "completed",
+      "started_at": "2026-09-24T15:49:52.174117",
+      "finished_at": "2026-09-24T15:50:27.540779",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.00036357997450977566,
+        "context_characters": 312.4
+      }
+    },
+    {
+      "configuration_id": "config_005",
+      "configuration": {
+        "chunk_size": 300,
+        "overlap": 50,
+        "rerank_k": 10,
+        "default_budget": 1,
+        "id": "config_005"
+      },
+      "status": "completed",
+      "started_at": "2026-09-24T15:50:27.543837",
+      "finished_at": "2026-09-24T15:51:00.711099",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.0003879000199958682,
+        "context_characters": 312.4
+      }
+    },
+    {
+      "configuration_id": "config_006",
+      "configuration": {
+        "chunk_size": 300,
+        "overlap": 50,
+        "rerank_k": 10,
+        "default_budget": 2,
+        "id": "config_006"
+      },
+      "status": "completed",
+      "started_at": "2026-09-24T15:51:00.713109",
+      "finished_at": "2026-09-24T15:51:35.821582",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.00038423999212682246,
+        "context_characters": 312.4
+      }
+    },
+    {
+      "configuration_id": "config_007",
+      "configuration": {
+        "chunk_size": 300,
+        "overlap": 50,
+        "rerank_k": 10,
+        "default_budget": 3,
+        "id": "config_007"
+      },
+      "status": "completed",
+      "started_at": "2026-09-24T15:51:35.824915",
+      "finished_at": "2026-09-24T15:52:14.883431",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.0004787800135090947,
+        "context_characters": 312.4
+      }
+    },
+    {
+      "configuration_id": "config_008",
+      "configuration": {
+        "chunk_size": 300,
+        "overlap": 50,
+        "rerank_k": 10,
+        "default_budget": 4,
+        "id": "config_008"
+      },
+      "status": "completed",
+      "started_at": "2026-09-24T15:52:14.888591",
+      "finished_at": "2026-09-24T15:52:55.682991",
+      "metrics": {
+        "evidence_recall": 0.4,
+        "quality": 0.2,
+        "latency": 0.0005182800116017461,
+        "context_characters": 312.4
+      }
+    }
+  ]
+}

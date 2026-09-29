@@ -339,17 +339,13 @@
       "question": "What is the maternity leave policy?",
       "answerable": false,
       "status": "answered",
-      "reason": "sufficient_evidence",
       "budget": 3,
-      "decision": {
-        "budget": 3,
-        "reason": "default_budget"
-      },
+      "budget_reason": "default_budget",
       "retrieval_evidence_recall": 1.0,
       "context_evidence_recall": 1.0,
-      "context_characters": 781,
-      "latency_seconds": 0.5338508000131696,
       "answer": "Maternity leave information should be confirmed with HR.",
+      "latency_seconds": 0.0010894000297412276,
+      "context_characters": 781,
       "judgement": {
         "groundedness": 2,
         "relevance": 2,
@@ -357,6 +353,8 @@
         "unsupported_claims": 0,
         "reason": "The answer is directly supported by the context and directly addresses the question. It is grounded in the information provided and does not include unsupported claims."
       },
+      "generation_cache_hit": true,
+      "judge_cache_hit": true,
       "retrieval": {
         "vector_results": [
           {
@@ -478,17 +476,13 @@
       "question": "What is the company's remote work policy?",
       "answerable": false,
       "status": "answered",
-      "reason": "sufficient_evidence",
       "budget": 3,
-      "decision": {
-        "budget": 3,
-        "reason": "default_budget"
-      },
+      "budget_reason": "default_budget",
       "retrieval_evidence_recall": 1.0,
       "context_evidence_recall": 1.0,
-      "context_characters": 781,
-      "latency_seconds": 0.5723163000075147,
       "answer": "I don't have enough information in the provided documents.",
+      "latency_seconds": 0.0009347999002784491,
+      "context_characters": 781,
       "judgement": {
         "groundedness": 0,
         "relevance": 0,
@@ -496,6 +490,8 @@
         "unsupported_claims": 0,
         "reason": "The answer does not provide any information about the company's remote work policy, which is the focus of the question. The context only discusses leave policies, not remote work policies."
       },
+      "generation_cache_hit": true,
+      "judge_cache_hit": true,
       "retrieval": {
         "vector_results": [
           {

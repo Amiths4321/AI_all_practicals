@@ -1,0 +1,55 @@
+{
+  "version_record": 1,
+  "created_at": "2026-09-28T14:14:42.433429",
+  "git": {
+    "commit": "71ec1ca7531e1d6c34ab1b829e6122f0fa9c62c8",
+    "branch": "main"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "configuration": {
+    "chunking": {
+      "chunk_size": 500,
+      "overlap": 100
+    },
+    "retrieval": {
+      "vector_k": 10,
+      "hybrid_k": 10,
+      "rerank_k": 10
+    },
+    "evidence": {
+      "threshold": 0.6
+    },
+    "context": {
+      "default_budget": 3
+    },
+    "ollama": {
+      "url": "http://10.22.39.192:11434",
+      "model": "qwen2.5vl:latest",
+      "timeout": 300
+    }
+  },
+  "pipeline_fingerprint": {
+    "adaptive_rag.py": "40a958ea5c4561c4f328ed18965d78081f5c236b29d1c07cc8b2c6d295e0abad",
+    "retriever.py": "5a4b082250ad5b2cf9beffe92405c6e76503df4438243180d50c62575047798d",
+    "hybrid_retriever.py": "646bb2e69deb42882401db367e9381829a31c50ce0a24f15d44b8da187072038",
+    "reranker.py": "5bc4aec091301a8d4a3b9edf4fc1a9fe9c6fbd47f39cb03b1a0c2e336a923348",
+    "context_builder.py": "2d462807c8759d457b51a74bcc3cf5278cca0c40b6c64735ae1046a4b1c71cab",
+    "context_compression.py": "b2a42e29828ebd0f38d416346d3e21145680c4f9ba4a66f5f0f50e31a41911f0",
+    "sentence_compression.py": "e17a647d15c1dd7c7afc8b1d8de26922272a43eb130760fd28cceb27622c7f5a",
+    "generation.py": "e56e4cdc9557235b887f53665450ee1deb07f56399aceb587a6a9529a57a3cd0",
+    "rag_judge.py": "d48148560d98718c823aa496926a9b497e8f92989236b31744c117ab3182704e",
+    "semantic_evidence.py": "58438c1852aaa7dd8c0eca51aae01b3970c2ebf03986f8f90b6e8c424a54451f",
+    "config.py": "875c132170d6663f0d2dd36dc4948502470ae2c1b0a9aa3d701eab16b1ce955f"
+  },
+  "input_fingerprint": {
+    "config.json": "9f5470d4b32dffe05bba77eb8893963eb0886d8ef8ce3a89fb098ebf50e3f374",
+    "evaluation_data.json": "3ca1c7016b5bb969db5441eeb46f5d29a8e9f0474c4f389e8d7a870771506a25",
+    "evidence_policy_benchmark.json": "180fa6203b2b21ca6f5835b835dfe6d62f697dec9da8a8b74089211f4de60424",
+    "empirical_context_policy.json": "ff2e3ff19f9d4e180ed1c1c9dd270167d0daac46d875c18a5be76873514ed5a7",
+    "documents\\leave_policy.txt": "853fa1fef06dcb2570d12f0a4496f8042eeb17e1b0f6d75ef7d8b1c6e2961f69",
+    "documents\\employee_handbook.txt": "853fa1fef06dcb2570d12f0a4496f8042eeb17e1b0f6d75ef7d8b1c6e2961f69"
+  }
+}

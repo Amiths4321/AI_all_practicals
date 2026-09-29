@@ -13,11 +13,7 @@ def load_report(experiment_dir):
     if not path.exists():
         return None
 
-    with open(
-        path,
-        "r",
-        encoding="utf-8"
-    ) as file:
+    with open(path, "r", encoding="utf-8") as file:
         return json.load(file)
 
 
@@ -25,20 +21,15 @@ def extract_metrics(report):
     if not report:
         return None
 
-    summary = report.get(
-        "summary",
-        {}
-    )
+    summary = report.get("summary", {})
 
     return {
         "questions": summary.get(
-            "questions",
-            0
+            "questions", 0
         ),
 
         "context_reduction": summary.get(
-            "context_reduction",
-            0.0
+            "context_reduction", 0.0
         ),
 
         "fixed_context": summary.get(
@@ -113,10 +104,6 @@ def main():
         )
 
         if report is None:
-            print(
-                f"Skipping {directory.name}: "
-                f"final_adaptive_evaluation.json not found"
-            )
             continue
 
         metrics = extract_metrics(
@@ -163,11 +150,6 @@ def main():
         print()
         print(
             f"Experiment: {item['experiment']}"
-        )
-
-        print(
-            f"  Questions: "
-            f"{item['questions']}"
         )
 
         print(

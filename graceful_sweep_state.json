@@ -1,0 +1,178 @@
+{
+  "experiments": {
+    "config_001": {
+      "status": "success",
+      "attempts": 1,
+      "history": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "started_at": 1790582966.8235188,
+          "finished_at": 1790583006.29883
+        }
+      ],
+      "result": {
+        "id": "config_001",
+        "status": "success",
+        "logs": [
+          {
+            "script": "adaptive_rag.py",
+            "returncode": 0,
+            "stdout": "======================================================================\nADAPTIVE RAG\n======================================================================\nDocuments: 2\nQuestions: 5\nPolicy entries: 0\nChunks: 2\n\n[1/5]\nWho approves annual leave?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[2/5]\nHow do employees apply for leave?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[3/5]\nCan medical leave require documents?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[4/5]\nWhat is the maternity leave policy?\nStatus: answered\nBudget: 3\nRetrieval evidence: 1.0\nContext evidence: 1.0\nLatency: 0.952 seconds\n\n[5/5]\nWhat is the company's remote work policy?\nStatus: answered\nBudget: 3\nRetrieval evidence: 1.0\nContext evidence: 1.0\nLatency: 0.62 seconds\n\n======================================================================\nFINAL SUMMARY\n======================================================================\nQuestions: 5\nAnswered: 2\nAbstained: 3\nErrors: 0\nAnswer rate: 0.4\nAbstention rate: 0.6\nError rate: 0.0\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_001\\adaptive_rag_report.json\n",
+            "stderr": "C:\\Users\\amith\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\__init__.py:113: RequestsDependencyWarning: urllib3 (2.7.0) or chardet (7.4.3)/charset_normalizer (3.4.8) doesn't match a supported version!\n  warnings.warn(\nW0928 13:39:39.614000 5084 site-packages\\torch\\utils\\_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.\nW0928 13:39:39.702000 5084 site-packages\\torch\\utils\\_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.\nFailed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\n"
+          },
+          {
+            "script": "final_adaptive_evaluation.py",
+            "returncode": 0,
+            "stdout": "Loading fixed-budget results...\nLoading adaptive results...\n\n============================================================\nFINAL ADAPTIVE RAG EVALUATION\n============================================================\nQuestions: 5\nFixed average context: 781.0\nAdaptive average context: 338.8\nContext reduction: 56.6%\nFixed evidence recall: 0.400\nAdaptive evidence recall: 0.400\nFixed quality index: 0.800\nAdaptive quality index: 0.200\nQuality delta: -0.600\nLatency delta: -0.421s\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_001\\final_adaptive_evaluation.json\n",
+            "stderr": ""
+          },
+          {
+            "script": "final_rag_report.py",
+            "returncode": 0,
+            "stdout": "Loading evaluation...\nLoading adaptive report...\n\n======================================================================\nFINAL RAG REPORT\n======================================================================\nQuestions: 5\nFixed context: 781.0\nAdaptive context: 338.8\nContext reduction: 56.6 %\nFixed evidence recall: 0.4\nAdaptive evidence recall: 0.4\nFixed quality: 0.8\nAdaptive quality: 0.2\nQuality delta: -0.6\nEvidence delta: 0.0\n\nClassifications:\n  no_material_saving: 2\n  quality_regression: 3\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_001\\final_rag_report.json\n",
+            "stderr": ""
+          },
+          {
+            "script": "failure_monitor.py",
+            "returncode": 0,
+            "stdout": "\n======================================================================\nRAG FAILURE MONITOR\n======================================================================\nQuestions: 5\nSuccesses: 1\nRetrieval failures: 3\nContext losses: 0\nAbstentions: 0\nProcessing errors: 0\nUnsupported claims: 0\nUngrounded answers: 1\nIncomplete answers: 0\nIrrelevant answers: 0\n\nSuccess rate: 0.200\nFailure rate: 0.800\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_001\\failure_monitoring.json\n",
+            "stderr": ""
+          }
+        ],
+        "elapsed_seconds": 39.42848205566406
+      }
+    },
+    "config_002": {
+      "status": "success",
+      "attempts": 1,
+      "history": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "started_at": 1790582966.8256302,
+          "finished_at": 1790583003.9783702
+        }
+      ],
+      "result": {
+        "id": "config_002",
+        "status": "success",
+        "logs": [
+          {
+            "script": "adaptive_rag.py",
+            "returncode": 0,
+            "stdout": "======================================================================\nADAPTIVE RAG\n======================================================================\nDocuments: 2\nQuestions: 5\nPolicy entries: 0\nChunks: 2\n\n[1/5]\nWho approves annual leave?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[2/5]\nHow do employees apply for leave?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[3/5]\nCan medical leave require documents?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[4/5]\nWhat is the maternity leave policy?\nStatus: answered\nBudget: 3\nRetrieval evidence: 1.0\nContext evidence: 1.0\nLatency: 0.603 seconds\n\n[5/5]\nWhat is the company's remote work policy?\nStatus: answered\nBudget: 3\nRetrieval evidence: 1.0\nContext evidence: 1.0\nLatency: 2.157 seconds\n\n======================================================================\nFINAL SUMMARY\n======================================================================\nQuestions: 5\nAnswered: 2\nAbstained: 3\nErrors: 0\nAnswer rate: 0.4\nAbstention rate: 0.6\nError rate: 0.0\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_002\\adaptive_rag_report.json\n",
+            "stderr": "C:\\Users\\amith\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\__init__.py:113: RequestsDependencyWarning: urllib3 (2.7.0) or chardet (7.4.3)/charset_normalizer (3.4.8) doesn't match a supported version!\n  warnings.warn(\nW0928 13:39:39.612000 15596 site-packages\\torch\\utils\\_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.\nW0928 13:39:39.703000 15596 site-packages\\torch\\utils\\_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.\nFailed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\n"
+          },
+          {
+            "script": "final_adaptive_evaluation.py",
+            "returncode": 0,
+            "stdout": "Loading fixed-budget results...\nLoading adaptive results...\n\n============================================================\nFINAL ADAPTIVE RAG EVALUATION\n============================================================\nQuestions: 5\nFixed average context: 781.0\nAdaptive average context: 338.8\nContext reduction: 56.6%\nFixed evidence recall: 0.400\nAdaptive evidence recall: 0.400\nFixed quality index: 0.800\nAdaptive quality index: 0.200\nQuality delta: -0.600\nLatency delta: -0.184s\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_002\\final_adaptive_evaluation.json\n",
+            "stderr": ""
+          },
+          {
+            "script": "final_rag_report.py",
+            "returncode": 0,
+            "stdout": "Loading evaluation...\nLoading adaptive report...\n\n======================================================================\nFINAL RAG REPORT\n======================================================================\nQuestions: 5\nFixed context: 781.0\nAdaptive context: 338.8\nContext reduction: 56.6 %\nFixed evidence recall: 0.4\nAdaptive evidence recall: 0.4\nFixed quality: 0.8\nAdaptive quality: 0.2\nQuality delta: -0.6\nEvidence delta: 0.0\n\nClassifications:\n  no_material_saving: 2\n  quality_regression: 3\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_002\\final_rag_report.json\n",
+            "stderr": ""
+          },
+          {
+            "script": "failure_monitor.py",
+            "returncode": 0,
+            "stdout": "\n======================================================================\nRAG FAILURE MONITOR\n======================================================================\nQuestions: 5\nSuccesses: 1\nRetrieval failures: 3\nContext losses: 0\nAbstentions: 0\nProcessing errors: 0\nUnsupported claims: 0\nUngrounded answers: 1\nIncomplete answers: 0\nIrrelevant answers: 0\n\nSuccess rate: 0.200\nFailure rate: 0.800\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_002\\failure_monitoring.json\n",
+            "stderr": ""
+          }
+        ],
+        "elapsed_seconds": 37.108017921447754
+      }
+    },
+    "config_003": {
+      "status": "success",
+      "attempts": 1,
+      "history": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "started_at": 1790582966.8279433,
+          "finished_at": 1790583040.2000935
+        }
+      ],
+      "result": {
+        "id": "config_003",
+        "status": "success",
+        "logs": [
+          {
+            "script": "adaptive_rag.py",
+            "returncode": 0,
+            "stdout": "======================================================================\nADAPTIVE RAG\n======================================================================\nDocuments: 2\nQuestions: 5\nPolicy entries: 0\nChunks: 2\n\n[1/5]\nWho approves annual leave?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[2/5]\nHow do employees apply for leave?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[3/5]\nCan medical leave require documents?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[4/5]\nWhat is the maternity leave policy?\nStatus: answered\nBudget: 3\nRetrieval evidence: 1.0\nContext evidence: 1.0\nLatency: 0.597 seconds\n\n[5/5]\nWhat is the company's remote work policy?\nStatus: answered\nBudget: 3\nRetrieval evidence: 1.0\nContext evidence: 1.0\nLatency: 0.635 seconds\n\n======================================================================\nFINAL SUMMARY\n======================================================================\nQuestions: 5\nAnswered: 2\nAbstained: 3\nErrors: 0\nAnswer rate: 0.4\nAbstention rate: 0.6\nError rate: 0.0\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_003\\adaptive_rag_report.json\n",
+            "stderr": "C:\\Users\\amith\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\__init__.py:113: RequestsDependencyWarning: urllib3 (2.7.0) or chardet (7.4.3)/charset_normalizer (3.4.8) doesn't match a supported version!\n  warnings.warn(\nW0928 13:40:16.379000 10040 site-packages\\torch\\utils\\_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.\nW0928 13:40:16.483000 10040 site-packages\\torch\\utils\\_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.\nFailed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\n"
+          },
+          {
+            "script": "final_adaptive_evaluation.py",
+            "returncode": 0,
+            "stdout": "Loading fixed-budget results...\nLoading adaptive results...\n\n============================================================\nFINAL ADAPTIVE RAG EVALUATION\n============================================================\nQuestions: 5\nFixed average context: 781.0\nAdaptive average context: 338.8\nContext reduction: 56.6%\nFixed evidence recall: 0.400\nAdaptive evidence recall: 0.400\nFixed quality index: 0.800\nAdaptive quality index: 0.200\nQuality delta: -0.600\nLatency delta: -0.489s\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_003\\final_adaptive_evaluation.json\n",
+            "stderr": ""
+          },
+          {
+            "script": "final_rag_report.py",
+            "returncode": 0,
+            "stdout": "Loading evaluation...\nLoading adaptive report...\n\n======================================================================\nFINAL RAG REPORT\n======================================================================\nQuestions: 5\nFixed context: 781.0\nAdaptive context: 338.8\nContext reduction: 56.6 %\nFixed evidence recall: 0.4\nAdaptive evidence recall: 0.4\nFixed quality: 0.8\nAdaptive quality: 0.2\nQuality delta: -0.6\nEvidence delta: 0.0\n\nClassifications:\n  no_material_saving: 2\n  quality_regression: 3\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_003\\final_rag_report.json\n",
+            "stderr": ""
+          },
+          {
+            "script": "failure_monitor.py",
+            "returncode": 0,
+            "stdout": "\n======================================================================\nRAG FAILURE MONITOR\n======================================================================\nQuestions: 5\nSuccesses: 1\nRetrieval failures: 3\nContext losses: 0\nAbstentions: 0\nProcessing errors: 0\nUnsupported claims: 0\nUngrounded answers: 1\nIncomplete answers: 0\nIrrelevant answers: 0\n\nSuccess rate: 0.200\nFailure rate: 0.800\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_003\\failure_monitoring.json\n",
+            "stderr": ""
+          }
+        ],
+        "elapsed_seconds": 36.192222118377686
+      }
+    },
+    "config_004": {
+      "status": "success",
+      "attempts": 1,
+      "history": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "started_at": 1790582966.8299801,
+          "finished_at": 1790583043.0956311
+        }
+      ],
+      "result": {
+        "id": "config_004",
+        "status": "success",
+        "logs": [
+          {
+            "script": "adaptive_rag.py",
+            "returncode": 0,
+            "stdout": "======================================================================\nADAPTIVE RAG\n======================================================================\nDocuments: 2\nQuestions: 5\nPolicy entries: 0\nChunks: 2\n\n[1/5]\nWho approves annual leave?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[2/5]\nHow do employees apply for leave?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[3/5]\nCan medical leave require documents?\nStatus: abstained\nBudget: 0\nRetrieval evidence: 0.0\nContext evidence: 0.0\n\n[4/5]\nWhat is the maternity leave policy?\nStatus: answered\nBudget: 3\nRetrieval evidence: 1.0\nContext evidence: 1.0\nLatency: 0.987 seconds\n\n[5/5]\nWhat is the company's remote work policy?\nStatus: answered\nBudget: 3\nRetrieval evidence: 1.0\nContext evidence: 1.0\nLatency: 2.494 seconds\n\n======================================================================\nFINAL SUMMARY\n======================================================================\nQuestions: 5\nAnswered: 2\nAbstained: 3\nErrors: 0\nAnswer rate: 0.4\nAbstention rate: 0.6\nError rate: 0.0\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_004\\adaptive_rag_report.json\n",
+            "stderr": "C:\\Users\\amith\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\requests\\__init__.py:113: RequestsDependencyWarning: urllib3 (2.7.0) or chardet (7.4.3)/charset_normalizer (3.4.8) doesn't match a supported version!\n  warnings.warn(\nW0928 13:40:19.005000 9448 site-packages\\torch\\utils\\_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.\nW0928 13:40:19.102000 9448 site-packages\\torch\\utils\\_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.\nFailed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given\nFailed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\nNumber of requested results 10 is greater than number of elements in index 2, updating n_results = 2\n"
+          },
+          {
+            "script": "final_adaptive_evaluation.py",
+            "returncode": 0,
+            "stdout": "Loading fixed-budget results...\nLoading adaptive results...\n\n============================================================\nFINAL ADAPTIVE RAG EVALUATION\n============================================================\nQuestions: 5\nFixed average context: 781.0\nAdaptive average context: 338.8\nContext reduction: 56.6%\nFixed evidence recall: 0.400\nAdaptive evidence recall: 0.400\nFixed quality index: 0.800\nAdaptive quality index: 0.200\nQuality delta: -0.600\nLatency delta: -0.040s\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_004\\final_adaptive_evaluation.json\n",
+            "stderr": ""
+          },
+          {
+            "script": "final_rag_report.py",
+            "returncode": 0,
+            "stdout": "Loading evaluation...\nLoading adaptive report...\n\n======================================================================\nFINAL RAG REPORT\n======================================================================\nQuestions: 5\nFixed context: 781.0\nAdaptive context: 338.8\nContext reduction: 56.6 %\nFixed evidence recall: 0.4\nAdaptive evidence recall: 0.4\nFixed quality: 0.8\nAdaptive quality: 0.2\nQuality delta: -0.6\nEvidence delta: 0.0\n\nClassifications:\n  no_material_saving: 2\n  quality_regression: 3\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_004\\final_rag_report.json\n",
+            "stderr": ""
+          },
+          {
+            "script": "failure_monitor.py",
+            "returncode": 0,
+            "stdout": "\n======================================================================\nRAG FAILURE MONITOR\n======================================================================\nQuestions: 5\nSuccesses: 1\nRetrieval failures: 3\nContext losses: 0\nAbstentions: 0\nProcessing errors: 0\nUnsupported claims: 0\nUngrounded answers: 1\nIncomplete answers: 0\nIrrelevant answers: 0\n\nSuccess rate: 0.200\nFailure rate: 0.800\n\nSaved: C:\\Users\\amith\\Desktop\\Confidential\\Misc Projects\\P10\\python\\rag_project\\experiment_workspaces\\config_004\\failure_monitoring.json\n",
+            "stderr": ""
+          }
+        ],
+        "elapsed_seconds": 36.76210951805115
+      }
+    }
+  },
+  "created_at": 1790582966.8210628,
+  "updated_at": 1790583081.6217375
+}

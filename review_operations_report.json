@@ -1,0 +1,14 @@
+{
+    "total_reviews": 7,
+    "pending": 2,
+    "approved": 5,
+    "rejected": 0,
+    "review_reasons": {
+        "INSUFFICIENT_EVIDENCE": 3,
+        "INVALID_CITATION": 2,
+        "NO_CANDIDATES": 2
+    },
+    "resolved_reviews": 5,
+    "average_resolution_minutes": 26.51,
+    "generated_at": "2026-09-16T10:57:10.748486"
+}
