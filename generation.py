@@ -1,18 +1,21 @@
+import os
 import requests
 
+OLLAMA_URL = os.getenv("OLLAMA_URL")
+MODEL_NAME = os.getenv("OLLAMA_MODEL")
 
-OLLAMA_URL = "http://10.22.39.192:11434"
-MODEL_NAME = "qwen2.5vl:latest"
+if not OLLAMA_URL:
+    raise RuntimeError("OLLAMA_URL is not configured")
+
+if not MODEL_NAME:
+    raise RuntimeError("OLLAMA_MODEL is not configured")
 
 
 def build_context(documents):
     context_parts = []
 
     for index, item in enumerate(documents, start=1):
-        source = item["metadata"].get(
-            "source",
-            "unknown"
-        )
+        source = item["metadata"].get("source", "unknown")
 
         context_parts.append(
             f"[SOURCE {index}: {source}]\n"
@@ -52,9 +55,9 @@ Answer:
         json={
             "model": MODEL_NAME,
             "prompt": prompt,
-            "stream": False
+            "stream": False,
         },
-        timeout=3600
+        timeout=120,
     )
 
     response.raise_for_status()

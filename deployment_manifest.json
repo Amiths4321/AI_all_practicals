@@ -1,6 +1,8 @@
 {
+  "deployment_time": "2026-09-30T12:36:02.446731+00:00",
   "service_version": "1.0.0",
-  "started_at": "2026-09-29T14:37:35.149394",
+  "container_image": "production-rag:2.2",
+  "deployment_environment": "production",
   "config_fingerprint": "16efd9ca9fd3ddd2da66b18e6e6cf88df1c83842666a24d1000882efbcdfb4a4",
   "index_collection": "adaptive_rag_67c17ce0a04754e8",
   "index_fingerprint": "67c17ce0a04754e8207250cfaa881a5fc71d5728a8c134af5064a3a0c2acbcf1",

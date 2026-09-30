@@ -1,9 +1,11 @@
 import asyncio
 import json
 import logging
+import os
 import sys
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import Any, Optional
 
 from fastapi import FastAPI, HTTPException
@@ -23,6 +25,17 @@ REQUEST_TIMEOUT_SECONDS = OPERATIONAL_CONFIG.get("request_timeout_seconds", 180)
 INDEX_MONITOR_INTERVAL = OPERATIONAL_CONFIG.get("index_monitor_interval_seconds", 30)
 
 request_semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
+
+CONTAINER_IMAGE = os.getenv("RAG_IMAGE", "unknown")
+DEPLOYMENT_ENVIRONMENT = os.getenv("DEPLOYMENT_ENVIRONMENT", "production")
+
+# Single source of truth for the manifest location:
+# explicit env var > /app (container) > folder of this script (local dev)
+BASE_DIR = Path(__file__).resolve().parent
+_default_dir = Path("/app") if Path("/app").exists() else BASE_DIR
+DEPLOYMENT_MANIFEST_FILE = Path(
+    os.getenv("DEPLOYMENT_MANIFEST_PATH", _default_dir / "deployment_manifest.json")
+)
 
 
 # ---------------------------------------------------------------- logging
@@ -48,8 +61,53 @@ logger.handlers.clear()
 logger.addHandler(handler)
 logger.propagate = False
 
+
+# ---------------------------------------------------------------- manifest
+def create_container_manifest(controller):
+    meta = controller.deployment_metadata
+    manifest = {
+        "deployment_time": datetime.now(timezone.utc).isoformat(),
+        "service_version": meta["service_version"],
+        "container_image": CONTAINER_IMAGE,
+        "deployment_environment": DEPLOYMENT_ENVIRONMENT,
+        "config_fingerprint": meta["config_fingerprint"],
+        "index_collection": meta["index_collection"],
+        "index_fingerprint": meta["index_fingerprint"],
+        "index_chunk_count": meta["index_chunk_count"],
+    }
+
+    DEPLOYMENT_MANIFEST_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(DEPLOYMENT_MANIFEST_FILE, "w", encoding="utf-8") as file:
+        json.dump(manifest, file, indent=2)
+
+    return manifest
+
+
+def validate_container_manifest(controller):
+    if not DEPLOYMENT_MANIFEST_FILE.exists():
+        raise RuntimeError("Deployment manifest is missing")
+
+    with open(DEPLOYMENT_MANIFEST_FILE, "r", encoding="utf-8") as file:
+        manifest = json.load(file)
+
+    meta = controller.deployment_metadata
+
+    if manifest.get("container_image") != CONTAINER_IMAGE:
+        raise RuntimeError("Deployment manifest image mismatch")
+
+    if manifest.get("config_fingerprint") != meta["config_fingerprint"]:
+        raise RuntimeError("Deployment manifest config fingerprint mismatch")
+
+    if manifest.get("index_fingerprint") != meta["index_fingerprint"]:
+        raise RuntimeError("Deployment manifest index fingerprint mismatch")
+
+    return True
+
+
 # ---------------------------------------------------------------- controller
 controller = ProductionRAGController()
+create_container_manifest(controller)
+validate_container_manifest(controller)
 
 
 # ---------------------------------------------------------------- background monitor
@@ -130,7 +188,11 @@ def ready():
 
 @app.get("/metadata")
 def metadata():
-    return controller.deployment_metadata
+    return {
+        **controller.deployment_metadata,
+        "container_image": CONTAINER_IMAGE,
+        "deployment_environment": DEPLOYMENT_ENVIRONMENT,
+    }
 
 
 @app.get("/metadata/validate")
@@ -188,38 +250,19 @@ async def query_endpoint(payload: QueryRequest):
 def recover_endpoint():
     return controller.recover_index()
 
-@app.post("/admin/rollback")
-async def rollback():
-    if controller is None:
-        raise HTTPException(
-            status_code=503,
-            detail="RAG controller is not ready"
-        )
 
-    try:
-        result = await asyncio.to_thread(
-            controller.rollback_and_reload
-        )
-
-        return {
-            "status": "rolled_back",
-            **result,
-        }
-
-    except Exception as exc:
-        raise HTTPException(
-            status_code=500,
-            detail=str(exc)
-        )
 @app.post("/index/reload")
 def reload_endpoint():
     return controller.reload_index()
 
 
+# One handler, two paths (previously defined twice)
 @app.post("/index/rollback")
 @app.post("/admin/rollback")
-def rollback_endpoint():
+async def rollback_endpoint():
     try:
-        return {"status": "success", **controller.rollback_and_reload()}
-    except Exception as error:
-        raise HTTPException(status_code=400, detail=str(error))
+        result = await asyncio.to_thread(controller.rollback_and_reload)
+        return {"status": "rolled_back", **result}
+    except Exception as exc:
+        logger.exception("Rollback failed")
+        raise HTTPException(status_code=500, detail=str(exc))

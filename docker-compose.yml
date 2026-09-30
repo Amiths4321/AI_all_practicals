@@ -1,0 +1,47 @@
+services:
+  rag:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    image: ${RAG_IMAGE}
+
+    container_name: production-rag
+
+    ports:
+      - "${RAG_PORT}:8000"
+
+    environment:
+      OLLAMA_URL: "${OLLAMA_URL}"
+      OLLAMA_MODEL: "${OLLAMA_MODEL}"
+      RAG_IMAGE: "${RAG_IMAGE}"
+      DEPLOYMENT_ENVIRONMENT: "${DEPLOYMENT_ENVIRONMENT}"
+
+    volumes:
+      - production-rag-chroma:/app/chroma_db
+
+    restart: unless-stopped
+
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8000/ready', timeout=5)"
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s
+
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 4G
+
+    stop_grace_period: 30s
+
+volumes:
+  production-rag-chroma:
