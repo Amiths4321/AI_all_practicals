@@ -1,5 +1,5 @@
 {
-  "deployment_time": "2026-09-30T12:36:02.446731+00:00",
+  "deployment_time": "2026-09-30T13:09:44.221381+00:00",
   "service_version": "1.0.0",
   "container_image": "production-rag:2.2",
   "deployment_environment": "production",
